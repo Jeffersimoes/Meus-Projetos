@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagens/bulguer.png"></a>
+            <div class="btn-menu" onclick="mostrarMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="contatos.html" class="active">Contatos</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner banner-contatos">
+        <div class="banner-text">
+            <h2>VGR Burguer's</h2>
+            <p>Conheça o paraíso em apenas uma mordida!</p>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1>Entre em contato conosco</h1>
+            <div class="formulario">
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" placeholder="Digite o seu nome..." name="nome" id="nome" class="form-style"><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="number" placeholder="Digite o seu telefone..." name="telefone" id="telefone" class="form-style"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Digite o seu e-mail..." name="email" id="email" class="form-style"><br>
+                    <label for="texto">Mensagem:</label><br>
+                    <textarea name="text" id="texto" cols="30" rows="10" placeholder="Deixe sua mensagem para nós..."></textarea><br>
+                    <input type="submit" value="Enviar" class="btn-submit">
+                </form> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="sociais">
+                <p>Conheça nossas redes socias</p>
+                <a href="#"><i class="fa fa-facebook-f"></i>Facebook</a><br>
+                <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+            </div>
+            <div class="contatos">
+                <p>Nossos Contatos</p>
+                <a href="#"><i class="fa fa-phone"></i>Tel:(11)4444-4444</a><br>
+                <a href="#"><i class="fa fa-whatsapp"></i>Whatsapp:4444-4444</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

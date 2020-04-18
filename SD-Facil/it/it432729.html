@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432729 - CRM - Contestação já recalculada</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>CRM - Contestação já recalculada</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432729</h1>
+        </div>
+      </div>
+      <div class="it_conteudo">
+          <h1>Contestação já recalculada</h1>
+    <h2>OBJETIVO:</h2>
+          <p>Orientar os analistas sobre como tratar os casos onde o (a) usuário (a) relata que a contestação não foi recalculada.</p>
+          <p>Importante:</p>
+          <h2>CONCEITUAÇÃO:</h2>
+          <p>• IT:  São os processos encontrado no sistema CA para auxiliar na tratativa dos chamados.</p>
+          <p>•	NETSMS:  Sistema utilizado para alteração nos contratos dos clientes NET</p>
+          <p>•	Usuário: Colaborador NET ou Terceiro que utiliza o Sistema NETSMS para atender aos clientes.</p>
+          <p>•	Cliente: Utilizador dos serviços prestados pela empresa NET.</p>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+          <p><b>Aplicação:</b> NETSMS</p>
+          <p>O analista SD deve questionar o usuário sobre qual a ação que está sendo realizada ANTES do início deste script,
+          visando o direcionamento correto para o grupo HP, caso seja necessário.</p>
+          <p><b>Para o problema temos o seguinte cenário mapeado:</b></p>
+          <p>Usuário (a) relata que a contestação por recalculo da fatura não ocorreu corretamente, porém no momento da análise a mesma já havia sido recalculada normalmente.</p>
+          <p>Em caso de fatura não recalcula após contestação, seguir IT 426576</p>
+          <div class="it_img">
+            <img src="./img/img58.png" alt="Print"/>
+          </div>
+          <p>Conforme pode ser verificado no exemplo acima, a fatura informada pelo usuário se encontra com status Cancelado por Contestação</br>
+           e quando a fatura está com este status, significa que a mesma foi contestada por recálculo e gerou uma nova fatura.</p>
+          <p>Para confirmar se a fatura realmente foi recalculada, vamos abrir as últimas faturas deste contrato, entrar em Títulos e Detalhamento </br>
+          dos Títulos, e validar qual delas possui o vencimento original igual ao da fatura informada pelo usuário.</p>
+          <div class="it_img">
+            <img src="./img/img59.png" alt="Print"/>
+          </div>
+
+          <p>Conforme pode ser verificado no exemplo acima, a fatura informada pelo usuário se encontra
+            com status Cancelado por Contestação, e quando a fatura está com este status, significa que a
+             mesma foi contestada por recalculo e gerou uma nova fatura.</p>
+
+          <p>Para confirmar se a fatura realmente foi recalculada, vamos abrir as últimas faturas do contrato,
+             o analista deverá acessar ainda na aba Financeiro as seguinte opções:</p>
+
+          <p>Aba Financeiro > Ajuste Financeiro >Títulos e Detalhamentos dos Títulos, e em seguida,
+                  validar qual delas possui o vencimento original igual ao da fatura informada pelo usuário.</p>
+
+                  <div class="it_img">
+                    <img src="./img/img60.png" alt="Print"/>
+                  </div>
+                    </br>
+
+          <p>Conforme pode ser verificado no print acima, encontramos a fatura que foi gerada após a contestação
+                (possui o vencimento original igual ao da fatura contestada), sendo que o valor do boleto gerado após
+                a contestação informada pelo usuário no exemplo acima é de 334,75, e a fatura que foi contestada por
+                recalculo possuía o valor R$ 432,27, ou seja, foi recalculada normalmente e não é necessária a abertura de chamado.</p><br>
+
+          <p class="it_subt">  Resposta Sugerida:</p>
+
+            <p>Prezados Colaborador, </p>
+
+            <p>No momento da análise a cobrança já se encontrava recalculada. Por gentileza verificar. </p>
+
+            <p>Atenciosamente</br>
+            <p>Service Desk Brasil</p>
+
+          </div>
+          <div class="itbox_inferior">
+            <h2>Propriedades do Documento:</h2>
+            <p>ID do doc: 432729</p>
+            <p>Data de criação: 11/10/2016</p>
+            <p>Data de Revisão: 17/10/2018</p>
+          </div>
+      </div>
+    </body>
+  </html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT424382 - Problemas na Baixa de OS com mensagem de Erro</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Problemas na Baixa de OS com mensagem de Erro</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:424382</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Problemas na Baixa de OS com mensagem de Erro</h1>
+
+          <br>
+          <h2>OBJETIVO:</h2>
+          <p>Mostrar os principais erros que podem ocorrer no momento da Baixa, cancelamento ou
+            execução de OS no sistema Netsms.</p>
+
+          <p>Erro ORA-00054 deverá ser validado pela supervisão pois o procedimento orienta
+            transferir o chamado para grupo COTI, e recebemos recentemente a orientação que o
+            COTI não tratará mais chamado desse segmento (IT425060).</P>
+
+          <br>
+          <h2>APLICAÇÃO:</h2>
+          <p>Esta IT possuí aplicabilidade nos seguintes grupos: </p>
+
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+              <li>Atlas</li>
+              <li>Perfil</li>
+              <li>SuporteOS/OC</li>
+            </dd>
+          </ul>
+
+          <br>
+          <h2>REFERÊNCIAS: </h2>
+          <ul>
+            <dd>
+              <li>	402061 – ERRO CRM-0181 NÃO É POSSÍVEL CANCELAR ESTA SOLICITAÇÃO,
+                POIS EXISTEM OS’s DEPENDENTES EM ANDAMENTO SENDO TRATADAS PELA REDE INTERNA</li>
+              <li>	424382 – Problemas na Baixa de OS com mensagem de Erro</li>
+              <li>	424978 – Não existe uma classe associada a este tipo de OS</li>
+              <li>	424980 – Não se pode cancelar uma solicitação que esteja com a OS em imediata</li>
+              <li>	424842 – ERRO 'ORA – 01461 : Can Bind a Long Value'</li>
+              <li>	425060 – ORA – 00054 : Resource busy and acquire With NOWAIT sepecified</li>
+              <li>	424979 – Não existem registros que correspondam a esses critérios de busca</li>
+              <li>	424224 – Falha: 'Não foi encontrado registro de telefone VoIP para ser cancelado'</li>
+              <li>	434531 – Erro CRM-0104 – Movimentação de Terminal - Não é Permitido que se
+                Realize esta Movimentação para esta Solicitação</li>
+              <li>	425032 – CRM-0184: Esta operação viola as regras de controle de dados</li>
+            </dd>
+          </ul>
+          <br>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+
+          <p>Abaixo segue uma lista com os erros relacionados a baixa de OS.</p>
+
+          <p><b>ERRO 1)</b> "Não existe uma classe associada a este tipo de OS “</p>
+
+          <br>
+          <p><b>ERRO 2)</b> “Não existe um tipo de edificação associada a este tipo de OS”</p>
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+
+          <br>
+          <p><b>ERRO 3)</b> “Não se pode cancelar uma solicitação que esteja com a OS em imediata”.</p>
+
+          <p>O usuário terá que desmarcar a OS de imediata através do caminho:</p>
+
+          <div class="it_img">
+            <figcaption>Rede Interna >> OS’s >> Supervisão de Rede Interna >> Supervisão de
+              Rede Interna-Principal</figcaption>
+            <img src="./img/img119.png"/>
+          </div>
+
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+
+          <br>
+          <p><b>ERRO 4</b> - “ORA – 01461: Can Bind a Long Value” - Ao tentar de Liberar a OS para Reagendamento”</p>
+
+          <p>Esse erro pode ocorrer no momento que realiza a liberação da OS para reagendamento. O analista deverá analisar 2 fatores:</p>
+
+          <p>1-	O preenchimento do campo observação da OS é muito extenso.</p>
+          <p>2-	Campo observação da OS com caracter especial</p>
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+          <br>
+          <p><b>ERRO 5</b> - “ORA – 00054: Resource busy and acquire With NOWAIT specified”.</p>
+          <p>Essa mensagem de erro ocorre quando o usuário realiza qualquer procedimento no sistema Netsms.</p>
+          <p>O chamado com o erro ORA-00054 deverá ser transferido para equipe COTI. (Vide observação na primeira
+            página)</p>
+          <br>
+          <p><b>ERRO 6</b> - “Não existem registros que correspondam a esses critérios de busca”.
+            (Ao cancelar solicitação)</p>
+
+          <p>Esse erro ocorre quando usuário realiza o cancelamento da OS e o sistema não permite o cancelamento automaticamente.</p>
+
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+
+          <br>
+          <p><b>ERRO 7</b> - 'CRM-0181 Não foi possível cancelar esta solicitação, pois existem OS’s dependentes em andamento sendo tratadas pela rede interna' (ao cancelar solicitação)</p>
+
+          <p>O usuário terá que fazer a baixa da OS de maneira manual seguindo orientação abaixo:</p>
+
+          <p>•	Acessar o sistema Netsms: Rede Interna > OS’s > Baixa de OS’s.</p>
+
+          <p>•	Colocar a OS e a base desejada, o sistema irá trazer a OS e o usuário poderá efetuar seu cancelamento.</p>
+          <p>(Para este procedimento é necessário que a OS esteja como Imediata ou Agendada e Despachada).</p>
+
+          <p>Caso ocorra erro no processo de baixa o usuário deverá abrir um chamado no Suporte OSOC, solicitando a baixa da OS.</p>
+
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+
+          <br>
+          <p><b>ERRO 8</b> - Não foi encontrado registro de telefone VoIP para ser Cancelado.</p>
+
+	        <p>Caso sistema apresente esse erro o usuário não conseguirá fazer a baixa da OS.</p>
+	        <p>Obrigatoriamente será necessário abrir um chamado na ferramenta Suporte OS/OC.</p>
+
+	        <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a Sugestão de Resposta na opção 7.</p>
+
+          <br>
+          <p><b>ERRO 9</b> -  'CRM-0104: Não é permitido que se realize esta movimentação para esta solicitação' (Ocorre na tela de baixa de OS do Netsms para entrega/devolução de equipamentos).</p>
+
+          <p>Esse chamado deverá ser transferido seguindo a instrução no tópico Solução.</p>
+
+          <br>
+          <p><b>ERRO 10</b> -  'O usuário não tem permissão para encerrar esta OS' (ao realizar baixa de OS)</p>
+
+          <p>Caso o sistema apresente essa mensagem de erro, transferir o chamado conforme instrução no tópico Solução.</p>
+
+          <br>
+          <p><b>ERRO 11</b> - SSNTerminalri - CRM-0184: Esta operação viola as regras de controle de dados do sistema' (o erro ocorre na tela de baixa de OS do Netms para entrega/devolução de equipamentos)</p>
+
+          <p>Nesse caso, o sistema não permite a entrega e ou devolução de equipamento pela tela de Baixa de OS e deve ser transferido conforme instrução no tópico Solução.</p>
+          <br>
+          <h2>SOLUÇÃO:</h2>
+          <br>
+          <p class="it_subt">Erros que orienta encerramento em N1 pode se utilizar categoria abaixo:</p>
+          <br>
+          <p><b>Grupo Responsável:</b> Service Desk N1</p>
+          <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITACOES.EXISTENCIA DE OS S DEPENDENTES EM
+            ANDAMENTO SENDO TRATADAS PELA REDE INTERNA</p>
+
+          <br>
+          <p class="it_subt">Categoria/Grupo solucionador para Erro 9</p>
+          <p><b>Categorias:</b> SISTEMAS.NETSMS.TERMINAIS ENTREGA.TELA DE SUPERVISAO DE REDE INTERNA</p>
+          <p>SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.TELA DE SUPERVISAO DE REDE INTERNA</p>
+
+          <br>
+          <p class="it_subt">Grupo solucionador para Erro 10</p>
+          <p><b>Grupo Responsável:</b> PERFIL</p>
+          <p><b>Categoria:</b> N/A</p>
+
+          <br>
+          <p class="it_subt">Grupo solucionador para Erro 11</p>
+          <p><b>Grupo Responsável:</b> Atlas</p>
+          <p><b>Categorias:</b> SISTEMAS.NETSMS.TERMINAIS ENTREGA.TELA DE SUPERVISAO DE REDE INTERNA</p>
+          <p>SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.TELA DE SUPERVISAO DE REDE INTERNA</p>
+
+
+          <br>
+          <h2>Sugestão de Resposta:</h2>
+
+          <br>
+          <p class="it_subt">Erros 1 e 2</p>
+          <p class="resposta">Prezados,</p>
+
+          <p class="resposta">Este chamado está sendo fechado pois não faz parte de nosso time de solução. Favor entrar em contato com sua gestão pois o mesmo deverá entrar em contato com a equipe COP que são responsáveis pelo erro citado.</p>
+
+          <p class="resposta">Atenciosamente.</br>
+          Service Desk Claro de Brasil.</p>
+
+          <br>
+          <p class="it_subt">Erro 3</p>
+          <div class="resposta">
+            <p>Prezados.</p>
+
+            <p>O sistema NETSMS não permite que seja cancelada qualquer tipo de solicitação que esteja com a OS em imediata, a exceção quando o cancelamento se dá pela própria OS através do caminho:</p>
+            <p>Rede Interna > OS’s > Baixa de OS’s.</p>
+            <p>Salvo esta exceção, o usuário terá que desmarcar a OS de imediata através do caminho:</p>
+            <p>Rede Interna > OS’s > Supervisão de Rede Interna > Supervisão de Rede Interna-Principal.</p>
+            <p>Atenciosamente.</br>
+            Service Desk Claro de Brasil.</p>
+          </div>
+          <br>
+          <p class="it_subt">Erro 4 - Caso 1</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+
+            <p>Verificado no sistema o campo de observação da OS está muito extensa é necessário fazer uma limpeza no campo observação. Favor realizar o procedimento informado e se caso problema persista reabrir o chamado.</p>
+
+            <p>Atenciosamente,</br>
+            Service Desk Claro de Brasil.</p>
+          </div>
+
+          <br>
+          <p class="it_subt">Erro 4 - Caso 2</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+
+            <p>Conforme analise realizada no sistema, o campo de observação da OS possui caracter especial é necessário fazer uma limpeza no campo observação.</p>
+
+            <p>Favor realizar o procedimento informado e se caso problema persista reabrir o chamado.</p>
+
+            <p>Atenciosamente.</br>
+            Service Desk Claro de Brasil.</p>
+          </div>
+
+          <br>
+          <p class="it_subt">Erro 6</p>
+          <div class="resposta">
+            <p>Prezados.</p>
+
+            <p>Este erro ocorre no sistema sendo feita de maneira automática, favor seguir o procedimento abaixo para fazer a baixa de maneira manual.</p>
+            <p>Favor efetuar o cancelamento pela tela de 'Baixa da OS' seguindo o caminho:  Rede Interna > OS’s > Baixa de OS’s. Colocar a OS e a base desejada, o sistema irá trazer a OS e com isso poderá efetuar seu cancelamento (para este procedimento é necessário que a OS esteja como imediata ou agendada e despachada).</p>
+
+            <p>Atenciosamente.</br>
+            Service Desk Claro de Brasil.</p>
+
+          </div>
+          <br>
+          <p class="it_subt">Erro 7</p>
+          <p>(Erro após fazer manualmente a baixa e validado que a OS esteja como imediata ou agendada e despachada).</p>
+          <div class="resposta">
+
+            <p>Prezados.</p>
+
+            <p>Conforme análise não será possível fazer a baixa da OS manualmente, nesse caso o usuário deverá abrir um chamado na ferramenta Suporte OSOC solicitando a baixa da OS. Esse chamado está sendo fechado devido a ferramenta utilizada para solucionar o problema não está relacionada ao CA.</p>
+
+            <p>Atenciosamente.</br>
+            Service Desk Claro de Brasil.</p>
+
+          </div>
+
+          <br>
+          <p class="it_subt">Erro 8</p>
+          <div class="resposta">
+            <p>Prezados.</p>
+            <p>Conforme análise não será possível fazer a baixa da OS manualmente, nesse caso o usuário deverá abrir um chamado na ferramenta Suporte OSOC solicitando a baixa da OS. Esse chamado está sendo fechado devido a ferramenta utilizada para solucionar o problema não está relacionada ao CA.</p>
+            <p>Atenciosamente.</br>
+            Service Desk Claro de Brasil.</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 424382</p>
+          <p>Data de criação: 18/11/2013</p>
+          <p>Data de Revisão: 19/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="David Santos - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431490 - Incidente Status de portabilidade PENDENTE</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Incidente Status de portabilidade<br> PENDENTE</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431490</h1>
+        </div>
+      </div>
+          <div class="it_conteudo">
+            <br>
+            <h1>Status de portabilidade Pendente</h1>
+              <br>
+              <h2>OBJETIVO:</h2>
+                <p>O documento tem como objetivo orientar o analista do Service Desk N1 a
+                  tratar chamados referentes a Status de portabilidade Pendente.</p>
+              <br>
+              <h2>APLICAÇÃO:</h2>
+                <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+                <dd>
+                  <ul>
+                    <li>Service Desk N1</li>
+                    <li>Portabilidade N1</li>
+                    <li>NETSMS - PORTABILIDADE</li>
+                  </ul>
+                </dd>
+              <br>
+              <h2>REFERÊNCIAS: </h2>
+                <p>N/A</p>
+              <br>
+              <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+              <br>
+                  <p>Em uma portabilidade de recepção, os terminais possuem um fluxo de
+                    retorno de mensagens para que o terminal seja ativo na Embratel, são elas:</p>
+                  <table>
+                    <tr>
+                      <th>Status</th>
+                      <th>Mensagem</th>
+                    </tr>
+                    <tr>
+                      <td>Requerido</td>
+                      <td>Solicitar a recepção de portabilidade.</td>
+                    </tr>
+                    <tr>
+                      <td>Provisório</td>
+                      <td>Retorno da solicitação de portabilidade com erro.</td>
+                    </tr>
+                    <tr>
+                      <td>Pendente</td>
+                      <td>Retorno da solicitação de portabilidade com sucesso.</td>
+                    </tr>
+                    <tr>
+                      <td>Conflito</td>
+                      <td>Confirmação de recepção da portabilidade com divergência entre operadoras.</td>
+                    </tr>
+                    <tr>
+                      <td>Ativo</td>
+                      <td>Ativação do terminal / Portabilidade de recepção concluída.</td>
+                    </tr>
+                  </table>
+                  <br>
+                  <p>O status PENDENTE é o retorno da solicitação de portabilidade com sucesso,
+                    é responsável pela criação do bilhete e agendar a janela de migração para Embratel.
+                    Com esse status é possível fazer o cancelamento da portabilidade, caso o assinante
+                    não queira mais que o seu número seja portado, porém, o cancelamento deve ser feito
+                    antes das 3 horas próximas da migração. Após a data de migração, o sistema tem até
+                    24 horas para atualizar o status de pendente para ativo.</p>
+                  <br>
+                  <p class="it_subt">Análise do cenário.</p>
+                  <p>Segue abaixo os passos para análise do status pendente / histórico de portabilidade:</p>
+                  <p><b>1 - </b>Verificar se o número telefônico é um portado através de consulta no site ABR
+                    Telecom - Consulta número <a href="http://consultanumero.abrtelecom.com.br:8080" target="_blank">Acesse aqui</a></p>
+                  <div class="it_img">
+                    <img src="./img/img207.png"/>
+                  </div>
+                  <br>
+                  <p><b>2 - </b>Verificar no histórico de portabilidade da Ferramenta NETSALES, se o
+                    terminal realmente esta com status pendente</p>
+                  <div class="it_img">
+                    <img src="./img/img208.png"/>
+                  </div>
+                <h2>SOLUÇÃO:</h2>
+                <p>Segue abaixo os cenários de status Pendente, onde a solicitação de abertura de chamado deve ser realizada ou negada:</p>
+                <dl class="">
+                  <dd>•	Quando o terminal já estiver portado para a Embratel a mais de 24 horas e o status ainda
+                     continuar como pendente <br> (deve-se consultar o número no site da ABR TELECOM
+                     para saber se ocorreu ou não a migração).</dd>
+                  <br>
+                  <dd>•	Quando o sistema gerar constantemente o re-agendamento na data de migração.</dd>
+                  <br>
+                  <dd>•	Quando o sistema apresentar erro para cancelar a portabilidade antes das 3 horas próximas a migração.</dd>
+                  <br>
+                  <dd>•	Quando ainda estiver dentro do período de migração e quando o usuário desejar o cancelamento da
+                    portabilidade dentro das 3 horas antecedentes da migração.</dd>
+                </dl>
+                <p><b>Obs.: </b>Anexar no chamado à tela de evidência do histórico de portabilidade e da consulta feita
+                  no site ABR TELECOM.</p>
+                <br>
+                <p class="it_subt">Categorias: </p>
+                <p>SISTEMAS. NETSALES. PORTABILIDADE STATUS. PENDENTES APOS A JANELA DE MIGRACAO (NUMERO JÁ PORTADO-MAIS 24HS).</p>
+                <p>SISTEMAS. NETSALES. PORTABILIDADE STATUS. PENDENTE DENTRO DA JANELA DE MIGRACAO.</p>
+          </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431490</p>
+          <p>Data de criação: 04/09/2015</p>
+          <p>Data de Revisão: 04/12/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

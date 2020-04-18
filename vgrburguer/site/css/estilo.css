@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: #BF371C;*/
+}
+header{
+    background-color: #584135;
+    width: 100%;
+    z-index: 100;
+}
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav a img{
+    width: 130px;
+}
+.btn-menu{
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.btn-menu div{
+    height: 4px;
+    margin: 6px 0;
+    background-color: #fff;
+}
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.menu li a:hover, .active{
+    background-color: #fff;
+    color: #584135 !important;
+}
+.banner{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-home.png);
+}
+.banner-quemsomos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-quemsomos.png);
+}
+.banner-cardapio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-cardapio.png);
+}
+.banner-delivery{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-delivery.png);
+}
+.banner-unidades{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-unidades.png);
+}
+.banner-contatos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-contatos.png);
+}
+.banner-promocoes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/banner-promocoes.png);
+}
+/*.banner:hover .banner-text{
+    transform: translateX(-300px) scale(1.5);
+}*/
+.banner-text{
+    transition: all 0.5s linear;
+}
+.banner-text h2{
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black;
+}
+.banner-text p{
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+    text-shadow: 1px 1px 2px black;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+section h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    /*color: #FFF04C;*/
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:nth-child(2){
+    transition-delay: 0.2s;
+}
+.card:nth-child(3){
+    transition-delay: 0.4s;
+}
+.card-animation{
+    transform: translateY(0);
+    opacity: 1;
+}
+.card:hover .card-image img{
+    transform: scale(1.1);
+}
+.card-image{
+    width: 100%;
+    overflow: hidden;
+}
+.card-image img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: 0.3s;
+}
+.card-text{
+    padding: 10px;
+}
+.card-text h2{
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    text-align: center;
+    /*color: #FFF04C;*/
+}
+.card-text p{
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.card-btn{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card-btn a{
+    padding: 10px 20px;
+    background-color: #584135;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.card-btn a:hover{
+    background-color: #BF371C;
+}
+footer{
+    background-color: #BF371C;
+    padding: 20px 0;
+    color: #fff;
+    line-height: 3em;
+}
+.footer-content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.sociais a i{
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+.sociais a{
+    text-decoration: none;
+    color: #fff;
+}
+.contatos a i{
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+.contatos a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Estilo da página quem somos*/
+.quem-somos-img{
+    width: 49%;
+    opacity: 0;
+    transition: 1s;
+}
+.quem-somos-img img{
+    width: 100%;
+
+}
+.quem-somos-txt{
+    width: 49%;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+.quem-somos-txt p{
+    padding-bottom: 10px;
+    line-height: 30px;
+    text-align: justify;
+}
+/*Estilo da página delivery*/
+.delivery{
+    width: 600PX;
+    margin: auto;
+    opacity: 0;
+    transition: 1s;
+}
+.delivery p{
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+/*Estilo da página unidades*/
+.mapa1{
+    width: 49%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.mapa1 p{
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+.mapa2{
+    width: 49%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+.mapa2 p{
+    padding-top: 10px;
+    text-align: justify;
+    line-height: 30px;
+}
+/*Estilo da página cardapio*/
+.card-cardapio{
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 3px gray;
+    border-radius: 5px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+/*.card-cardapio:hover{
+    box-shadow: 0 0 5px gray;
+    transform: translateY(-10px);
+    transition-delay: 0;
+}*/
+.card-cardapio:nth-child(2){
+    transition-delay: 0.2s;
+}
+.card-cardapio:nth-child(3){
+    transition-delay: 0.4s;
+}
+.card-cardapio:nth-child(4){
+    transition-delay: 0.6s;
+}
+.card-cardapio-image img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.card-cardapio-text{
+    padding: 10px;
+}
+.card-cardapio-text h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.card-cardapio-text dl dt{
+    padding-top: 20px;
+    font-weight: bold;
+}
+/*Estilo da página promocoes*/
+.card-promocoes{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-promocoes:nth-child(2){
+    transition-delay: 0.2s;
+}
+.card-promocoes:nth-child(3){
+    transition-delay: 0.4s;
+}
+.card-promocoes:nth-child(4){
+    transition-delay: 0.6s;
+}
+.card-promocoes:nth-child(5){
+    transition-delay: 0.8s;
+}
+.card-promocoes:hover .card-promocoes-text{
+    transform: translateY(0);
+}
+.card-promocoes-image img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card-promocoes-text{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #BF371C, #584135);
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(260px);
+    transition: 0.3s;
+}
+.card-promocoes-text h3{
+    font-size: 1.2em;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.card-promocoes-text p{
+    color: white;
+    text-align: justify;
+    line-height: 20px;
+}
+/*Estilo da página formulário*/
+.formulario{
+    width: 70%;
+    margin: auto;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1s;
+}
+.form-style{
+    padding: 10px 5px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid dimgray;
+}
+input[submit]{
+    width: 30px;
+}
+textarea{
+    width: 100%;
+}
+.btn-submit{
+    padding: 5px 20px;
+}
+/*Classes de animação*/
+.card-animation{
+    transform: translateY(0);
+    opacity: 1;
+}
+.anima-texto{
+    opacity: 1;
+    transform: translateX(0)
+}
+.anima-image{
+    opacity: 1;
+}
+/*Layout responsivo*/
+@media screen and (max-width: 1024px){
+    .btn-menu{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+        display: none;
+    }
+    .menu li{
+        padding: 10px 0;
+    }
+}
+@media screen and (min-width: 1025px){
+    .menu{
+        display: flex !important;
+    }
+}
+@media screen and (max-width: 968px){
+    .quem-somos-img{
+        width: 100%;
+    }
+    .quem-somos-txt{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .delivery{
+        width: 60%;
+    }
+    .delivery img{
+        width: 100%;
+    }
+    .mapa1{
+        width: 100%;
+    }
+    .mapa2{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 660px){
+    .content{
+        justify-content: center;
+    }
+    .delivery{
+        width: 80%;
+    }
+    .footer{
+        line-height: 1em;
+    }
+    .footer-content{
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+    }
+    .contatos{
+        margin-top: 20px;
+    }
+    .card-promocoes-text{
+        transform: translateY(0);
+    }
+}

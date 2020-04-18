@@ -1,0 +1,54 @@
+#headerlogo h1,
+      #footerlogo  a p {
+            color: #BEDCF6;
+            font-family: Monoton;
+            -webkit-animation: neon1 2.5s infinite alternate-reverse;
+            -moz-animation: neon1 2.5s infinite alternate-reverse;
+            animation: neon1 2.5s infinite alternate-reverse;
+        }
+
+        #headerlogo  h1:hover,
+        #footerlogo a p:hover {
+            color: #8AD1C3;
+            -webkit-animation: none;
+            -moz-animation: none;
+            animation: none;
+        }
+
+        /*glow for webkit*/
+
+        @-webkit-keyframes neon1 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8AD1C3, 0 0 70px #8AD1C3, 0 0 80px #8AD1C3, 0 0 100px #8AD1C3 0 0 150px #8AD1C3;
+            }
+
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8AD1C3, 0 0 35px #8AD1C3, 0 0 40px #8AD1C3, 0 0 50px #8AD1C3, 0 0 75px#8AD1C3;
+            }
+        }
+
+        /*glow for mozilla*/
+
+        @-moz-keyframes neon1 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8AD1C3, 0 0 70px #8AD1C3, 0 0 80px #8AD1C3, 0 0 100px #8AD1C3 0 0 150px #8AD1C3;
+            }
+
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8AD1C3, 0 0 35px #8AD1C3, 0 0 40px #8AD1C3, 0 0 50px #8AD1C3, 0 0 75px#8AD1C3;
+            }
+        }
+
+        /*glow*/
+
+        @keyframes neon1 {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #8AD1C3, 0 0 70px #8AD1C3, 0 0 80px #8AD1C3, 0 0 100px #8AD1C3, 0 0 150px #8AD1C3;
+            }
+
+            to {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #8AD1C3, 0 0 35px #8AD1C3, 0 0 40px #8AD1C3, 0 0 50px #8AD1C3, 0 0 75px #8AD1C3;
+            }
+        }
+
+      

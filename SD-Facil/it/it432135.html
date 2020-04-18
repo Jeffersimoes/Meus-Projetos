@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432135 - Usuário solicita inversão de ponto principal e ponto adicional</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Usuário solicita inversão de ponto principal e ponto adicional</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432135</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Usuário solicita inversão de ponto principal e ponto adicional</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Essa IT tem por objetivo orientar os analistas sobre como validar a relação de ponto principal (PP)
+           e  ponto adicional (PA) no sistema NETSMS ou seja, quando o usuário solicita a inversão de PP e PA.</p>
+
+          <h2>APLICAÇÃO:</h2>
+          <ul>
+            <dd>
+              <li> Essa IT possuí aplicabilidade nos seguintes grupos:</li>
+              <li>	SISTEMAS N1</li>
+              <li>	WEB N1</li>
+              <li>	SERVICE DESK N1</li>
+            </dd>
+          </ul>
+          <h2>REFERÊNCIAS:</h2>
+          <p><b>N/A</b></p>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+          <p>Quando o usuário solicita a correção dos pontos do contrato relatando estarem
+            invertidos, ou seja, ponto 1 como principal e ponto 2 como adicional.</br>
+            Porem identifica-se que estão corretos de acordo com as regras de negócios da NET referente aos
+            pesos dos produtos(familia, tecnologia, preço).</p>
+          <p><u><b>Exemplo:</b></u></p>
+          </br>
+          <div class="it_img">
+            <img src="./img/img61.png"/>
+          </div>
+          <div class="it_img">
+            <img src="./img/img62.png"/>
+          </div>
+          <p>No sistema HP Business Tools, orientar o usuário a Validar se as configurações
+            dos pontos Principal e Adicional estão corretas.</p>
+          <h2>SOLUÇÃO: </h2>
+          <ul>
+            <dd>
+              <p>Para realizar a verificação:</p>
+              <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool"
+                target="_blank">Clique aqui</a></li></br>
+              <li>Caso apareça a seguinte mensagem: ‘There is a problem with this website's security certificate.’</br>
+                Clique em ‘Continue to this website (not recommended)’ para prosseguir
+              </li></br>
+              <li>Logar com mesmo usuário utilizado para acessar o NETSMS</li></dd>
+              </br>
+              <dd>
+              <li>  Na opção de CONSULTAR AÇÃO, preencher a respectiva cidade ao qual o usuário esta acessando no sistema e os demais filtros da seguinte forma:</li>
+              <li><b>Grupo :</b> CRM</li>
+              <li><b>Macro Processo : </b>CRM / Atender</li>
+              <li><b>Funcionalidade : </b>Contrato / Solicitação</li>
+              <li><b>Ação :</b> VERIFICAR PONTO PRINCIPAL E ADICIONAL</li>
+              <li><b>Preencher os dados necessário</b> – Número do contrato e operadora, em seguida clicar em Consultar.</li>
+            </dd>
+          </ul>
+          <dd>
+            <p>3. Ao clicar em CONSULTAR, é mostrado o resultado da verificação. Atentar-se para a linha nomeada “Problema” na qual
+             é informado o problema encontrado e a ação a ser tomada. Abaixo segue print de exemplo do resultado:</p>
+          </dd>
+          <div class="it_img">
+            <figcaption>PP e PA OK.</figcaption>
+            <img src="./img/img64.png"/>
+          </div>
+          <h2>SUGESTÃO DE RESPOSTA</h2>
+
+<dd><p>Prezado usuário,</p>
+
+<p>Conforme analise verificou-se que o ponto 1 foi eleito o ponto principal pelo sistema,
+  visto que o produto XXX possui peso (que é um valor numérico atribuído a cada produto de
+  acordo com a sua tecnologia para determinar pontos principais e adicionais em contratos)
+  maior que os outros produtos instalados.</br>
+  OBS: Se o contrato estiver irregular (pacotes de diferentes famílias instalados no contrato)
+  pode ser que o ponto adicional (PA) seja o pacote de maior peso. Neste caso, deverá ser gerado
+  uma nova solicitação de mudança de pacote nos pontos do contrato para que os pacotes
+  instalados estejam dentro de uma mesma família.</p>
+
+<p>Atenciosamente,</br>
+Service Desk Claro Brasil</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432135</p>
+          <p>Data de criação: 26/04/2016</p>
+          <p>Data de Revisão: 06/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

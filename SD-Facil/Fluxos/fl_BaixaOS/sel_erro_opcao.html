@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="David Santos - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>Fluxo - Falhas em Baixa de OS</title>
+    <link rel="shortcut icon" href="../img_padrao/logo_sdfacil.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="corpo">
+      <div class="box_superior">
+        <a href="index.html">
+          <div class="logo">
+          </div>
+        </a>
+        <div class="box_titulo">
+          <h1>Falhas em Baixa de OS</h1>
+        </div>
+      </div>
+      <div class="nav_inicio">
+        <div class="box_bt_inicio">
+      </div>
+      </div>
+      <div class="conteudo">
+        <h1>Selecione abaixo, o erro que ocorre ao realizar a baixa de os:</h1>
+        <div class="box_erro_links">
+            <select class="selecao" name="Erros" onchange="AbrirSecao(this.value)">
+              <option value="">Selecione uma opção</option>
+              <option value="pag_res1.html">01 - Terminal Entrega inválido (FKV)</option>
+              <option value="pag_res2.html">02 - Não existe uma classe associada a este tipo de OS</option>
+              <option value="pag_res3.html">03 - Não existe um tipo de edificação associada a este tipo de OS</option>
+              <option value="pag_res4.html">04 - Não se pode cancelar uma solicitação que esteja com a OS em imediata</option>
+              <option value="pag_res5.html">05 - ORA – 01461 : Can Bind a Long Value”  - Ao tentar de Liberar a OS para Reagendamento</option>
+              <option value="pag_res6.html">06 - ORA – 00054: Resource busy and acquire With NOWAIT specified</option>
+              <option value="pag_res7.html">07 - Não existem registros que correspondam a esses critérios de busca.</option>
+              <option value="pag_res8.html">08 - CRM-0181 Não é possível cancelar esta solicitação, pois existem OSs...</option>
+              <option value="pag_res9.html">09 - Não foi encontrado registro de telefone VoIP para ser Cancelado</option>
+              <option value="pag_res10.html">10 - CRM-0104: Não é permitido que se realize esta movimentação...</option>
+              <option value="pag_perg1.html">11 - O usuário não tem permissão para encerrar esta OS</option>
+              <option value="pag_res13.html">12 - SSNTerminalri - CRM-0184: Esta operação viola as regras de...</option>
+            </select>
+        </div>
+      </div>
+      <div class="nav_botoes">
+      </div>
+      <div class="rodape">
+
+      </div>
+
+    </div>
+
+  </body>
+  <script>
+            function AbrirSecao(secao){
+                window.open(""+secao+"", "_parent");
+            }
+</script>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431967 - Validar se o produto desejado esta bloqueado por NODE</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Validar se o produto desejado está bloqueado por NODE</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431967</h1>
+        </div>
+      </div>
+      <div class="it_conteudo">
+
+        <h1>Validar se o produto desejado esta bloqueado por NODE</h1>
+
+        <h2>OBJETIVO: </h2>
+
+        <p>O documento orientar o Analista da Service Desk N1 em como atuar nos
+          incidentes em que o produto desejados pelo usuário está Bloqueado por Node.</p>
+          <br>
+        <h2>APLICAÇÃO:</h2>
+
+        <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+
+        <dd>
+          <ul>
+            <li>Service Desk N1</li>
+          </ul>
+        </dd>
+        <br>
+        <h2>REFERÊNCIAS:</h2>
+
+        <p>N / A</p>
+        <br>
+        <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+
+        <p>Usuários informam que ao clicar na opção Produto durante um processo de Mudança de Pacote,
+          a Ferramenta NETSMS exibe a mensagem de Erro: “Não existem registros que correspondam a
+          esses critérios de busca”, ou seja, a região do contrato não suporta o pacote desejado. </P>
+        <p>Geralmente essa restrição acontece com velocidades altas de Produtos Virtua 60,
+          120 MB, como mostra a imagem a seguir.</p>
+
+        <div class="it_img">
+          <img src="./img/img159.png"/>
+        </div>
+        <br>
+        <h2>VALIDAÇÃO DE CENÁRIO:</h2>
+
+        <p>A causa do sistema não disponibilizar o pacote desejado e emitir a
+          mensagem <b>“Não existem registros que correspondam a esses critérios de
+          busca”</b> é devido ao NODE do contrato não permitir a contratação para
+          este contrato.</p>
+
+        <p>Utilizaremos o HPBT para efetuar o diagnóstico, conforme caminho abaixo:</p>
+
+        <dd>
+        <ul>
+          <li><B>Grupo:</B> CRM/li>
+          <li><B>Macro Processo:</B> CRM / Atender</li>
+          <li><B>Funcionalidade:</B>  Contrato/Solicitação</li>
+          <li><B>Ação:</B> VERIFICAR RESTRIÇÃO POR NODE</li>
+        </ul>
+        </dd>
+
+        <div class="it_img">
+          <img src="./img/img160.png"/>
+        </div>
+
+
+        <p class="it_subt">INFORMAÇÕES NECESSÁRIAS PARA VALIDAÇÃO</p>
+        <dd>
+        <ul>
+            <li><B>NUMERO DO CONTRATO:</B> Ex: 349533315</li>
+            <li><B>CODIGO CIDADE:</B> Ex: 003</li>
+            <li><B>PERFIL DESEJADO:</B> EX: PTV + VIRTUA + FONE</li>
+            <li><B>NUMERO DO PONTO:</B>EX: 1</li>
+            <li><B>ID DO PRODUTO DESEJADO:</B> EX: 18385</li>
+        </ul>
+        </dd>
+
+
+        <div class="it_img">
+          <img src="./img/img161.png"/>
+        </div>
+
+        <p>Em seguida, a funcionalidade retornará os dados referentes ao produto desejado se está OK ou NÃO OK para contratação no contrato e na cidade em questão.</p>
+
+        <p class="it_subt">Produto Restrito por Node:</p>
+
+        <div class="it_img">
+          <img src="./img/img162.png"/>
+        </div>
+        <br>
+        <p class="it_subt">Produto não Restrito por Node:</p>
+
+        <div class="it_img">
+          <img src="./img/img163.png"/>
+        </div>
+        <br>
+
+        <h2>SOLUÇÃO:</h2>
+
+        <p>Com base nesta análise, o incidente deverá ser encerrado em N1 com categoria abaixo descrita e sugestão de resposta
+         no item 7 desse documento.</p>
+
+        <p><b>Classificação:</b> Incidente A1</p>
+        <p><b>Grupo Responsável:</b> Service Desk N1</p>
+        <p><b>Categoria:</b> SISTEMAS.NETSMS.NODE.RESTICAO DE NODE</p>
+        <br>
+        <h2>SUGESTÃO DE RESPOSTA:</h2>
+
+        <div class="resposta">
+          <p>Prezado usuário,</p>
+          <p>Conforme análise ao contrato, foi verificado que o produto desejado foi criado com uma restrição para ser vendido apenas em um grupo determinado
+          de NODE dessa cidade. O problema está ocorrendo porque o node deste contrato não pertence a esse grupo, por isso o produto não aparece para contratação.
+          Caso tenha dúvidas, favor entrar em contato com a área de PRODUTOS/MARKETING da NET.</p>
+          <p>Atenciosamente,<br>
+          Service Desk Claro Brasil</p>
+        </div>
+
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431967</p>
+          <p>Data de criação: 22/03/2016</p>
+          <p>Data de Revisão: 06/11 /2018</p>
+        </div>
+    </div>
+  </body>
+</html>

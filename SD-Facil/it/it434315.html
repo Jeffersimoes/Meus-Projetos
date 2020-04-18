@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT434315 - Procedimento de abertura de PA</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Procedimento de abertura de PA</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:434150</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h2>OBJETIVO:</h2>
+
+<p>Orientar o analista do Service Desk N1 em como atuar nos chamados referentes ao erro
+  “terminais já foram Movimentados pelo Usuário”.</p>
+
+
+        <h2>APLICAÇÃO:</h2>
+
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <dd>
+            <ul>
+              <li>Service Desk N1</li>
+              <li>Atlas</li>
+            </ul>
+          </dd>
+
+        <h2>REFERÊNCIAS: </h2>
+
+        <p>N/A</p>
+
+<h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+	<p>Ao ser reportado pelo usuário que o terminal já foi movimentado, o analista do Service Desk N1 deverá validar através da Ferramenta NETSMS se o terminal já se encontra vinculado contrato / ponto quando o usuário solicita em entrega ou, se o terminal já não se encontra vinculado ao contrato / ponto quando solicitar a retirada.</p>
+
+<p>Para a validação do cenário, o analista de deverá acessar a Ferramenta NETSMS > Aba Técnico > Terminais, em seguida o analista deverá validar se o terminal se encontra Atrelado / retirado do contrato, conforme mostra exemplo abaixo:</p>
+
+<div class="it_img">
+  <img src="./img/img146.png"/></br>
+</div>
+<div class="it_img">
+  <img src="./img/img147.png"/></br>
+</div>
+
+<p>Para os casos de equipamentos HDD (Hard Disk), o analista deverá validar a tela de terminais e o campo serial externo que indica se o terminal está vinculado ao ponto ou não.</p>
+<p>Para valida o cenário, o analista do Service Desk N1 deverá acessa a Ferramenta NETSMS >
+  <p> Aba Técnicos >> Clicar no botão Terminais e validar se o terminal se encontra atrelado / vinculado ao contrato.</p>
+
+  <div class="it_img">
+    <img src="./img/img148.png"/></br>
+  </div>
+        <br>
+  <p class="it_subt">Caso 1:</p>
+
+  <p>Para validar nos pontos se o terminal já entregue / devolvido, no caso HDD, o analista do Service Desk N1 deverá acessar a Ferramenta NETSMS> Aba Técnico > validar o campo serial (conforme imagem abaixo), em seguida, deverá encerrar o incidente conforme as orientações localizadas no item 7 Sugestão de Resposta.</p>
+
+        <br>
+  <p class="it_subt">Caso 2:</p>
+
+  <p>Caso o terminal não se encontre movimentado, da forma com que o usuário deseja, o analista do Service Desk deverá seguir as orientações descritas no item 7 Sugestão de Resposta.</p>
+
+
+    <div class="it_img">
+      <img src="./img/img149.png"/></br>
+    </div>
+
+    <h2>SOLUÇÃO:</h2>
+
+      <p class="it_subt">Caso 1:</p>
+
+      <p>O incidente deverá ser encerrado em N1 usando a seguinte categoria e sugestão de resposta conforme item 7 Sugestão de Resposta:</p>
+
+        <p><b>Classificação:</b> A1</p>
+        <p><b>Grupo Responsável:</b>  Service Desk N1</p>
+        <p><b>Categoria</b>: SISTEMAS.ATLAS.TERMINAL.EQUIPAMENTO NÃO PODE SER ENTREGUE</p>
+        <br>
+    <p class="it_subt">Caso 2:</p>
+
+    <p>Caso o terminal não se encontre movimentado, da forma com que o usuário deseja,
+       o analista do Service Desk deverá abrir um chamado do tipo Incidente e direcionar para caixa Atlas,
+        usando as categorias a seguir de acordo com a solicitação do usuário.</p>
+
+    <p>Tipo:</b> Entrega de Terminal</p>
+    <p>Classificação:</b> A3</p>
+    <p>Grupo Responsável:</b>  Atlas</p>
+    <p>Categoria:</b> SISTEMAS.NETSMS.TERMINAIS ENTREGA.TELA DE SUPERVISAO DE REDE INTERNA</p>
+    <br>
+    <p><b>Tipo:</b> Devolução de Terminal</p>
+    <p><b>Classificação</b>: A3</p>
+    <p><b>Grupo Responsável:</b>  Atlas</p>
+    <p><b>Categoria:</b> SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.TELA DE SUPERVISAO DE REDE INTERNA</p>
+
+<br>
+    <h2>SUGESTÃO DE RESPOSTA:</h2>
+<br>
+      <p class="it_subt">Sugestão de Resposta 1:</p>
+
+<div class="resposta">
+<p>Prezado usuário (a),</p>
+
+<p>No momento da análise, identificamos que o terminal já estava movimentado.
+  Favor confirmar se a falha foi solucionada e caso continue, será necessário abrir novo
+  chamado com as evidencias atualizadas e com passo a passo do caminho realizado.</p>
+
+<p>Atenciosamente, <br>
+Service Desk Claro Brasil</p>
+
+<br><br>
+</div>
+
+  <p class="it_subt">Sugestão de Resposta 2:</p>
+
+  <div class="resposta">
+
+<p>Prezado Usuário(a),</p>
+
+<p>Após análise do chamado, identificamos que se trata de uma movimentação e Terminal
+Foi confirmado que o usuário possui todas as permissões necessárias para realizar a ação desejada,
+  conforme evidencia em anexo. Contudo, não foi possível o usuário prosseguir com a solicitação.</br>
+<p>Com base nas informações apresentadas e na IT 434315, o chamado deverá ser tratado pela equipe Atlas.</br>
+Sendo assim, solicitamos por gentileza que prossigam com as tratativas necessárias para resolução do chamado.</p>
+
+<p>Atenciosamente,</br>
+Service Desk Claro Brasil</p>
+</div>
+        </div>
+          <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 434315</p>
+          <p>Data de criação: 15/02/2018</p>
+          <p>Data de Revisão: 26/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

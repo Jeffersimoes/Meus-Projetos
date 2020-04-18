@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Bold;
+}
+
+body {
+    padding-top: 10px;
+    padding-left: 10px;
+    overflow-x: hidden;
+    background-color: greenyellow;
+    /*#E9EBF7*/
+}
+
+@font-face {
+    font-family: Vanilla;
+    src: url(../lib/fontes/VanillaTwilightScript.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../lib/fontes/Roboto-Bold.ttf)
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../lib/fontes/Roboto-Light.ttf)
+}
+
+

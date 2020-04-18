@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT430340 - VALIDAÇÃO DE PROPOSTAS - ENVIADAS OU PENDENTES</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>VALIDAÇÃO DE PROPOSTAS - ENVIADAS OU PENDENTES</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:430340</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>VALIDAÇÃO DE PROPOSTAS - ENVIADAS OU PENDENTES</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Procedimento voltado para instruir o profissional a validar se a proposta já foi enviada e as pendencias existentes na mesma já foi regularizada ou usuário deve regularizá-las.</p>
+          <br />
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <p class="it_subt">Aplicação: Service Desk N1</p>
+          <p class="it_subt">Aplicação: NetSales</p>
+          <h2>CONCEITUAÇÃO:</h2>
+          <p>Validar status da proposta.</p>
+          <p>Encerrar chamado com base na fraseologia.</p>
+          <p>Transferir o chamado para equipe de Netsales com base nas validações e categoria.</p>
+          <br />
+          <p class="it_subt">DESCRIÇÃO GERAL DO PROCEDIMENTO:</p>
+          <br />
+          <p><u><b>VALIDAÇÃO DA PROPOSTA</b></u></p>
+          <p>O procedimento a ser adotado nesta situação é consultar a proposta na ferramenta HPBTOOS, no script localizado no seguinte caminho: Grupo: CRM - > Macro Processo: CRM / Vender / Venda - > Ação: Analisar Proposta Para Envio.</p>
+          <div class="it_img">
+            <img src="./img/img89.png"/>
+          </div>
+          <p>Como mostra a imagem abaixo, após consultar a proposta, VERIFICAR se a proposta já foi <b>ENVIADA/CANCELADA</b> e se existe <b>PENDENCIA</b> para ser liberada pelo Vendedor ou Back office, ou seja, apenas enviar para o grupo solucionador as pendencias Outros Endereços, Endereço existente e problemas SPC, as demais pendencias podem ser tratadas pelo usuário / BackOffice</p>
+          <div class="it_img">
+            <img src="./img/img90.png"/>
+          </div>
+          <p><b><u>CASO 1 – PROPOSTA ENVIADA/CANCELADA</u></b></p>
+          <br />
+          <p>	Neste caso o chamado deverá ser encerrado em N1, pois não é possível realizar qualquer analise em uma proposta que já foi enviada, pois a mesma já foi encaminhado para gerar o contrato. Assim sendo, utilizar a seguinte mensagem para fechamento do chamado:</p>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PROPOSTA.ENVIADA / CANCELADA</p>
+          <p><b>Grupo: </b>SERVICE DESK N1</p></br>
+          <p class="it_subt">Resposta sugerida: </p>
+          <p>Caros,<br />Conforme análise da proposta número XXXXX, foi verificado e que a proposta já foi enviada/cancelada neste caso favor continuar com adesão de produtos para o novo contrato. Caso existam novos problemas com o contrato já gerado, ou com outra proposta, favor abrir novo chamado já descrevendo o cenário atual do mesmo não há possibilidades de analisar um problema em propostas enviadas.<br />Atenciosamente.<br />
+            Service Desk Claro Brasil.
+          </p>
+          <br />
+          <p><b><u>CASO 2 – PROPOSTA COM PENDENCIAS </u></b></p>
+          <p>Para qualquer pendencia que <b>NÃO</b> for <b>Outros Endereços, Endereço existente e Problemas SPC.</b> O incidente deve ser encerrado em N1.</p>
+          <br />
+          <p>Este cenário demonstra que existe pendências abertas para a proposta. As pendencias devem ser liberadas antes do envio finalização da proposta e que não é TI que libera as mesmas. O usuário ou o BackOffice deve libera-las, a não ser <b>Outros Endereços, Endereço existente e Problemas SPC</b>, as demais pendencias podem ser tratadas pelo usuário / BackOffice.</p>
+          <br />
+          <div class="it_img">
+            <img src="./img/img91.png"/>
+          </div>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PROPOSTA.ENVIADA / CANCELADA</p>
+          <p><b>Grupo: </b>SERVICE DESK N1</p></br>
+          <p class="it_subt">Resposta sugerida: </p>
+          <p>Caros,<br />Existe uma pendencia na proposta número XXXXXX, o procedimento pode ser tratado pelo próprio vendedor ou por um BackOffice, caso o vendedor não possua o acesso. Assim sendo, favor solicitar primeiramente que a pendencia em questão tenha analise por um BackOffice e caso ocorra algum erro durante a liberação, favor evidenciar o erro e abrir novo chamado solicitando a análise do erro em si.<br />Atenciosamente.<br />
+            Service Desk Claro Brasil.
+          </p>
+          </br>
+          <p class="it_subt">CASO 3 – PENDENCIA ENDEREÇO EXISTENTE</p>
+          <p>Abrir incidente para a equipe NetSales.</p>
+          <br />
+          <p><b>Classificação: </b>Solicitação - <b>A3</b></p>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PENDÊNCIAS.ENDEREÇO EXISTENTE (SEM CONTRATO NO ENDEREÇO)</p>
+          <p><b>Grupo: </b>NETSALES</p></br>
+          <p>Deverá ser preenchido aba propriedades corretamente.</p>
+          <ul>
+            <li><b>Número da proposta:*</b></li>
+            <li><b>ENDEREÇO: *</b></li>
+            <li><b>CEP: *</b></li>
+            <li><b>Telefone De Contato: *</b></li>
+            <li><b>Telefone alternativo comercial: *</b></li>
+            <li><b>Código da cidade: *</b></li>
+          </ul>
+          </br>
+          <p class="it_subt">CASO 4 – PENDENCIA OUTROS ENDEREÇOS</p>
+          <p>Abrir incidente para a equipe NetSales</p>
+          <p><b>Classificação: </b>Solicitação - <b>A3</b></p>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PENDÊNCIAS.ERRO AO LIBERAR PENDENCIA (OUTROS ENDEREÇOS)</p>
+          <p><b>Grupo: </b>NETSALES</p></br>
+          <p>Deverá ser preenchido aba propriedades corretamente.</p>
+          <ul>
+            <li><b>Número da proposta:*</b></li>
+            <li><b>MENSAGEM_ERRO: *</b></li>
+            <li><b>Telefone De Contato: *</b></li>
+            <li><b>Telefone alternativo comercial: *</b></li>
+            <li><b>Código da cidade: *</b></li>
+          </ul>
+          </br>
+          <p class="it_subt">CASO 5 – PARA A PENDENCIA PROBLEMAS SPC</p>
+          <p>Abrir incidente para a equipe NetSales</p>
+          <p><b>Classificação: </b>Solicitação - <b>A3</b></p>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PROPOSTA.PROBLEMAS.NA.CHECAGEM.DE.CREDITO</p>
+          <p><b>Grupo: </b>NETSALES</p></br>
+          <p>Deverá ser preenchido aba propriedades corretamente.</p>
+          <ul>
+            <li><b>Print anexado? *</b></li>
+            <li><b>Script de atendimento validado? *</b></li>
+            <li><b>Telefone De Contato: *</b></li>
+            <li><b>Telefone alternativo comercial: *</b></li>
+            <li><b>Número da proposta: *</b></li>
+            <li><b>Código da cidade: *</b></li>
+          </ul>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 430340</p>
+          <p>Data de criação: 22/06/2015</p>
+          <p>Data de Revisão: 09/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

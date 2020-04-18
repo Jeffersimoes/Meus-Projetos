@@ -1,0 +1,99 @@
+ /*Inicio do Footer */
+ #footer {
+    margin-bottom: 10px;
+    width: calc(100vw - 37px);
+    height: 150px;
+    background: #A1A8D5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+#footerlogo {
+    width: calc(20%);
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    position: absolute;
+    padding-left: 40px
+        /*ALTERADO A MARGIN-LEFT PARA PEDDING-LEFT*/
+}
+
+#footerlogo img {
+    width: 70px;
+    height: 70px;
+}
+
+#footerlogo a p {
+    font-family: Vanilla;
+    font-size: 55px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#footertudormidias {
+    /*ALTERADO O NOME DO ID*/
+    width: 200px;
+    height: 55px;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+#footermidias {
+    width: 200px;
+    height: 35px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
+
+#footermidias a,
+#footerlogo a {
+    z-index: 1;
+    text-decoration: none;
+}
+
+#footermidias i {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #8AD1C3;
+    background-color: #BEDCF6;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#footermidias i:hover {
+    /*Adicionao efeito hover nos icones da midias*/
+    transform: scale(1.5);
+}
+
+#footercontatos {
+    padding-left: 350px;
+    width: calc(100vw - 37px);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#footercontatos p:nth-child(2),
+#footercontatos p:nth-child(4) {
+    margin-top: 15px;
+}
+
+#footercontatos p:nth-child(2),
+#footercontatos p:nth-child(3),
+#footercontatos p:nth-child(4) {
+    font-family: Roboto-Light;
+}
+
+#footercontatos p:nth-child(4) {
+    font-size: 13px;
+}
+
+/*Fim do Footer */

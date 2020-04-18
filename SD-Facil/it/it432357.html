@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jose Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432357 - Status Embratel Incompatível com Ponto FONE</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Status Embratel Incompatível com Ponto FONE</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432357</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Status Embratel Incompatível com Ponto FONE</h1>
+              <br>
+              <h2>OBJETIVO:</h2>
+                  <p>Esse documento tem como objetivo orientar o Analista do
+                    Service Desk N1 em como atuar nos chamados referentes ao
+                    erro <br><b>“SA133-Status Embratel incompatível com ponto Fone”</b>, erro
+                     relacionado ao Status EBT em relação ao ponto de fone.</p>
+              <br>
+              <h2>APLICAÇÃO:</h2>
+                  <p>Essa IT possuí aplicabilidade nos seguintes grupo:</p>
+                      <dd>
+                        <ul>
+                          <li>Service Desk N1</li>
+                        </ul>
+                      </dd>
+              <br>
+              <h2>REFERÊNCIAS: </h2>
+                  <p>N/A</p>
+              <br>
+              <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+                  <p>O cenário poderá ser identificado em casos onde o status EBT
+                    consta como NÃO POSSUI, porem possui pontos de FONE instalado
+                    no contrato.</p>
+                  <p>A validação será feita através da Ferramenta NETSMS.</p>
+                      <dd>
+                        <ul>
+                          <li>Acessar a Ferramenta NETSMS</li>
+                          <li>Inserir código da cidade / contrato</li>
+                          <li>Acessar a aba Geral > Campo Produtos > Dados Embratel</li>
+                        </ul>
+                      </dd>
+                  <p>A validação nos mostra que no contrato em questão, o assinante possui o produto FONE NET EMP FIXO ILIM porém Não Possui<br>
+                     contrato Embratel, conforme nos mostra a imagem a seguir:</p>
+                      <dd>
+                          <div class="it_img">
+                              <img src="./img/img155.png"/></br>
+                          </div>
+                      </dd>
+              <br>
+              <h2>SOLUÇÃO:</h2>
+                  <p>Considerando então esse cenário e que, o status Embratel é de responsabilidade da equipe NETFONE N3 (Não portado)<br>
+                     PORTABILIDADE (número portado) e não deve ser direcionado para as caixas HPE (NETSMS-ATENDER) via CA, o incidente deverá ser<br>
+                     encerrado pelo Service Desk N1, com a categoria abaixo e sugestão de resposta descrita no item 7 deste documento.</p>
+                  <p><b>Grupo Solucionador:</b>  Service Desk N1</p>
+                  <p><b>Categoria</b>: SISTEMAS.NETSMS.PORTABILIDADE - STATUS DO CONTRATO EMBRATEL.ALTERAR P/NÃO POSSUI (CONTRATO SEM PORT)</p>
+              <br>
+              <h2>SUGESTÃO DE RESPOSTA:</h2>
+                  <div class="resposta">
+                      <p>Prezado usuário(a),</p>
+                      <p>O time responsável por realizar esse procedimento é a equipe de NETFONE N3. Favor registrar um chamado para essa equipe<br>
+                         informando divergências no status EBT do contrato através da ferramenta Call Center Suporte OC.</p>
+                      <p>A mesma está instalada em sua máquina e caso tenha alguma dificuldade para encontrá-la ou não esteja instalada, favor contatar o<br>
+                         time atendimento.netfone@hpe.com</p>
+                      <p>Atenciosamente,<br>
+                      Service Desk Claro Brasil</p>
+                  </div>
+          </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432357</p>
+          <p>Data de criação: 08/08/2016</p>
+          <p>Data de Revisão: 02/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

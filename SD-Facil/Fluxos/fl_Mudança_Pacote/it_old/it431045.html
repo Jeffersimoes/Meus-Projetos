@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT431045 - Mudança de pacote (perfil e comercialização de produto)</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Mudança de pacote</br>(perfil e comercialização de produto)</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431045</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>NETSMS/NETSALES – Mudança de pacote (perfil e comercialização de produto)</h1>
+          <h2>RESUMO:</h2>
+          <p>Verificar se produto pertence ao perfil desejado e se sua comercialização encontra-se aberta.</p>
+          <h2>PROBLEMA:</h2>
+          <p>PERFIL, PRODUTO, COMERCIALIZACAO, PERFIL DO CONTRATO, PRODUTO PERTENCE AO COMBO.</p>
+          <p class="it_subt">Aplicação: NETSMS/NETSALES</p>
+          <p>Script para verificar se produto desejado
+            encontra-se disponível para o perfil X e se sua comercialização está aberta.</p>
+            <p class="it_importante">A abertura de chamado deverá ser feita apenas se mesmo após a validação
+              o produto ainda não aparece disponível para contratação.</p>
+          <p class="it_subt">Exemplo:</p>
+          <p>Usuário reporta que ocorre erro ao gerar solicitação de adesão/mudança de pacote.</p>
+          <h2>VALIDAÇÃO:</h2>
+          <p class="it_subt">1.	Consultas na ferramenta HP Business Tool.</p>
+          <ul>
+            <li>- Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li></br>
+            <li>Caso apareça a seguinte mensagem: ‘There is a problem with this website's security certificate.’</br>
+              Clique em ‘Continue to this website (not recommended)’ para prosseguir
+            </li></br>
+            <li>- Logar com mesmo usuário utilizado para acessar o NETSMS</li>
+            <li></br>
+              <dl>
+                <dt>
+                  - Na opção de CONSULTAR AÇÃO, preencher a respectiva cidade ao qual o usuário esta acessando no sistema e os demais filtros da seguinte forma:
+                </dt>
+                  <dd>Grupo : CRM</dd>
+                  <dd>Macro Processo : CRM / Vender / Venda</dd>
+                  <dd>Funcionalidade : Venda / Produto</dd>
+                  <dd>Ação : CONSULTA PERFIL E COMERCIALIZACAO DE PRODUTO</dd></br>
+                <dt>
+                  - Preencher os campos conforme descrito:
+                </dt>
+                  <dd>Cod operadora: preencher com o códido da operadora desejada. Ex: 003</dd>
+                  <dd>Perfil desejado: perfil ao qual usuário deseja contratar o produto. Ex COMBO 1244 / PTV VIRTUA FONE</dd>
+                  <dd>Produto desejado: ID do produto desejado para contratação</dd>
+                  <dd>Produto atual: o produto atualmente instalado no ponto.<br/>
+                    Importante: Caso o usuário deseje realizar uma adesão de ponto ou contratação de a la carte, este campo deverá ser preenchido com o número 0.</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="it_img_pq">
+            <figcaption>Exemplo de Consulta</figcaption>
+            <img src="./img/img5.png" alt="Exemplo de consulta">
+          </div>
+          <div class="it_img_md">
+            <figcaption>Neste caso o produto desejado não está disponível para contratação</figcaption>
+            <img src="./img/img6.png" alt="Página de validação - 1">
+          </div>
+          <div class="it_img_md">
+            <figcaption>Neste caso o produto pertence ao perfil, porém a comercialização
+              encontra-se fechada</figcaption>
+            <img src="./img/img9.png" alt="Pagina de validação - 2">
+          </div>
+          <p>Caso a validação informe que o produto esta disponivel para o perfil
+            correto que o usuario esta tentando realizar a contratação  e mesmo assim não aparecer,
+            ou seja tem que selecionar o perfil correto que a funcionalidade acima informar que o perfil pertença,
+            independente do fique ligado, visto que a funcionalidade é uma consulta real time da base.</p>
+          <p class="it_importante">Caso mesmo após todas as validações necessárias,
+            ainda não for possível identificar o motivo da falha,
+            abrir incidente conforme informações abaixo:</p>
+          <p class="it_subt">Classificação: A3</p>
+          <p class="it_subt">Categoria: SISTEMAS.NETSMS.PACOTE.NAO DISPONIVEL PARA CONTRATACAO(ITENS OK)</p>
+          <p class="it_subt">Grupo Solucionador: NETSMS - ATENDER</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431045</p>
+          <p>Data de criação: 04/09/2015</p>
+          <p>Data de Revisão: 01/08/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432387 – Verifica ERRO Failed To Invoke - Alterar dados cadastrais</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Verifica ERRO Failed to Invoke - Alterar dados cadastrais</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT: 432387</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Verifica ERRO Failed To Invoke - Alterar dados cadastrais</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Este documento tem como objetivo orientar o Analista da Service Desk
+            N1 em como atuar nos chamados
+             referentes ao erro “Failed To Invoke / Alterar Dados Cadastrais”,
+             ocasionados no sistema NETSMS,
+             quando o usuário tenta realizar uma alteração cadastral.</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+            </dd>
+          </ul>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p class="it_subt">Cenário: </p>
+          <p>Usuário informa erro “Failed To Invoke” ao tentar realizar atualização
+            no cadastro do assinante.<br />
+          Para validação do cenário, o analista do Service Desk N1 deverá acessar a
+          Ferramenta NETSMS > Aba Cadastro,
+           como mostra a imagem a seguir:</p>
+           <div class="it_img">
+             <img src="./img/img156.png"/>
+           </div>
+           <p>Após localizar os dados cadastrais do assinante na “Aba cadastros”, o
+             Analista do Service Desk N1 deverá
+             identificar se ocorre o erro “Failed To Invoke” no momento da atualização
+             do cadastro, assim como nos mostra a
+              imagem a baixo:</p>
+          <div class="it_img">
+            <img src="./img/img157.png"/>
+          </div>
+          <p>Identificado o cenário, a próxima etapa será validar se o endereço de
+            cobrança que está localizado na "Aba Geral"
+             possui mais de 60 caracteres (incluindo rua, número complemento, bairro, cep, etc).</p>
+          <div class="it_img">
+           <img src="./img/img158.png"/>
+         </div>
+         <h2>SOLUÇÃO: </h2>
+         <p>Caso possuir mais de 60 caracteres, o chamado deve-se ser retido no N1,
+           com a seguinte categoria e mensagem de encerramento conforme sugerido no
+           campo <b>sugestão de resposta</b></p>
+         <p><b>Classificação:</b> Incidente A2</p>
+         <p><b>Grupo Responsável:</b> SERVICE DESK N1</p>
+         <p><b>Categoria:</b> SISTEMAS.GED.PROBLEMAS CADASTRAIS.Ñ CONSEGUE ALTERAR
+           NOVO ENDEREÇO</p>
+
+         <h2>SUGESTÃO DE RESPOSTA: </h2>
+         <div class="resposta">
+            <p>Prezado usuário,</p>
+            <p>O erro ocorre devido o endereço de cobrança em questão possuir
+              mais de 60 caracteres em sua totalidade
+            (incluindo rua, número complemento, bairro, cep, etc). <br>
+            Favor entrar em contato com a equipe de Engenharia e Projetos solicitando
+            abreviação do endereço para no máximo 60
+            caracteres e após realizar a correção do endereço de cobrança, prosseguir
+            com a alteração dos dados desejados. <br>
+            Se após a correção de endereço surgir novos erros, favor abrir um
+              novo chamado e anexar as novas evidências.
+            <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432387</p>
+          <p>Data de criação: 18/08/2016</p>
+          <p>Data de Revisão: 06/11/2018</p>
+        </div>
+</html>

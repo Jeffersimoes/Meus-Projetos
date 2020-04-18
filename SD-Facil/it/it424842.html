@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT424842 - ORA – 01461 : Can Bind a Long Value</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>ORA – 01461 : Can Bind a Long Value</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:424842</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Erro: ORA – 01461 : Can Bind a Long Value</h1><br>
+
+          <h2>OBJETIVO:</h2>
+          <p>Procedimento visa orientar analista a abrir chamado corretamente quando
+            aparecer erro ao liberar OS para reagendamento.</p>
+            <br>
+
+            <h2>APLICAÇÃO:</h2>
+            <p>Essa IT aplica-se nos seguintes grupos:</p>
+        <dd>
+          <ul>
+            <li>SERVICE DESK N1</li>
+            <li>OS/OC</li>
+          </ul>
+        </dd>
+
+        <h2>REFERÊNCIAS:</h2>
+          <p>N/A</p>
+
+      <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+        <p><b>PROBLEMA:</b> 010 - Liberar a OS para Reagendamento</p>
+
+
+        <P><B>Detalhes:</B></p>
+        <p>Quando o usuário entrar em contato informando que o sistema NETSMS está apresentando a mensagem de erro
+          “ORA – 01461: Can Bind a Long Value” - Ao tentar liberar a OS para reagendamento”.</p>
+
+        <P><B>  Mensagem de erro: “ORA – 01461</P></B>
+        </br>
+
+        <h2>SOLUÇÃO:</h2>
+
+        <p><b>Classificação: </b>Incidente - <b>A1</b></p>
+        <p><b>Categoria: </b>SISTEMAS.NETSMS.OS.ERRO AO TENTAR LIBERAR OS PARA REAGENDAMENTO  ORA 01461</p>
+        <p><b>Grupo: </b>SERVICE DESK N1</p></br>
+        <P><B> Na verdade, este é um dos erros que podem vir a acontecer no momento de liberar OS para reagendamento, e deverá ser analisado 2 fatores:  </P></B>
+
+        <dd>
+          <ul>
+            <li>a)	O preenchimento do Campo observação da OS muito extenso. Deverá ser realizada a limpeza do campo Observação da OS;</li>
+            <li>b)	Campo observação da OS com caractere especial. Ex: 45234456. Neste caso, basta remover o caractere “’” (aspas simples).</li>
+          </ul>
+        </dd>
+        <br><br>
+        <h2>Resposta Sugerida:</h2>
+        <p>Prezado Colaborador, </p>
+        <br>
+        <p>Para que a falha não ocorra deve ser respeitado o seguinte padrão para preenchimento do campo. </p>
+        <dd>
+          <ul>
+            <li>1. Limitar caracteres - Motivo: Este erro ocorre por ter excedido o limite de caracteres que o campo suporta.</li>
+            <li>2. O campo observação da 'OS' não deve conter caracteres especiais ex: '*' '/'./li></li>
+          </ul>
+        </dd>
+        <p>Favor efetuar novamente o procedimento respeitando os padrões.
+        <p>Dúvidas com relação a resolução informada, favor entrar em contato no número: 0800 741 2500 na opção 7 da ura.</p>
+        <br>
+        <p>Atenciosamente</p>
+        <p>  Service Desk Claro Brasil</p>
+        </div>
+      <div class="itbox_inferior">
+        <h2>Propriedades do Documento:</h2>
+        <p>ID do doc: 424842</p>
+        <p>Data de criação: 21/11/2013</p>
+        <p>Data de Revisão: 12/10/2018</p>
+      </div>
+    </div>
+  </body>
+</html>

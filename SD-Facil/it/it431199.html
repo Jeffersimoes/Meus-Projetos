@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva- Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431199 - Validar permissão para abertura de solicitação</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Validar permissão para abertura de solicitação <br>Mudança de Pacote</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431199</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h1>Validar permissão para abertura de solicitação - Mudança de Pacote</h1>
+          <br>
+          <h2>	OBJETIVO: </h2>
+  	      <p>Esse procedimento tem o objetivo orientar o analista como validar
+            se o usuário possui permissões para gerar/abrir solicitação.</p>
+          <br>
+          <h2>APLICAÇÃO:</h2>
+          <p>Service Desk N1</p>
+          <br>
+          <h2>REFERÊNCIAS:</h2>
+  	      <p>N/A</p>
+          <br>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+  	      <p>Primeiro passo o analista deverá acessar o site do HPBT.</p>
+            <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">HP BusinessTool</a>
+              <br>
+              <br>
+  	         <p>Caso o analista não saiba o número do id da solicitação segue a macro para consultar o ID.</p>
+
+              <dd>
+                <ul>
+                  <li><b>Grupo:</b> CRM</li>
+                  <li><b>Macro Processo:</b> CRM/Atender</li>
+                  <li><b>Funcionalidade:</b> Contrato/ Solicitação</li>
+                  <li><b>Ação:</b> Consultar ID Solicitação.</li>
+                </ul>
+              </dd>
+
+              <div class="it_img">
+                <img src="./img/img192.png"/>
+              </div>
+              <br>
+              <div class="it_img">
+                <figcaption>Essa busca pode ser utilizada para outras validações como retirada
+                  de equipamento, mudança de pacote.</figcaption>
+                <img src="./img/img193.png"/>
+              </div>
+
+              <p>Após identificar a ID do tipo de solicitação desejada, o analista deverá consultar se o usuário possui permissão para gerar esta solicitação.
+                Esta validação é realizada por meio da macro abaixo:
+              </p>
+
+                <dd>
+                  <ul>
+                    <li><b>Grupo:</b> CRM</li>
+                    <li><b>Macro Processo:</b> CRM / Acesso / Perfil</li>
+                    <li><b>Funcionalidade:</b> Perfil / Usuario</li>
+                    <li><b>Ação:</b> CONSULTAR PERMISSÃO PARA GERAR SOLICITAÇÃO ou Permissão para Gerar Solic</li>
+                  </ul>
+                </dd>
+              <div class="it_img">
+                <figcaption>A consulta de permissão é utilizada para verificar se o usuário
+                  possui o perfil necessário para abrir o tipo de solicitação desejada.<br> Ex: Mudança de pacote.</figcaption>
+                <img src="./img/img194.png"/>
+              </div>
+
+              <p>Segue o resultado da validação, se o usuário possui PERMISSÃO PARA GERAR SOLICITAÇÃO</p>
+              <br>
+
+              <div class="it_img">
+                <figcaption>O resultado abaixo informa que o usuário POSSUI a permissão para
+                  gerar a solicitação.</figcaption>
+                <img src="./img/img197.png"/>
+              </div>
+              <br>
+              <div class="it_img">
+                <figcaption>Abaixo segue exemplo onde o usuário NÃO POSSUI permissão para
+                  gerar a solicitação.</figcaption>
+                <img src="./img/img195.png"/>
+              </div>
+              <br>
+
+            	<h2>SOLUÇÃO: </h2>
+
+              <p>Caso o usuário não possua permissão o chamado deverá ser encerrado em N1.</p>
+              <p>Se o usuário possuir a permissão o analista deverá seguir com as validações
+                conforme o problema. </p>
+              <p>Este procedimento tem o objetivo somente de validar as permissões do usuário.</p>
+                <br>
+              <h2>SUGESTÃO DE RESPOSTA: </h2>
+              <div class="resposta">
+                <br>
+                <p>Prezado usuário,</p>
+                <p>Durante analise, foi identificado que o login informado não possui
+                  o permissão para gerar a solicitação desejada.<br>
+                  Esta solicitação deve ser gerada por um usuário que possua as
+                  permissões necessárias.<br>
+                  Caso o colaborador necessite deste perfil, será necessario entrar em
+                  contato com sua supervisão para que seja aberta uma solicitação de permissão de acesso.</p>
+                <p>Atenciosamente,<br>
+                  Service Desk Claro Brasil</p>
+              </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431199</p>
+          <p>Data de criação: 06/10/2015</p>
+          <p>Data de Revisão: 22/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

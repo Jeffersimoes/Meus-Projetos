@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432144 – Equipamento se encontra preso apenas ao contrato e sistema não permite a retirada</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Equipamento se encontra preso apenas ao contrato <br>e sistema não permite a retirada</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432144</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Equipamento se encontra preso apenas ao contrato e sistema não permite a retirada</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Orientar o analista a tratar de forma eficaz quando o usuário abre chamado
+             referente à um contrato que possui um equipamento preso somente ao contrato.</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+            </dd>
+          </ul>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>Para identificar se o equipamento se encontra preso somente no contrato,
+               o analista deverá realizar os seguintes passos: </p>
+          <ul>
+         <dd>
+          <li>Abra o contrato no sistema NETSMS e seleciona a aba técnico</li>
+         </dd>
+        </ul>
+         <div class="it_img">
+           <img src="./img/img166.png"/>
+         </div>
+         <ul>
+           <dd>
+             <li>Verifique se o número de série do equipamento informado consta em algum ponto do contrato.<br/><br />
+                 Se na aba técnico constar o número de série informado pelo usuário,
+                  não se trata de retirada de equipamento apenas no contrato e sim de retirada de terminal ao ponto.<br/><br />
+                Se na aba técnico não aparecer o número de série informado pelo usuário, prossiga com a validação.</li><br />
+             <li>Na mesma aba, clique na aba terminais para abrir os equipamentos que estão vinculado ao contrato.</li>
+           </dd>
+         </ul>
+         <div class="it_img">
+           <img src="./img/img170.png"/>
+         </div>
+         <ul>
+           <dd>
+            <li>Na aba terminais, verifique se o número do terminal que o usuário informa consta no contrato.</li>
+           </dd>
+         </ul>
+         <div class="it_img">
+           <img src="./img/img171.png"/>
+         </div>
+         <p>Após identificar que trata-se realmente de um equipamento preso somente ao contrato é necessário identificar
+            se o usuário possui a permissão para gerar essa movimentação.
+             Essa validação é realizada por meio do sistema HP Business Tool, conforme instruções abaixo.</p>
+         <ul>
+           <li>Preencha o HPBT da seguinte forma: </li>
+         </ul>
+         <ul>
+           <dd>
+             <li><b>Cidade:</b> coloque aqui a cidade do contrato que está sendo tratado</li>
+             <li><b>Grupo:</b> OSS</li>
+             <li><b>Macroprocesso:</b> OSS/Atlas</li>
+             <li><b>Funcionalidade:</b> Login/Usuário</li>
+             <li><b>Ação:</b> Permite Gerar Retirada de Equipamento</li>
+           </dd>
+         </ul>
+         <ul>
+           <li>Após o preenchimento das informações acima, irar abrir a tela abaixo,
+              preencha o login que o usuário utiliza para realizar essa movimentação</li>
+         </ul>
+         <div class="it_img">
+           <img src="./img/img172.png"/>
+         </div>
+         <ul>
+           <li>Caso informe que o usuário não possui permissão para realizar essa ação,
+              o chamado deverá ser encerrado conforme instruções no item solução.</li>
+         </ul>
+         <div class="it_img">
+           <img src="./img/img173.png"/>
+         </div>
+         <ul>
+           <li>Caso informe que o usuário possui permissão é necessário verificar com o usuário se tentou
+              realizar a retirada de equipamento por meio da aba técnico gerando uma solicitação.</li>
+         </ul>
+         <div class="it_img">
+           <img src="./img/img174.png"/>
+         </div>
+         <p>Caso o usuário tenha tentado realizar a retirada de equipamento pela aba técnico e não conseguiu,
+            chamado deverá ser direcionado conforme, instruções no campo solução.</p><br />
+         <p>Caso o usuário não tenha tentado realizar a retirada do equipamento pela aba técnico,
+           chamado deverá ser encerrado, conforme instruções no campo solução.</p>
+        <br>
+         <h2>SOLUÇÃO: </h2>
+         <ul>
+           <li><b>Terminal preso ao ponto: </b></li>
+         </ul>
+         <p>Para chamados em que identifica-se que o equipamento está preso ao ponto e ao contrato,
+            o analista deverá encerrar o chamado conforme instruções abaixo:</p>
+         <p><b>Classificação:</b> Incidente</p>
+         <p><b>Categoria:</b>SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(NAO SUPERVISOR)</p>
+         <p><b>Grupo Responsável:</b> SERVICE DESK N1</p>
+         <ul>
+           <br>
+           <li><b>Usuário não possui permissão: </b></li>
+         </ul>
+         <p>Para chamados em que identifica-se que o usuário não possui permissão para realizar esse tipo de solicitação,
+           o analista deverá encerrar o chamado conforme instruções abaixo:</p>
+         <p><b>Classificação:</b> Incidente</p>
+         <p><b>Categoria:</b>SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(NAO SUPERVISOR)</p>
+         <p><b>Grupo Responsável:</b> SERVICE DESK N1</p>
+         <br>
+         <ul>
+           <li><b>Terminal Preso Somente ao Contrato – Opção 1: </b></li>
+         </ul>
+         <p>Para chamados em que identifica-se que o equipamento se encontra preso somente ao contrato e o usuário possui permissão
+            para gerar a retirada do equipamento, deve-se questionar se o usuário realizou a tentativa de retirar o equipamento
+             do sistema NETSMS na aba técnico.
+             Caso não tenha realizado a retirada pela aba técnico, deve-se encerrar o chamado conforme instruções abaixo: </p>
+         <p><b>Classificação:</b> Incidente</p>
+         <p><b>Categoria:</b>SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(NAO SUPERVISOR)</p>
+         <p><b>Grupo Responsável:</b> SERVICE DESK N1</p>
+         <br>
+         <ul>
+           <li><b>Terminal Preso Somente ao Contrato – Opção 2: </b></li>
+         </ul>
+         <p>Para chamados em que identifica-se que o equipamento se encontra preso somente ao contrato e o usuário possui
+            permissão para gerar a retirada do equipamento, deve-se questionar se o usuário realizou a tentativa de retirar
+             o equipamento do sistema NETSMS na aba técnico. Caso tenha realizado, direcionar o chamado para a equipe Atlas
+              realizar a tratativa conforme instruções abaixo: </p>
+         <p><b>Classificação:</b> Incidente</p>
+         <p><b>Categoria:</b>SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.EM BAIXA DE OS</p>
+         <p><b>Grupo Responsável:</b> Atlas</p>
+         <br>
+         <h2>SUGESTÃO DE RESPOSTA: </h2>
+         <ul>
+           <li><b>Terminal preso ao ponto: </b></li>
+         </ul>
+         <div class="resposta">
+            <p>Prezado usuário,</p>
+            <p>Conforme analise realizada, equipamento informado se encontra vinculado ao contrato e ao ponto.
+               Caso deseje a retirada do equipamento é necessário realizar a retirada de equipamento pelo sistema NETSMS
+                na aba supervisão. <br />
+            Caso apresente erro ao gerar essa solicitação, favor abrir novo chamado com o passo a passo atualizado <br />
+            <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+          <br>
+         <ul>
+           <li><b>Não Possui Permissão: </b></li>
+         </ul>
+        <div class="resposta">
+             <p>Prezado usuário,</p>
+             <p>Conforme analise realizada, foi identificado que o login utilizado não possui permissão para realizar essa movimentação.<br />
+               Nesse caso, favor utilizar outro login para realizar a ação desejada e ou abrir uma PA, permissão de acesso, junto a sua gestão.<br />
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+        <br>
+        <ul>
+          <li><b>Terminal Preso Somente ao Contrato – Opção 1: </b></li>
+        </ul>
+        <div class="resposta">
+             <p>Prezado usuário,</p>
+             <p>Conforme analise realizada, não foi realizado a tentativa de retirada do equipamento por meio da aba técnico no sistema NETSMS.<br />
+               Favor gerar uma solicitação de retirada de equipamento e durante a baixa, devolver o equipamento preso somente ao contrato.<br />
+               Caso falha persista, favor reabrir o chamado com o passo a passo do procedimento realizado.<br />
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+        <br>
+        <ul>
+          <li><b>Terminal Preso Somente ao Contrato – Opção 2: </b></li>
+        </ul>
+        <div class="resposta">
+             <p>Prezado usuário,</p>
+             <p>Conforme analise realizada, equipamento se encontra preso somente ao contrato não sendo possível realizar a sua retirada por meio da solicitação “retirada de equipamento” no sistema NETSMS.<br />
+               Favor prosseguir com a tratativa do chamado.<br />
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+    </div>
+    <div class="itbox_inferior">
+      <h2>Propriedades do Documento:</h2>
+      <p>ID do doc: 432144</p>
+      <p>Data de criação: 04/05/2016</p>
+      <p>Data de Revisão: 06/11/2018</p>
+    </div>
+</html>

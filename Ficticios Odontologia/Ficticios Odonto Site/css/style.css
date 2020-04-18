@@ -1,0 +1,556 @@
+body {
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(rgb(255, 255, 255, 0.7), rgb(255, 255, 255, 0.7)), url(/imagem/odontow.jpg);
+     } 
+
+*{
+    box-sizing: border-box;
+}
+#tudo{
+    margin-left: 100px;
+    margin-right: 100px; 
+    border: 0px 0px 50px 50px ; 
+    font-family: 'Poppins', sans-serif;
+    
+}
+ /*TOPO */
+header{
+    text-align: center;
+    position: absolute;
+    display:inline-flex;
+    height: 201px;
+    width: 1200px;
+    margin-top: 0px;
+    background-image: linear-gradient(to right, #9face6  0%, #74ebd5  100%); }
+
+header #logo{
+    width: 200px;
+    height: 180px; 
+}
+header #logo img{
+width: 300px;
+height: 300px;
+position: relative;
+top:-50px;
+left: -30px;
+}
+ 
+ header #navegacao{
+    width: 700px;
+    height: 140px;
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+    top: 30px;
+ }
+ header #navegacao #menu{
+    width: 400px;
+    right: 250px;
+
+ } 
+ header #navegacao #menu ul {
+    background-color:#EDEDED;
+    list-style:none;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%); 
+    border-radius: 50px 50px 50px 50px;
+    width: 650px;
+    height: 50px;
+    padding-top: 5px;
+    top: 70px;
+    position:absolute;
+    left: 30px; }
+
+ header #navegacao #menu ul li{
+    display: inline; }
+
+ header #navegacao #menu ul li a {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;  
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: -30px;
+    top:10px;
+}
+
+header #navegacao {
+    padding: 3px 15px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+}
+
+header #navegacao a:hover {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px 15px 15px;
+}
+
+#formulario {         
+        width: 200px;
+        height: 130px;
+        float: right;
+        position: relative;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: 37px;
+        text-decoration: none;
+         top: 40px;
+    }
+#button {
+box-shadow: 2px 2px 1px rgb(19, 124, 105);   
+margin-top: 50px;
+text-decoration-line: none;
+width: 90px;
+height: 25px;
+margin:10px 0px 0px 0px;
+padding: 0px;
+border-radius: 15px 15px 15px 15px;
+
+}
+
+#button a{
+    text-decoration-style: none;
+    text-decoration: none;
+}
+#button2{
+   
+    box-shadow: 2px 2px 1px rgb(19, 124, 105);   
+
+    text-decoration: none;
+    text-decoration-style: none;
+    height: 25px;
+    width: 150px;
+    border-radius: 15px 15px 15px 15px;
+    margin:-20px 0px 0px 0px;
+    font-size: 13px;
+ }
+
+
+ #button2 a{
+    text-decoration-style: none;
+    text-decoration: none;
+}
+#home{
+    display: inline;
+    position: absolute;
+    top:200px;
+}
+
+#conteudo{
+    margin: 40px 0px 40px 40px;
+    height: 290px;
+    display:flex;
+    position: relative;
+    
+}
+
+#direita{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 200px;    
+    width: 470px;    
+    float: right;
+    left: -60px;
+    position: relative;}
+
+#direita img{
+    
+    height: 249px;
+    width:470px;
+    box-sizing: 100%;
+    margin-left: 50px;;
+}
+
+#esquerda{
+    padding: 40px;
+    float: left;
+    width: 600px;
+    height: 250px;
+    margin: 5px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    font-size: 20px; 
+    top: -30px;
+    left: -20px;
+}
+#depolink{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    text-decoration-style: none;
+    border-radius: 20px;
+    height: 100px;
+    width: 400px;
+    box-shadow: #13547a;
+    background-color: #63b5f6;
+        
+}
+#depolink a{
+    text-decoration:none;
+    text-decoration-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    
+}
+.degrade1{
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    width: 1200px;
+    overflow: hidden;
+}
+.degrade2{
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    width: 1200px;
+    overflow: hidden;
+}
+/*Produtos*/
+
+#produtos{
+    position: relative;
+    display: block;
+    top: 500px;
+}
+
+#galeria{
+  /*  border: 1px solid #f6c; */
+    margin: 0px;
+    position: relative;
+    left: 35px;
+   
+}
+#galeria img{
+    height: 200px;
+    width: 300px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border-radius:10px;
+
+}
+#galeria img:hover{
+    filter: grayscale(100%);
+    cursor: pointer;  
+}
+
+/*Depoimentos OK*/ 
+#depoimentos { 
+    top: 1310px;    
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    text-align: center;
+}
+
+#boxblue{
+    top:70px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1004px;
+    height: 450px;
+    left: 90px;
+    background-color: #63b5f6;
+}
+/*Texto do Depoimentos*/ 
+.box1{ 
+    padding-top: 55px;
+    text-align: center;
+    font-size: 20px;
+    width:50%;
+    height:225px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+/*Alinhamento dos Depoimentos*/ 
+#depoimentos .boxalign{
+    display: inline-block;
+    position: relative;
+}
+
+/*fim do depoimentos*/
+
+ /*Quem somos*/ 
+ #quemsomos {
+    width: 1200px ;
+    height: 800px;
+    position: absolute;
+    left: 100px;
+    top: 1900px;
+    background: 1px solid #ff0000;
+    text-align: center;
+    
+}
+#contsomos {
+   position: absolute; 
+   display: block;
+   width: 500px ;
+   height: 100px;
+   top: 10px;
+   left: 225px;
+   text-align: center;
+   
+}
+/*Descrição sobre a clinica*/ 
+#tema1 {
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    font-size:25px;
+    border: 2px solid rgb(255, 255, 255);
+    top: 30px;
+    left: -160px;
+    position: absolute;
+    padding-top: 55px;
+}
+/*Texto1*/ 
+.texto1 {
+   width: 700px ;
+   height: 150px;
+   top: 30px;
+   left:210px ;
+   position: absolute;
+   text-align: right;
+   font-size:18px;
+   border: 2px solid rgb(255, 255, 255);;
+}
+/*Missão, visão e valores*/ 
+#tema2 {
+   width: 300px;
+   height: 250px;
+   left: auto;
+   
+   top: 230px;
+   left: 605px;
+   font-size: 25px;
+   text-align: center;
+   border: 2px solid rgb(59, 219, 158);
+   position: absolute;
+   padding-top: 100px;
+}
+
+/*Texto2*/ 
+.texto2{ 
+   width: 700px ;
+   height: 250px;
+   font-size:18px;
+   position: absolute;
+   text-align: left;
+   left: -150px;
+   top: 230px;
+   border: 2px solid rgb(59, 219, 158);
+
+}
+/*Profissionais que atendem*/ 
+
+#tema3 {
+    width:300px;
+    height: 150px;
+    left: 800px;
+    top: 550px;
+    left: -150px;
+    font-size:25px;
+    text-align: center;
+    border: 2px solid rgb(109, 195, 245);
+    position: absolute;
+    padding-top: 40px;
+    
+ }
+.texto3 {
+    width: 700px ;
+    height: 150px;
+    top: 550px;
+    left:210px ;
+    position: absolute;
+    text-align: right;
+    font-size:18px;
+    border: 2px solid rgb(109, 195, 245);
+    padding-top: 20px;
+ }
+
+
+/*banner dos convenios*/ 
+#banner {
+    display: block;
+    position: absolute;    
+    width: 1200px;
+    height: 705px;
+    left: 101px;
+    top: 2700px;
+    overflow: hidden;
+    
+    
+}
+/*Imagens dos convenios*/ 
+.image {
+  
+   height: 618px;
+   width: 1100px;
+   margin-left: 100px;
+   margin-right: 100px;
+   position: relative;
+   left: -50px;
+   top: 0px;
+  
+   
+}
+.image img{
+    height: 665px;
+    width: 1100px;
+    position: relative;
+    display: inline;
+    
+    
+}
+  /*Doutor*/ 
+
+ #quadrado{
+    width: 1200px;
+    height: 500px;
+    padding: 50px;
+    display: block;
+    position: absolute;
+    left:101px;
+    top: 3405px;
+    
+   
+ }
+ /*Texto Doutor*/ 
+ #texto{
+    width: 780px;
+    height: 380px;
+    padding: 5px;
+    top: 60px;
+    position: absolute;
+    left: 30px;
+    border: 2px solid #020101;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.textoo {
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 30px;
+    font-size: 18px;
+
+}
+
+.textooo {
+    text-align: left;
+    position: relative;
+    top: -40px;
+    left: 30px;
+    font-size: 18px;
+}
+
+ /**imagem doutor**/
+ 
+#radius img{
+    border-radius: 50%;
+    width: 300px;
+    height: 250px;
+    left: 800px;
+    top: 80px;
+    position: relative;
+    overflow: hidden;
+    display: inline;
+ }
+  /**RODAPÉ**/
+
+footer{
+    height: 400px;
+    width: 1200px;
+    top: 3905px;
+    left: 101px;
+    position: absolute;
+    display:block;
+    
+    font-family: 'Poppins', sans-serif;
+    z-index: 111;    
+    }
+
+#rodape{
+    
+    height: 360px;
+    width: 1160px;
+    margin: 20px;
+    position: relative;
+    display: flex;    
+    flex-wrap: wrap;
+}
+
+ #mapa {
+     width: 500px;
+     height: 300px;
+     
+ }   
+ iframe{
+     height: 100%;
+     width: 100%;
+ }
+#endereco{
+    padding-top: 30px;
+    text-align: left;
+    width: 700px;
+    height: 50px;     
+    
+
+}
+#ladodireito{
+    height:300px;
+    width: 50%;
+     
+}
+#ladoesquerdo{
+    height:300px;
+     width: 50%;
+    
+     
+}
+#contato{
+    height: 140px;
+    width: 500px;
+    margin-left: 40px;
+    padding-top: 30px;
+    text-align: center;
+    
+ }
+
+  /**Rede social**/
+
+ #social{
+   
+    width: 500px;
+    height: 155px;    
+    margin-left: 40px;
+    padding: 30px;
+    
+    color: lightgrey;
+    display: flex;
+    justify-content: center;
+}
+
+#social a:hover{
+    color: rgb(118, 228, 114);
+}
+
+ #social a{
+    font-size: 30px;
+    padding: 30px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+ }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="David Santos - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>SD-Fácil 1.2</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="corpo">
+      <div class="box_superior">
+        <div class="logo_sist">
+          <img src="./img/logo4.png" alt="">
+        </div>
+        <div class="titulo">
+        </div>
+      </div>
+      <div class="logo">
+        <img src="./img/logo_sdfacil1.png" alt="">
+      </div>
+      <div class="box_selec">
+        <h1>Selecione uma opção:</h1>
+      </div>
+      <div class="box_botoes">
+          <button id="btn_l" class="mainmenubtn_l" onmouseover="hover(this)"
+          onmouseout="mouseout(this)" onclick="abre_fechaCRM()">CRM</button>
+        <div id="mySidenav" class="sidenav">
+          <a id="fechar" href="javascript:void(0)" class="closebtn" onclick="fecha_menus()">&times;</a>
+            <h1>Fluxos CRM</h1>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Mudança_Pacote/index.html" target="_blank">Mudança de Pacote</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Verificacao_proposta/index.html" target="_blank">Validação de Proposta</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Ret_susp_temp/index.html" target="_blank">Retorno Suspensão Temporária</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Contest_Fatura/index.html" target="_blank">Contestação de Fatura</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_StatusEBT_IncNetfone/index.html" target="_blank">Status EBT incompatível com ponto fone</a>
+        </div>
+      </div>
+      <div class="box_botoes_d">
+          <button id="btn_r" class="mainmenubtn_r" onmouseover="hover(this)"
+          onmouseout="mouseout(this)" onclick="abre_fechaOSS()">OSS</button>
+          <div id="mySidenav2" class="sidenav_r">
+            <a id="fechar" href="javascript:void(0)" class="closebtn" onclick="fecha_menus()">&times;</a>
+            <h1>Fluxos OSS</h1>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Inversao_pp_pa/index.html" target="_blank">Inversão Ponto Principal e Ponto Adicional</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_Associacao_term/index.html" target="_blank">Erro ao Associar Terminal ao Ponto</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_BaixaOS/index.html" target="_blank">Erros em Baixa de OS</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_DesconOpcaoComRet/index.html" target="_blank">Desconexão opção com retirada de equipamento</a>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_ProcOC_ComMovTerm/index.html" target="_blank">Processamento de OC’s com movimentação de terminais</a>
+          </div>
+      </div>
+      <div class="box_botoes_3">
+          <button id="btn_3" class="mainmenubtn_l" onmouseover="hover(this)"
+          onmouseout="mouseout(this)" onclick="abre_fechaPort()">PORTABILIDADE</button>
+          <div id="mySidenav3" class="sidenav">
+            <a id="fechar" href="javascript:void(0)" class="closebtn" onclick="fecha_menus()">&times;</a>
+            <h1>Fluxos Portabilidade</h1>
+            <a onclick="fecha_menus()" href="../Fluxos/fl_StatusPortabilidade-Pendente/index.html" target="_blank">Status de portabilidade Pendente</a></div>
+      </div>
+        <div class="box_sist">
+          <h1>Sistemas:</h1>
+          <a href="https://servicedesknet.embratel.com.br/CAisd/pdmweb.exe" target="_blank"><button class="botoes"
+            id="bt_sistema" type="button" name="button">CA</button></a>
+          <a href="https://5.8.8.177:7010/HPBusinessTool/pages/executarScript/ExecuteScript.jsf" target="_blank">
+          <button class="botoes" id="bt_sistema" type="button" name="button">HPBT</button></a>
+          <a href="https://callcenter.embratel.com.br/sm/index.do" target="_blank"><button class="botoes"
+            id="bt_sistema" type="button" name="button">HPSM Analista</button></a>
+          <a href="https://callcenter.embratel.com.br/sm/ess.do" target="_blank"><button class="botoes"
+            id="bt_sistema" type="button" name="button">HPSM Funcionário</button></a>
+          <a href="http://novofiqueligado/site/home/homefl.ashx" target="_blank"><button class="botoes"
+            id="bt_sistema" type="button" name="button">Fique Ligado</button></a>
+        </div>
+        <div class="rodape">
+          <h1>
+            Desenvolvido por: Torre CSC</br>
+            Sugestões: <a href="mailto:noturno.sdclarobr@globalhitss.com.br">noturno.sdclarobr@globalhitss.com.br</a>
+          </h1>
+        </div>
+      </div>
+      <script type="text/javascript" src="./js/script.js">
+
+      </script>
+  </body>
+</html>

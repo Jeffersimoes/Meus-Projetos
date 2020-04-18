@@ -1,0 +1,470 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{  
+    background-image:linear-gradient(rgba(255, 255,255,0.7),rgba(255, 255,255,0.7)),url(../imagens/brooke-lark-4ELjpkrMpHg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#tudo{ 
+    width: 1200px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(248, 245, 212);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+/*Conteudo da nav*/    
+header{
+    width: 100%;
+   /* max-width: 1200px;*/
+    height:300px;
+   /* max-height: 300px;*/
+    background-image: url(../imagens/banner-produto.jpg);
+    clear: both;
+}
+
+#logo{
+    position: absolute;
+    top: 100px;
+    max-width: 300px;
+    height: 150px;
+    float: left;
+    border-radius: 100px;
+    margin-left: 525px;
+    margin-right: 525px;
+}
+
+#logo img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+#nav{
+    top: 0px;
+    /* display: flex; */
+    /* position: fixed; */
+    right: 160px;
+    /*max-width: 1200px;*/
+    width: 100%;
+    height: 49px;
+    overflow: hidden;
+    background-color:#EEC7C2;
+    border-radius: 0 0 20px 20px;
+    /* float: right; */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+
+
+}
+
+#nav li{
+    padding: 30px 63.6px;
+    display: inline;    
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px; 
+    /*vertical-align: middle;  */
+
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav li:hover{
+    overflow: hidden;
+    background: #B76B52;
+}
+/*Fim do conteudo da nav*/
+
+#text{
+    margin: 20px 0 40px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+#text p{
+    text-align: center;
+    font-size: 16px;  
+}
+
+#text h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;  
+ }
+
+#text h2{
+    /* padding: 28px; */
+    text-align: center;
+    font-size: 30px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;     
+}
+
+/*Inicio da Index*/
+.item-home{
+    width: 250px;
+    border-radius: 40px;
+    margin: 40px;
+}
+ 
+ .item-home img{
+    width: 100%;
+    border-radius: 5px;
+}
+ 
+ .item-home h3{
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+ 
+ .item-home p{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+}
+ 
+ .depoimentos{
+    display: inline-flex;
+    margin-left: 20px;
+    top: auto;
+ }
+
+#dep1{
+    background-color: rgb(168, 196, 238);
+    width: 250px;
+    border: 1px dotted; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+ 
+#dep2{
+    background-color: rgb(252, 193, 232);
+    width: 250px;
+    border: 1px dotted; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#dep3{
+    background-color: rgb(176, 235, 200);
+    width: 250px;
+    border: 1px dotted; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}  
+/* fim da pagina Index*/
+
+/*Iniio da Quem Somos*/
+
+#titulo_h1{
+    text-align: center;
+    font-size: 40px;
+}
+#titi_h2{
+    text-align: left;
+    font-size: 30px;
+}
+#dona{
+    /* position: relative; */
+    padding-left: 5px;
+    overflow: hidden;
+    /* top: 100px; */
+    width: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+#dona1 img{
+    width: 450px;
+}
+#historia{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#historia h3{  
+    width: 400px;
+    text-align: left;
+    font-size: 30px;   
+}
+#historia p{    
+    text-align: center;
+    font-size: 20px;
+    text-align: left;   
+}
+
+#sobre p{
+    /* width: 400px;
+    height: 400px; */
+    font-size: 20px;  
+}
+
+#sobre{
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+#sobre h3{
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 40px ;
+}
+
+/*Fim da Quem Somos*/
+
+/*Inicio da produtos*/
+
+#titulo_produto{
+    font-size: 30px;
+    text-align: center;
+}
+
+.produtos{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+
+.titulo-produtos{
+    width: 100%;
+    text-align: center;
+}
+
+.card-produtos, .depoimentos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.produtos img {
+    width: 260px;
+    height: 260px;
+    top: 260px;
+    left: 260px; 
+}
+
+.item{
+    margin: 0 20px;
+} 
+.item h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    color: rgba(250, 79, 0, 0.918);
+    background-color: rgb(223, 205, 146);
+}
+
+#item h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+    font-size: 32px;
+    border: 3px solid black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;          
+}
+ 
+#item p{
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+    font-size: 20px;             
+                
+}
+
+.caixa{
+    margin-bottom: 20px;
+}
+
+.caixa img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+}
+.caixa p{
+    text-align: center;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.botao{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.botao a{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(98, 132, 245);
+}
+.botao a:hover{
+    text-decoration: underline;
+}
+/* Fim da produtos*/
+
+/*Inicio mvv*/
+.itens{
+    width: 900px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+/*fim do mvv*/
+
+/*Formulario*/
+#formulario{
+    display: block;
+    margin-top: 20px;
+    height: auto;
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    background-color: #FDE5D5;
+    color: #10141C;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+textarea{
+    background-color: #FDE5D5;
+    border-radius: 10px;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+textarea::placeholder{
+    padding: 10px 0 0 5px;
+}
+
+::placeholder{
+    color: #FDE5D5;
+    font-weight: 800;
+}
+
+input#submit{
+    width: 80px;
+    float: right;
+    margin-right: 5%;
+}
+
+fieldset{
+    background-color:#B76B52;
+    border-radius: 20px;
+    color: #10141C;
+    border: 1px solid #FDE5D5;
+}
+
+#contatos{
+    display: block;
+    margin-top: 30px;
+    height: auto;
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contatos h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*fim do formulario*/
+
+/*pagina do mapa*/
+#map{
+    margin-top: 100px;
+    margin-left: 300px;/*largura total da pag é 1200px, mapa tem 600px de largura. Sobra 600px, usando metade para esquerda e direita faz centralizar o mapa. caso queira alteirar o tamnho, só lembrar de refazer esse calculo */
+    margin-right: 300px;  
+    width: 600px;
+    height: 450px;
+}
+
+#endereco{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 100px;
+    width: 50%;
+}
+/*fim do mapa*/
+
+/*Inicio do rodape*/
+#rodape{
+    margin-top: 50px;
+    color: white;
+    background-color: #B76B52;
+    width: 1200px;
+    height: 150px;
+    display: flex;
+}
+
+.esquerda {
+    background-color: #B76B52;
+    width: 600px;
+    text-align: center;
+    list-style: none;
+    display: block;
+    margin-top: 25px;
+}
+
+.esquerda h5{
+    font-size: 16px;
+    width: 600px;
+    /* position: absolute; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.lis{
+    font-size: 15px;
+    width: 600px;
+    float: left;
+    /* position: absolute; */
+    text-align: center;
+    /* margin-top: 5px; */
+
+}
+
+.direita{
+    background-color: #B76B52;
+    left: 600px;
+    width: 600px;
+    margin-top: 35px;
+    text-align: center;
+    list-style: none;
+}
+
+.direita a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+/*Fim do rodape*/

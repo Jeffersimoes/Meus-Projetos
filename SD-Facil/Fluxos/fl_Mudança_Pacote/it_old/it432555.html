@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT432555 - Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432555</h1>
+        </div>
+      </div>
+        <div class="it_conteudo"></br>
+          <h1>Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</h1></br>
+          <h2>RESUMO:</h2>
+          <p>Aplicação: NETSMS/NETSALES</p>
+          <h2>PROBLEMA:</h2>
+          <p>O analista deve questionar o usuário se o contrato possui mais de um ponto de TV instalado.</br>
+            Para o problema temos os seguintes cenários mapeados:</p>
+          <p class="it_subt">Identificação do cenário:</p>
+          <p>Por regra de negocios NET, todo contrato deve possuir, ao menos 1 ponto de TV no contrato.
+            Contudo alguns assinantes não desejam produtos de programação de TV, desejam apenas internet
+            ou fone. Para atender essa necessidade foi criado o produto ACESSO VIRTUA, que trata-se de
+            um produto de TV, porém não possui equipamentos e nem é cobrado. Assim, satisfaz a necessidade
+            sistêmica de possuir ao menos um ponto de TV e atende aos assinantes quando os mesmos não desejam
+            mais produtos de TV.</p>
+
+            <p>Para a utilização do produto ACESSO VIRTUA foi criada uma regra que deve ser atendida que é a
+            seguinte regra: O CONTRATO SOMENTE PODE POSSUIR O PRODUTO DE ACESSO VIRTUA QUANDO ESTE FOR O
+            ÚNICO PONTO PTV DO CONTRATO.</p>
+            <p>Dada a regra acima descrita, temos alguns problemas de falha de processo dos usuários,
+            em virtude dessa regra.</p>
+            <p>Segue abaixo um exemplo:</p>
+          <p class="it_subt">Exemplo:</p>
+          <div class="it_img">
+            <img src="./img/img10.png" alt="Exemplo"/>
+          </div>
+          </br>
+          <p>No exemplo acima, se o usuário tivesse se atentado a regra sistêmica, o erro não teria
+            ocorrido, pois conforme a regra sistemica preza, o ACESSO VIRTUA somente pode existir em
+            contratos com um unico ponto PTV. Logo, o correto no caso acima era primeiramente remover o
+            PA de TV e depois, com o contrato somente com 1 ponto de TV realizar a Mudança de Pacote para
+            ACESSO VIRTUA</p>
+          <h2>PROCEDIMENTO:</h2>
+          <p>Ao receber um chamado onde o usuário alega problema com mudança de pacote
+            para ACESSO VIRTUA, o analista do Service Desk deve averiguar os seguintes pontos</p>
+          <ul>
+            <li>1 - Acessar o contrato informado pelo usuário, no NETSMS, clicar na aba PRODUTOS e verificar
+              quais os pontos instalados no contrato, em busca de pontos adicionais de TV instalados.</li></br>
+            <li>2 - Caso o contrato possua mais de um ponto de TV instalado, verificar se já existe
+              solicitação de RETIRADA DE PONTO aberta para os Pontos Adicionais.
+            </li></br>
+            <li>2.1 – Caso exista solicitação de RETIRADA DE PONTO, abertas para os pontos Adicionais então:</li></br>
+            <li>Orientar o usuário (caso esteja abrindo ainda o chamado) ou Reter em N1 com a seguinte orientação:
+            </li></br>
+            <p>“Segundo Regra de Negócios NET, o produto ACESSO VIRTUA somente pode ser incluído no contrato
+              quando este for o único ponto PTV do contrato. Nesse contrato existem pontos adicionais de TV
+              que já possuem solics de RETIDA DE PONTO aberta para eles, portanto o usuário deverá primeiramente
+              BAIXAR como EXECUTADA as retiradas e depois, quando sobrar apenas 1 ponto de TV, prosseguir com a
+              abertura da mudança de pacote para o produto desejado ACESSO VIRTUA. Att”</p></br>
+            <li>2.2 – Caso não exista solics de RETIRADA DE PONTO , abertas para os pontos Adicionais então:</li></br>
+            <li>Orientar o usuário (caso esteja abrindo ainda o chamado) ou Reter em N1 com a seginte orientação:</li></br>
+            <p>“Segundo Regra de Negócios NET, o produto ACESSO VIRTUA somente pode ser incluído no contrato
+              quando este for o único ponto PTV do contrato. Nesse contrato existem pontos adicionais de TV,
+              portanto, para atender a regra de negocios vigente, favor proceder com abertura de solicitação de
+              RETIRADA DE PONTO para os pontos adicionais de TV. Somente depois de executadas as retiradas de ponto
+              e o contrato possuir apenas um unico ponto de TV, prosseguir com a mudança de pacote desejada para o
+              produto desejado ACESSO VIRTUA. Att”</p>
+          </ul>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432555</p>
+          <p>Data de criação: 11/10/2016</p>
+          <p>Data de Revisão: 05/09/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

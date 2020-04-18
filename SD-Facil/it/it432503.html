@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432503 - Funcionalidade Associar Terminal ao Ponto</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Funcionalidade Associar Terminal ao Ponto</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432503</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h1>Funcionalidade Associar Terminal ao Ponto</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Orientar o analista o passo a passo para a associar terminal ao ponto para melhor orientar o usuário que desconheça o procedimento.</p>
+          <br>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+            </dd>
+          </ul>
+          <br>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>A primeira validação que o analista deverá fazer é verificar no HPBT o status do terminal poderá ter os seguintes status: </p>
+          <ul>
+            <dd>
+              <li>Inicializado</li>
+              <li>Não inicializado</li>
+              <li>Empreiteira</li>
+              <li>Perda e roubo</li>
+            </dd>
+          </ul>
+          <p>Para fazer a validação o analista deverá seguir os passos abaixo:</p>
+          <ul>
+            <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li></br>
+          </ul>
+          <p>Procedimento de Consulta:</p>
+          <ul>
+            <dd>
+              <li>Acessar o HP Business Tool;</li>
+              <li>Selecionar ‘Consultar Ação’;</li>
+              <li>Selecionar a Cidade desejada;</li>
+              <li>Selecionar o ‘Grupo’ – “OSS”;</li>
+              <li>Selecionar o ‘Macro Processo’ – “OSS / Atlas”;</li>
+              <li>Selecionar a ‘Funcionalidade’ – “Informações do Terminal”;</li>
+              <li>Selecionar a ‘Ação’ – “CONSULTA DAS INFORMAÇÕES DE UM TERMINAL</li>
+            </dd>
+          </ul>
+          <div class="it_img">
+            <img src="./img/img72.png">
+          </div>
+          <div class="it_img">
+            <figcaption>Após colocar todas as informações o resultado da consulta deverá estar conforme mostra a print abaixo:</figcaption>
+            <img src="./img/img73.png">
+          </div>
+          <br>
+          <p>É necessário o status do terminal esteja como inicializado para que o terminal seja associado ao contrato.</p>
+          <p>Após realizar essa validação o analista deverá instruir o colaborador abrir o Netsms.
+            Acessar a tela através do menu: REDE INTERNA >> OS’s >> SUPERVISÃO DE REDE INTERNA >> ASSOCIAR TERMINAL AO PONTO</p>
+          <div class="it_img">
+            <img src="./img/img74.png">
+          </div>
+          <div class="it_img">
+            <figcaption>O usuário deverá localizar o contrato</figcaption>
+            <img src="./img/img75.png">
+          </div>
+          <div class="it_img">
+            <figcaption>Posteriormente deverá selecionar o terminal desejado para fazer a associação.</figcaption>
+            <img src="./img/img76.png">
+          </div>
+          <div class="it_img">
+            <figcaption>Inserir as informações do terminal, como número de série, ponto e clicar em “SALVAR”.</figcaption>
+            <img src="./img/img77.png">
+          </div>
+          <br>
+          <h2>SOLUÇÃO: </h2>
+          <p>Esse procedimento orienta passo a passo como associar um terminal ao ponto e não se aplica para erros que possam ocorrer.</p>
+          <p>Caso ocorra algum erro durante esse procedimento o analista deverá consultar outra IT.</p>
+          <br>
+          <h2>SUGESTÃO DE RESPOSTA: </h2>
+          <p>Personalize a resposta para o analista, sempre informando o motivo do encerramento e ou o motivo do direcionamento para determinada torre.</p>
+          <br />
+          <p class="it_subt">Caso 1 – Terminal Inicializado</p>
+          <div class="resposta">
+             <p>Prezado usuário,</p>
+             <p>Após fazer análise no HPBT, foi verificado que o status do terminal encontra-se inicializado.<br />
+             Favor seguir o procedimento abaixo para fazer a associação.<br />
+             Abrir o Netsms acessar a tela através do menu:
+             REDE INTERNA >> OS’s >> SUPERVISÃO DE REDE INTERNA >> ASSOCIAR TERMINAL AO PONTO.
+              Após localizar o contrato deverá selecionar o terminal que deseja associar junto ao ponto e clicar em “Salvar”.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+          <br />
+          <p class="it_subt">Caso 2 – Terminal Não Inicializado</p>
+          <div class="resposta">
+             <p>Prezado usuário,</p>
+             <p>Para poder fazer a associação é necessário que o terminal esteja inicializado e conforme verificado
+                o status do terminal não esta inicializado, não sendo possível fazer a associação.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432503</p>
+          <p>Data de criação: 09/09/2016</p>
+          <p>Data de Revisão: 28/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

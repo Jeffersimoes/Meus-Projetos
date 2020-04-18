@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431533 - Validações para movimentação de terminal (Perda ou Roubo)</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Validações para movimentação de terminal (Perda ou Roubo)</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431533</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Validações para movimentação de terminal (Perda ou Roubo)</h1>
+            <br>
+            <h2>OBJETIVO:</h2>
+              <p>Esse procedimento tem o objetivo orientar o analista como fazer as validações necessárias para direcionamento ou encerramento.</p>
+            <br>
+            <h2>APLICAÇÃO:</h2>
+              <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+                <dd>
+                  <ul>
+                    <li>Service Desk N1</li>
+                    <li>Atlas</li>
+                  </ul>
+                </dd>
+            <br>
+            <h2>REFERÊNCIAS: </h2>
+              <p>N/A</p>
+            <br>
+            <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+              <p>O analista deverá solicitar evidência com o status do terminal.</p>
+                <ul>
+                  <dl>
+                    <dd>
+                        <li>Perda</li>
+                        <li>Roubo</li>
+                        <li>Desaparecido</li>
+                    </dd>
+                  </dl>
+                </ul>
+                  <div class="it_img_md">
+                      <img src="./img/img202.png"/>
+                  </div>
+                <ul>
+                  <dl>
+                    <dd>
+                        <li>O status do terminal é perda/roubo/desaparecido?</li>
+                    </dd>
+                  </dl>
+                </ul>
+              <p>Se a resposta for SIM o analista deverá questionar se o usuário já entrou em contato com MSO.<br>
+                 Nesse caso o chamado deverá ficar pendente usuário aguardando retorno, se contato for via e - mail o<br>
+                 mesmo deverá incluso no chamado. Se a reposta for Não, o analista deverá seguir para a próxima validação.</p>
+            <br>
+              <p class="it_subt">Cenário 1 – Erro ORA-01858 - ORA-06512</p>
+              <p>Validar se apresenta os erros citados. Caso apresente o erro, o analista deverá encerrar o chamado seguindo <b>sugestão de resposta 7</b>.</p>
+              <p>Caso apresente outro erro seguir com as validações abaixo.</p>
+            <br>
+              <p class="it_subt">Cenário 2 – Erro CRM-0268</p>
+              <p>Validar se apresenta os erros citados. Caso apresente o erro, o analista deverá encerrar o chamado seguindo <b>sugestão de resposta 7.</b>.</p>
+              <p>Caso apresente outro erro seguir com as validações abaixo.</p>
+            <br>
+              <p class="it_subt">Cenário 3 - Erro – “Perfil atual do usuário não permite acesso a janela. Solicite liberação de acesso ao sistema através do fluxo de concessão estabelecida”</p>
+              <p>Validar se apresenta os erros citados. Caso apresente o erro, o analista deverá encerrar o chamado seguindo <b>sugestão de resposta 7.</b>.</p>
+              <p>Caso apresente outro erro seguir com as validações abaixo.</p>
+            <br>
+              <p class="it_subt">Cenário 4 - Procedimento para ser feito a Entrega/Devolução do terminal</p>
+              <p>No Netsms o usuário deverá acessar Menu de Opções > Rede Interna -> OS's -> Supervisão de Rede Interna -> Supervisão de Rede Interna-Principal</p>
+                <div class="it_img_md">
+                    <img src="./img/img206.png"/>
+                </div>
+            <br>
+              <p class="it_subt">Cenário 5 – Problema ainda persiste e foi realizado procedimento no cenário 4</p>
+              <p>Nesse caso o chamado deverá ser encaminha para equipe de atlas, seguindo a categoria disponibilizada no item <b>6 Solução</b>.</p>
+            <br>
+            <h2>SOLUÇÃO:</h2>
+              <p>Para o cenário 5 o analista deverá categorizar conforme a descrição do incidente.</p>
+                <ul>
+                  <dl>
+                    <dd>
+                        <li>SISTEMAS.NETSMS.TERMINAIS <b>DEVOLUCAO</b>.TELA DE SUPERVISAO DE REDE INTERNA</li>
+                        <li>SISTEMAS.NETSMS.TERMINAIS <b>ENTREGA</b>.TELA DE SUPERVISAO DE REDE INTERNA</li>
+                        <li>SISTEMAS.NETSMS.TERMINAIS <b>TROCA</b>.TELA DE SUPERVISAO DE REDE INTERNA</li>
+                    </dd>
+                  </dl>
+                </ul>
+              <p><b>Grupo solucionador: Atlas</b></p>
+            <br>
+            <h2>SUGESTÃO DE RESPOSTA:</h2>
+              <p class="it_subt">Cenário 1 - Erro ORA-01858 - ORA-06512</p>
+                <div class="resposta">
+                    <p>Prezado(a),</p>
+                    <p>Esse erro ocorre por um problema local na máquina, especificamente na configuração de data/hora.<br>
+                       Favor seguir o procedimento abaixo e ajustar data/hora:<br>
+                       Painel de controle >> opções regionais de idioma >> personalizar >> data >> a data abreviada deve ser modificada para dd/mm/aaaa.<br>
+                       Caso o problema ocorra novamente após o erro reabrir o chamado anexando novas evidências para análise.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+            <br>
+              <p class="it_subt">Cenário 2 – Erro CRM-0268</p>
+                <div class="resposta">
+                    <p>Prezado(a),</p>
+                    <p>De acordo com as regras de negócios da Net, é necessário que um ponto com pacote VIRTUA possua contratações a La carte do provedor e/ou forma de aquisição.<br>
+                       Solução: Para o usuário conseguir efetuar qualquer alteração neste ponto, o mesmo terá que efetuar a contratação destes a La cartes para acerto sistêmico.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+            <br>
+              <p class="it_subt">Cenário 3 – Sem permissão</p>
+                <div class="resposta">
+                    <p>Prezado(a),</p>
+                    <p>O erro ocorre devido à falta de permissão para aba de Supervisor de Rede Interna.<br>
+                       Caso o colaborador necessite do acesso, favor entrar em contato com supervisão e solicitar acesso.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+            <br>
+              <p class="it_subt">Cenário 5 - Transferência para o grupo Atlas</p>
+                <div class="resposta">
+                    <p>Prezado(a),</p>
+                    <p>O erro ocorre devido à falta de permissão para aba de Supervisor de Rede Interna.<br>
+                       Caso o colaborador necessite do acesso, favor entrar em contato com supervisão e solicitar acesso.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+
+
+
+
+
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 424619</p>
+          <p>Data de criação: 19/11/2013</p>
+          <p>Data de Revisão: 28/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

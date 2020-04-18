@@ -1,0 +1,218 @@
+@media screen and (min-width:901px) {
+    #headermidias {
+        margin-right: 20px;
+    }
+    #btn1 i,
+    #btn2 i,
+    #btn3 i,
+    #btn4 i,
+    #btn5 i {
+        display: none;
+    }
+    #mainlinha {
+        flex-direction: row;
+    }
+
+    #mainlinha iframe {
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    #header {
+        height: 160px;
+    }
+
+    #headerlogo {
+        margin-top: 20px;
+    }
+
+    #headerlogo img {
+        width: 80px;
+        height: 80px;
+    }
+    #headerlogo h1 {
+        font-size: 3.0em;
+    }
+
+    #headermidias {
+        display: none;
+    }
+
+    .dropbtn i {
+        font-size: 22px;
+    }
+
+    #btn1 p,
+    #btn2 p,
+    #btn3 p,
+    #btn4 p,
+    #btn5 p {
+        display: none;
+    }
+
+    .dropbtn {
+        width: 100px;
+        height: 28px;
+        margin-top: 6px;
+    }
+
+    #mainlinha {
+        flex-direction: column;
+    }
+
+    .main-videos {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    #mainlinha iframe {
+        height: 350px;
+    }
+
+    #banner {
+        height:
+            300px;
+    }
+
+    #footerlogo {
+        margin-left: 20px;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footerlogo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #footerlogo a p {
+        font-size: 35px;
+        margin-left: 0px;
+    }
+
+    #footercontatos {
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+
+    #footercontatos p:nth-child(1),
+    #footertudormidias p {
+        display: none;
+    }
+
+    #footertudormidias {
+        margin-right: 10px;
+    }
+
+    #footercontatos p{
+        text-align: center;
+    }
+
+    #footercontatos p:nth-child(2),
+    #footercontatos p:nth-child(3) {
+        font-size: 13px;
+    }
+
+    #footercontatos p:nth-child(4) {
+        font-size: 10px;
+        margin-top: 10px;
+    } 
+
+    #footertudormidias {
+        float: none;
+        position: absolute;
+        width: calc(100vw - 37px);
+        align-items: center;
+        margin-right: 0px; 
+    } 
+}
+
+
+@media screen and (max-width: 600px) {
+    #headerlogo {
+        margin-top: 25px;
+    }
+
+    #headerlogo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    #headerlogo h1 {
+        font-size: 2.5em;
+    }
+    
+    #headermidias {
+        display: none;
+    }
+
+    .dropbtn {
+        width: 90px;
+        height: 28px;
+        margin-top: 6px;
+    }
+
+    .dropbtn i {
+        font-size: 22px;
+    }
+    #banner {
+        height: 200px;
+    }
+
+    #mainlinha {
+        flex-direction: column;
+    }
+    
+    #mainlinha iframe {
+        height: 250px;
+    }
+
+    .main-videos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footerlogo {
+        padding-left: 0px;
+        position: absolute;
+        flex-direction: column;
+    }
+
+    #footerlogo img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    #footerlogo a p {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    #footercontatos {
+        padding-left: 0px;
+        margin-top: 80px;
+    }
+
+    #footercontatos p:nth-child(1),
+    #footertudormidias p {
+        display: none;
+    }
+
+    #footertudormidias {
+        margin-right: 80px;
+    }
+
+    #footertudormidias {
+        margin-top: 20px;
+        
+    }
+    #footermidias {
+        align-items: center;
+    }
+}

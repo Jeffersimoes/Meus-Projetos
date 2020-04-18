@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT426576 - Fatura não recalcula após Contestação</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Fatura não recalcula após Contestação</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:426576</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h1>Fatura não recalcula após Contestação</h1>
+          <br>
+          <h2>OBJETIVO: </h2>
+            <p>O documento tem como objetivo orientar o Analista do Service Desk N1 a como proceder quando o Usuário informar que a Fatura
+            não recalcula o valor após a Contestação ser Aprovada.</p>
+            <br>
+          <h2>APLICAÇÃO:</h2>
+            <p>•	Service Desk N1</p>
+            <p>•	NETSMS – Novo Módulo de Cobrança</p>
+              <br>
+          <h2>REFERÊNCIAS:</h2>
+            <p>•	IT 432729 - CRM - Contestação já Recalculada</p>
+              <br>
+
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+            <p>Usuário entra em contato informando que a Fatura não recalcula o Valor após a Contestação ser Aprovada.</p>
+              <br>
+          <p class="it_subt">Importante:</p>
+              <p>Sempre devemos questionar ao Usuário sobre qual a AÇÃO que está sendo realizada, visando o direcionamento
+              do Chamado para o Grupo Solucionador correto.</p>
+
+              <p><u>Em caso de contestação recalculada, seguir IT 432729</u></p>
+
+              <p>Para este tipo de Incidente existem dois Cenários:</p>
+                <br>
+          <p class="it_subt">Cenário 1:Contestação Aprovada com Fatura em Aberto</p>
+
+          <p>Usuário afirma que foi realizada a Contestação, a mesma foi aprovada, porém a Fatura continuou em aberto, e ao verificar a Contestação foi por Lançamento Futuro</p>
+
+            <div class="it_img">
+              <img src="./img/img53.png"/>
+            </div>
+
+            <p>O cenário será validado pelo analista do Service Desk N1 através da Ferramenta NETSMS, deverá verificar na aba Cadastro/
+            Ocorrências se há Ocorrências referentes à contestação relatada pelo Usuário, sendo que a Ocorrência deve ter no campo observação
+             a Data de Vencimento da Fatura Contestada e a Informação de Lançamento Futuro (“Lanc. Fut.”), conforme exemplo abaixo:</p>
+
+             <div class="it_img">
+               <img src="./img/img54.png"/>
+             </div>
+
+             <p>Para o caso apresentado acima, o chamado deverá ser encerrado conforme instrução no item <B>solução.</B></p>
+              <br>
+             <p class="it_subt">Cenário 2: Fatura Contestada por Recalculo</p>
+
+             <p>Usuários relata que foi realizada a Contestação por Recálculo, sendo
+               que a Fatura é Cancelada e é gerada uma nova Fatura, porém o Valor da Fatura não é recalculado.</p>
+             <div class="it_img">
+               <img src="./img/img55.png"/>
+             </div>
+
+             <div class="it_img">
+               <img src="./img/img56.png"/>
+             </div>
+
+                <p>Para estes casos devemos verificar na aba <b>Cadastro/ Ocorrências</b> se há Ocorrências anteriores referentes à
+                <b>Data de Cancelamento da primeira Fatura</b> com o Status <b>“Cancelada por Contestação”</b>  e que não teve o Valor alterado,
+                conforme exemplo acima, sendo que na Ocorrência tada pelo Usuário, sendo que a Ocorrência deve ter no <b>Campo Observação</b>
+                a <b>Data de Vencimento da Fatura</b> contestada e a <b>Informação de Lançamento Futuro (“Lanc. Fut.”)</b>, conforme exemplo abaixo:</p>
+
+            <div class="it_img">
+              <img src="./img/img57.png"/>
+            </div>
+
+                <p>No caso apresentado acima, o chamado deverá ser encerrado conforme instrução no item <b>solução.</b></p>
+                  <br>
+            <h2>SOLUÇÃO: </h2>
+                <p class="it_subt">Cenário 1:Contestação Aprovada com Fatura em Aberto</p>
+                    <br>
+                <p>	Se existir ocorrência, o incidente deverá ser retido em N1 utilizando a
+                  categoria a seguir e Sugestão de Resposta descrita no item SUGESTÃO DE RESPOSTA: </p>
+
+              <p><b>Tipo:</b> Incidente</p>
+              <p><b>Classificação</b>: A1</p>
+              <p><b>Categoria:</b> SISTEMAS.NETSMS.COBRANÇA / FATURA.FATURA DO CLIENTE PARA IMPRESSÃO DE 2º VIA (Ñ VISUALIZA)</p>
+              <p><b>Grupo Solucionador:</b> SERVICE DESK N1</p>
+                  <br>
+                  <br>
+                  <br>
+
+
+              <p class="it_subt">Cenário 2: Fatura Contestada por Recalculo</p>
+
+              <p>Caso não sejam encontradas Ocorrências, o Analista do Service Desk N1 deverá abrir um Incidente com Classificação e Grupo Solucionador abaixo, podendo utilizar a fraseologia de direcionamento do incidente descrito no item SUGESTÃO DE RESPOSTA: </p>
+              <br>
+
+              <p><b>Tipo:</b> Incidente</p>
+              <p><b>Classificação:</b> A3</p>
+              <p>Categoria:</b> SISTEMAS.NETSMS.COBRANÇA / FATURA.ERRO NA CONTESTACAO</p>
+              <p><b>Grupo Solucionador:</b> NETSMS – NOVO MODULO DE COBRANCA</p>
+  	           <br>
+
+             <h2>SUGESTÃO DE RESPOSTA: </h2>
+               <br>
+               <p class="it_subt">Cenário 1: Contestação Aprovada com Fatura em Aberto</p>
+               <br>
+
+          <div class="resposta">
+
+              <p>Prezado Usuário,</p>
+              <p>De acordo com as Regras de Negócio da NET, a Fatura permaneceu "Em Aberto"
+                após Contestação, pois a Contestação realizada sobre foi do Tipo Lançamento Futuro.<br>
+                Quando uma Fatura é contestada por lançamento futuro, a mesma permanece
+                "Em Aberto" para que seja paga e gera Itens de contrapartida como Crédito
+                para o Assinante na próxima Fatura. Dessa forma, o assinante deve pagar a
+                fatura em aberto, pois receberá os descontos na fatura gerada após esta
+                contestação ser aprovada.</p>
+              <p>Atenciosamente,</p>
+              <p>Service Desk Claro Brasil</p>
+          </div>
+                <br>
+                <br>
+              <p class="it_subt">Cenário 2: Fatura Contestada por Recalculo</p>
+              <br>
+
+        <div class="resposta">
+
+              <p>Prezados,</p>
+              <p>Após análise do chamado, identificamos que trata-se de Fatura não
+                recalcula após Contestação.
+                Foi confirmado que o usuário possui todas as permissões necessárias
+                para realizar a ação desejada, conforme evidencia em anexo.
+                Com base nas informações apresentadas e na IT 426576, o chamado
+                deverá ser tratado pela equipe NETSMS- NOVO MODULO DE COBRANÇA </p>
+                <p>Sendo assim, solicitamos por gentileza que prossigam com as
+                tratativas necessárias para resolução do chamado.</p>
+              <p>Atenciosamente,</p>
+              <p>Service Desk Claro Brasil</p>
+        </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 426576</p>
+          <p>Data de criação: 07/05/2014</p>
+          <p>Data de Revisão: 14/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

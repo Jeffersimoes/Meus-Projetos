@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT428411 - Mudança de pacote (mais de uma vez no mesmo dia)</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Mudança de pacote</br>(Mais de uma vez no mesmo dia e no mesmo ponto)</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:428411</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>NETSMS/NETSALES – Mudança de pacote<br>(Mais de uma vez no mesmo dia e no mesmo ponto)</br></h1>
+          <h2>RESUMO:</h2>
+          <p>Orientar os analistas sobre como tratar os casos onde o ocorre o
+            erro ao gerar mais de uma solicitação de Mudança de Pacote no mesmo dia.</p>
+          <p class="it_subt">Aplicação: NETSMS/NETSALES</p>
+          <h2>Fluxo de atividades:</h2>
+          <p>Para o problema temos o seguinte cenário mapeado :</p>
+          <p>Usuarios realizam a tentativa de abrir a solicitação MUDANCA  DE PACOTE. Porem é exibida a mensagem
+            “Não é permitido a mudança de pacote para o mesmo produto no mesmo ponto, duas vezes no mesmo dia ”,
+            devido regra de negocios NET, onde só é permitida uma MUDANÇA de PACOTE para o mesmo produto e ponto por dia.</p>
+          <p class="it_subt">cenário:</p>
+          <p>Usuário reporta que ocorre erro a Mensagem <b>“Não é permitido a mudança de pacote para o mesmo produto no mesmo
+             ponto, duas vezes no mesmo dia ”</b> ao gerar a solicitação de Mudança de Pacote.</p>
+          <h2>Exemplo:</h2>
+          <div class="it_img">
+            <figcaption>Tela do sistema para identificação:</figcaption>
+            <img src="./img/img7.png" alt="Exemplo de erro">
+          </div>
+          <p>Caso o contrato se enquadre no cenario acima onde o usuario tenta abrir mais de uma mudança de pacote,
+            para o ponto no mesmo dia. O analista <b>NÃO DEVERÁ</b> abrir chamado para as filas HP,
+            Deve-se orientar o usuario a observar no historico de solicitação do contrato que ja foi aberta esta mesma
+            mudança de pacote no dia atual e que o mesmo prossiga com a mudança de pacote somente no dia seguinte.</p>
+          <p class="it_importante">Resposta Padrão Sugerida:</p>
+          <p>“SEGUNDO REGRA DE NEGÓCIO DA NET NÃO É PERMITIDO GERAR A MESMA MUDANÇA DE PACOTE NO MESMO PONTO,
+            MAIS QUE UMA VEZ AO DIA. FAVOR PROSSEGUIR COM A SOLICITAÇÃO DESEJADA NO DIA SEGUINTE."</p>
+          </br></br>
+          <h2>REFERÊNCIAS</h2>
+          <p>Norma NBR ISO 20000</br>
+            Norma NBR ISO 9001</br>
+            MN_QC_001_Manual_do_Sistema_de_Gestao_Integrada </br>
+            MN_IS_001_Manual_de_Gestão_do_Serviço</br>
+            PR_QC_001_Elaboração_de_Ativos;</br>
+            PR_QC_005_Controle_Documentos_Registros</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431045</p>
+          <p>Data de criação: 04/09/2015</p>
+          <p>Data de Revisão: 01/08/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

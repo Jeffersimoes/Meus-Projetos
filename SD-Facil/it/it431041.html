@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431041 - Situação Técnica Comercial Não OK</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Situação Técnica / Comercial Não OK</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431041</h1>
+        </div>
+      </div>
+      <div class="it_conteudo">
+        <h1>Situação Técnica / Comercial Não OK</h1>
+        <h2>RESUMO:</h2>
+        <p>Este documento visa orientar os analistas sobre como tratar os casos de usuários
+          que efetuam abertura de incidentes informando que o produto não aparece ou não é
+          disponibilizada a opção COMBO.</p>
+        <p><i>Ex: Usuário tenta efetuar solicitação de mudança de pacote, contratação/cancelamento
+          de canais à La Carte, adesão de ponto e outros, porém devido a situação técnica e/ou
+          comercial da tecnologia envolvida constar como não OK, indicando que está bloqueado
+          para o tipo de tecnologia desejada.</i></p>
+        <h2>APLICAÇÃO:</h2>
+        <p><b>Esta IT se aplica aos seguintes grupos:</b></p>
+        <p>Sistemas N1</p>
+        <p>Web N1</p>
+        <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+        <p>Quando o usuário informar que o produto desejado e ou a opção COMBO não aparece para
+          realizar uma mudança de pacote, aquisição de canal à La Carte, etc; Devemos realizar
+          as validações nos sistemas NETSMS ou HPBT, conforme orientação abaixo: </p>
+        <br />
+        <p>A primeira etapa será verificar se o contrato permite esse tipo de alteração.<br />
+          Essa verificação é realizada por meio do sistema HPBT, seguindo os seguintes passos: </p>
+        <ul>
+          <dd><li><b>Cidade:</b> Selecione a cidade que consta no contrato</b></li></dd>
+          <dd><li><b>Grupo:</b> CRM</b></li></dd>
+          <dd><li><b>Macro Processo:</b> CRM/Vender/Venda</b></li></dd>
+          <dd><li><b>Funcionalidade:</b> Venda/Produto</b></li></dd>
+          <dd><li><b>Ação:</b>Consultar Mudança de Pacote Individual (Contrato NETSMS)</li></dd>
+        </ul>
+        <p>Após o preenchimento irá aparecer a tela abaixo, solicitando os seguintes dados: </p>
+        <ul>
+          <dd><li><b>Login:</b> login do usuário que irá realizar a alteração;</li></dd>
+          <dd><li><b>Contrato:</b> contrato que o usuário precisa realizar a alteração;</li></dd>
+          <dd><li><b>Operadora:</b> o código da cidade que pertence o contrato;</li></dd>
+          <dd><li><b>Ponto:</b> O ponto dentro do contrato que o usuário irá realizar a alteração;</li></dd>
+        </ul>
+        <div class="it_img">
+          <img src="./img/img92.png"/>
+        </div>
+        <p>Caso apresente a imagem abaixo, favor verificar no item solução a resposta adequada:</p>
+        <div class="it_img">
+          <img src="./img/img93.png"/>
+        </div>
+        <p>A validação poderá ser realizada também pelo sistema NETSMS por meio da aba produtos, conforme imagens abaixo.</p>
+        <div class="it_img">
+          <img src="./img/img94.png"/>
+        </div>
+        <p>Quando a Tv digital estiver bloqueada, não aparecerá produtos digitais</p>
+        <div class="it_img">
+          <img src="./img/img95.png"/>
+        </div>
+        <ul>
+          <dd><li>Fone bloqueado</li></dd>
+        </ul>
+        <div class="it_img">
+          <img src="./img/img96.png"/>
+        </div>
+        <h2>SOLUÇÃO:</h2>
+        <p>Para os cenários apresentados acima, possuímos as seguintes soluções: </p>
+        <br />
+        <p><b>1. Perfil não ok:</b> Caso o perfil esteja não ok para o produto pretendido, o usuário
+          deverá abrir uma PA no NetOnline, solicitando que o perfil seja relacionado a pelo menos
+          um dos departamentos listados na coluna <b>Departamentos Necessários.</b></p>
+        <br />
+        <p><b>2. Sit Venda Endereço:</b> Caso a venda no endereço esteja não liberado, indica que o
+          endereço não contempla o produto desejado. O usuário deverá entrar em contato com o
+          Departamento de Projetos (engenharia), para verificarem os seguimentos de serviços do
+          endereço e caso necessário, realizarem eventual correção.</p>
+        <br />
+        <p><b>3. Sit Tecnica e/ou Sit Comercial não Ok:</b> Caso a situação técnica e ou comercial
+          estejam não Ok, significa que pode haver alguma irregularidade. O usuário deverá entrar
+          em contato com a equipe de Projetos (engenharia) para verificarem a situação e caso necessário,
+          realizarem eventual correção.</p>
+        <br />
+        <p>Encerrar o chamado na categoria abaixo: </p>
+        <p><b>Grupo: </b>SERVICE DESK N1</p>
+        <p><b>Categoria: </b>SISTEMA.NETSMS.SOLICITACOES.SITUACAO TECNICA/COMERCIAL - NÃO OK</p>
+        <h2>Sugestão de Resposta:</h2>
+        <p>Prezado,<br/><br/>Conforme análise realizada, foi verificado que não será possível gerar a
+          solicitação desejada devido ao fato de haver irregularidades em relação ao bloqueio dos produtos,
+          essa verificação poderá ser realizada através do sistema NETSMS (verificar em INF. PRODUTOS >
+          SITUAÇÃO TÉCNICA/COMERCIAL NÃO OK) e também através do sistema GED (verificar em REDE>
+          TRECHOS RESTRITOS > CONSULTA POR LOGRADOURO). <br />Favor entrar em contato com a equipe
+          ENGENHARIA/PROJETOS solicitando regularização da unidade e retirada da restrição de TRECHOS
+          RESTRITOS, antes de prosseguir com a solicitação desejada.<br /><br/>Atenciosamente,<br/>
+          Service Desk Claro Brasil</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431041</p>
+          <p>Data de criação: 04/09/2015</p>
+          <p>Data de Revisão: 10/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

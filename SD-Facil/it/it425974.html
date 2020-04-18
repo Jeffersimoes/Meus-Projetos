@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT425974 - Como fazer Entrega/Devolução de terminais em baixa de OS</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Como fazer Entrega/Devolução de terminais em baixa de OS</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:425974</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Como fazer Entrega/Devolução de terminais em baixa de OS</h1>
+          <h2>RESUMO:</h2>
+          <p></p>
+          <h2>PROBLEMA:</h2>
+          <p></p>
+          <h2>RESOLUÇÃO:</h2>
+          <p>Para todos os casos onde o usuário solicita entrega / devolução de terminal ao ponto (Associar terminal ao ponto) e não informa erro, fazer a seguinte pergunta ao usuário:</p>
+          <p><b><i>Qual o status do contrato?</i></b></p>
+          <p><b>Desconexão Opção</b> - o usuário deve utilizar a OS da solicitação de desconexão opção e efetuar devolução do terminal (utilizando a orientação padrão).</p>
+          <p><b>Desconexão Inadimplência com Retirada de Equipamento</b> - o usuário deve utilizar a OS da solicitação de desconexão inadimplência e efetuar a devolução do terminal (utilizando a orientação padrão).</p>
+          <p><b>Desconectado Inadimplência (total)</b> - o usuário deve utilizar a OS da solicitação de desconexão inadimplência e efetuar a devolução (utilizando a orientação padrão).</p>
+          <p><b>Reinstalação Assinatura</b> - o usuário deve utilizar a OS da solicitação de reinstalação assinatura e efetuar a entrega do terminal (utilizando a orientação padrão).</p>
+          <p><b>Reinstalação Ponto Adicional</b> - o usuário deve utilizar a OS da solicitação de reinstalação ponto adicional e efetuar a entrega do terminal (utilizando a orientação padrão).</p>
+          <p>Entrar no menu <u>Rede Interna > OSs > Supervisão de Rede Interna > Supervisão de rede interna principal</u> e informar a OS em que o terminal deveria ser entregue/devolvido e clicar no botão “Terminais”.</p>
+          <p class="it_importante"> <b>As operação Entrega e Devolução/Retirada deve ser feita com usuário Supervisor de Rede Interna.</b></p>
+          <p class="it_importante"> OBS 1.: Caso o sistema emita erro ao utilizar o menu Supervisor de Rede interna o mesmo emitira uma mensagem que o usuário não possui perfil.</p>
+            <div class="it_img">
+              <img src="./img/img82.png">
+            </div>
+          <p>Orientar o usuário para solicitar o perfil necessário ou solicitar há algum usuário que possua tal perfil, realize o processo.</p>
+          <p>Para este caso efetuar abertura de um chamado com os dados abaixo;</p></br>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A1</p>
+          <p><b>Categoria:</b> SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(NAO SUPERVISOR)</p>
+          <p><b>Grupo:</b> Service Desk N1</p>
+          <p class="it_importante"> OBS 2 .: AS TELAS ABAIXO SÃO APENAS UM EXEMPLO DO PASSO A PASSO A SER SEGUIDO PARA OS CASOS EM QUE O USUÁRIO DESEJA EFETUAR A DEVOLUÇÃO/RETIRADA DE UM TERMINAL.</p>
+          <p><b>- DEVOLUÇÃO/RETIRADA</b></p>
+          <p>Na aba técnico é possível ver as OSs de retirada que estão abertas.</p>
+            <div class="it_img">
+              <img src="./img/img83.png">
+            </div>
+          <p>- Clicar em Rede Interna – OS’s – Baixa de OS’s.</p>
+            <div class="it_img">
+              <img src="./img/img84.png">
+            </div>
+          <p>- Informar o número da OS (no caso do exemplo uma OS de retirada, desconexão) o contrato e clicar em OK.</P>
+            <div class="it_img">
+              <img src="./img/img85.png">
+            </div>
+          <p>- Será preenchida a tela abaixo automaticamente, escolher a AÇÃO, no caso do exemplo como é uma retirada escolher DEVOLUÇÃO (DECODER DIGITAL, SMART....).</p>
+            <div class="it_img">
+              <img src="./img/img86.png">
+            </div>
+          <p>- Abaixo informar o número do equipamento que vai ser devolvido, escolher o estado (ex: suspeito) que ele deve ser devolvido e clicar no botão SALVAR.</p>
+            <div class="it_img">
+              <img src="./img/img87.png">
+            </div>
+          <p>Para este caso utilizar os dados abaixo para abertura do chamado. O processo é valido tanto para baixa de OS via COP quando Baixa de OS via Supervisão de rede interna.</br>
+             (Sempre questionar o usuário para efetuar abertura de chamado com a categoria correta)</p></br>
+          <p><b>Categoria para baixa de OS via COP</b></p>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Grupo Solucionador:</b> ATLAS</p>
+          <p><b>Categoria:</b> <u>SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.EM BAIXA DE OS</u></p></br>
+          <p><b>Categoria para baixa de OS via Supervisão de Rede Interna</b></p>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Grupo Solucionador:</b> ATLAS</p>
+          <p><b>Categoria:</b> <u>SISTEMAS.NETSMS.TERMINAIS DEVOLUCAO.TELA DE SUPERVISAO DE REDE INTERNA</u></p>
+          <p class="it_importante"> - <b>ENTREGA</b></p>
+          <p class="it_importante"> - Para casos onde usuário vai realizar a entrega através da OS de adesão ou reinstalação,seguir os mesmos passos dos prints acima, alterar apenas a AÇÃO que no caso será uma ENTREGA (DECODER, SMART....), que deve ser realizada através de uma OS de reinstalação ou adesão.</b></p>
+          <p>- Informar o terminal e clicar no botão SALVAR.</p>
+            <div class="it_img">
+              <img src="./img/img88.png">
+            </div>
+          <p>Para este caso utilizar os dados abaixo para abertura do chamado. O processo é valido tanto para baixa de OS via COP quando Baixa de OS via Supervisão de rede interna. (Sempre questionar o usuário para efetuar abertura de chamado com a categoria correta)</p>
+          <p><b>Categoria para baixa de OS via COP</b></p>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Grupo Solucionador:</b> ATLAS</p>
+          <p><b>Categoria:</b> <u>SISTEMAS.NETSMS.TERMINAIS ENTREGA.EM BAIXA DE OS</u></p></br>
+          <p><b>Categoria para baixa de OS via Supervisão de Rede Interna</b></p>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Grupo Solucionador:</b> ATLAS</p>
+          <p><b>Categoria:</b> <u>SISTEMAS.NETSMS.TERMINAIS ENTREGA.TELA DE SUPERVISAO DE REDE INTERNA</u></p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 425974</p>
+          <p>Data de criação: 28/02/2014</p>
+          <p>Data de Revisão: 27/09/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

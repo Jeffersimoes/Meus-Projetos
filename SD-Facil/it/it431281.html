@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431281 – Retorno de Suspensão Temporária, por meio de Ocorrência</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Retorno de Suspensão Temporária, por meio de Ocorrência</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT: 431281</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Retorno de Suspensão Temporária, por meio de Ocorrência</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Este documento visa orientar o analista como proceder em casos que o usuário informa que deseja efetuar
+             o retorno de SUSPENSÃO TEMPORARIA.</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+              <li>MARKETING HP</li>
+            </dd>
+          </ul>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>Para realizar o retorno de suspensão temporária, o usuário deverá a seguinte ocorrência: </p>
+          <ul>
+         <dd>
+          <li><b>CA3R - RS1 - RETORNO AUTOMATICO DE SUS - T.I</b></li>
+         </dd>
+        </ul>
+         <p>Essa ocorrência é gerada no sistema NETSMS.</p><br />
+         <p>Para validação do cenário, o analista do Service Desk N1 deverá acessar a Ferramenta NETSMS.</p>
+         <ul>
+           <dd>
+             <li>Acessar a Ferramenta NETSMS</li>
+             <li>Logar com usuário / senha</li>
+             <li>Inserir o número do contrato / cidade</li>
+             <li>Acessar a Aba Produtos > selecionar o ponto desejado</li>
+           </dd>
+         </ul>
+         <p>Exemplo 1</p>
+         <div class="it_img">
+           <img src="./img/img176.png"/>
+         </div>
+         <p>Em seguida, ainda na aba Produtos, verificar no campo “Produtos por Ponto”
+           se o contrato consta em Suspensão Temporária. </p><br />
+         <p>Exemplo 2</p>
+         <div class="it_img">
+           <img src="./img/img177.png"/>
+         </div>
+         <p>Após a constatação que o contrato consta em Suspensão Temporária, orientar o usuário que
+           para o retorno de suspensão temporária o mesmo deve abrir uma ocorrência para tratativa conforme abaixo:</p>
+         <p><b>Grupo Ocorrência CA3R - RETORNO DO CAA</b></p><br />
+         <p><b>Tipo Ocorrência CA3R - RS1 - RETORNO AUTOMATICO DE SUS - T.I</b></p>
+         <div class="it_img">
+           <img src="./img/img178.png"/>
+         </div>
+         <div class="it_img">
+           <img src="./img/img179.png"/>
+         </div>
+         <p>Apenas deve ser aberto incidente caso já exista uma ocorrência do tipo CA3R - RS1 - RETORNO AUTOMATICO DE SUS - T.I
+            aberta no contrato e informe “ERRO” e solicite a abertura de incidente conforme exemplo abaixo:</p>
+         <div class="it_img">
+           <img src="./img/img180.png"/>
+         </div>
+         <p>Caso a OCORRÊNCIA já tenha sido aberta, e a data de abertura tenha sido maior que 7 dias.
+            Deve-se solicitar o usuário que abra uma nova ocorrência.<br />
+            Para qualquer outro cenário de retorno de suspensão temporária deve orientar o usuário a abrir ocorrência
+            para tratativa conforme acima</p>
+         <p class="it_subt">Observação:</p>
+         <p>Caso a OCORRÊNCIA já tenha sido aberta, e a data de abertura tenha sido maior que 7 dias.
+           Deve-se solicitar o usuário que abra uma nova ocorrência.</p>
+         <p>Para qualquer outro cenário de retorno de suspensão temporária deve orientar o usuário a abrir
+           ocorrência para tratativa conforme acima.</p>
+         <h2>SOLUÇÃO: </h2>
+         <p><b>Transferir para o grupo solucionador:</b> MARKETING – HP</p>
+         <p><b>Classificação:</b> A3</p>
+         <p><b>Categoria:</b>SISTEMAS.NETSMS.SOLICITAÇOES.MUDANÇA DE PACOTE - RETORNO DE SUSPENSÃO TEMPORÁRIA</p><br />
+         <p>O chamado somente deve ser direcionado após o preenchimento de todos os requisitos abaixo: </p>
+         <ul>
+           <dd>
+             <li>Permissões confirmadas no sistema e anexada no chamado</li>
+             <li>Evidência da falha em anexo</li>
+             <li>Categoria correta</li>
+             <li>IT correta</li>
+             <li>Código da Cidade</li>
+             <li>Número do Contrato</li>
+             <li>Número do Ponto</li>
+             <li>Telas de evidencia com o passo a passo até o momento do erro</li>
+             <li>Telefone de Contato</li>
+             <li>Telefone alternativo comercial</li>
+           </dd>
+         </ul>
+         <p>Com as informações completas, direcionar o chamado com a seguinte fraseologia.</p>
+         <h2>SUGESTÃO DE RESPOSTA: </h2>
+         <div class="resposta">
+            <p>Prezado usuário,</p>
+            <p>Após análise do chamado, identificamos que se trata de uma falha_____ no sistema__________.<br />
+            Foi confirmado que o usuário possui todas as permissões necessárias para realizar a ação desejada,
+            conforme evidencia em anexo. Contudo, devido ao erro ______,
+            não foi possível o usuário prosseguir com a solicitação de ____ .
+            Com base nas informações apresentadas e na IT _____, o chamado deverá ser tratado pela equipe ______.<br />
+            Sendo assim, solicitamos por gentileza que prossigam com as tratativas necessárias para resolução do chamado.</p>
+            <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+        </div>
+    <div class="itbox_inferior">
+      <h2>Propriedades do Documento:</h2>
+      <p>ID do doc: 431281</p>
+      <p>Data de criação: 16/10/2015</p>
+      <p>Data de Revisão: 08/11/2018</p>
+    </div>
+</html>

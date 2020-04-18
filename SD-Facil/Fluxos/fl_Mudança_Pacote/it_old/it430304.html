@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT430304 – VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:430304</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</h1>
+          <h2>RESUMO:</h2>
+          <p>Procedimento voltado para instruir o profissional a validar erros se a proposta e CPF informados para liberação de endereço inadimplente são os mesmos utilizados em tentativa de erro da proposta.</p>
+          <p class="it_subt">Aplicação: Service Desk N1</p>
+          <h2>PROBLEMA:</h2>
+          <p>Validar erros se a proposta e CPF informados para validar erros se a proposta e CPF informados para liberação de endereço inadimplente são os mesmos utilizados em tentativa de envio da proposta.</p>
+          <h2>RESOLUÇÃO:</h2>
+          <p>A partir de 22/03/2015, foram inseridas atualizações no sistema que visam impedir fraudes com relação a liberação de endereço inadimplentes, de forma que para o endereço que for solicitado a liberação, deverá ser informado para qual proposta e qual CPF será liberado e caso no momento do envio a proposta e/ou o CPF for divergente do informado para liberação, a proposta será impedida de ser enviada.</p>
+          <img class="it_img" src="./img/img11.png"/>
+          <p class="it_subt">VALIDAÇÃO DO CENARIO:</p>
+          <p>O procedimento a ser adotado nesta situação é consultar a proposta na ferramenta HPBTOOS, no script localizado no seguinte caminho: Grupo: CRM - > Marcro Processo: CRM / Vender / Venda - > Ação: Analisar Proposta Para Envio:</p>
+        <img class="it_img" src="./img/img12.png"/>
+          <p>Após consultar a proposta, verificar os campos CPF/CNPJ atrelado à liberação do endereço e Proposta atrelada à liberação do endereço.</p>
+          <img class="it_img" src="./img/img13.png"/>
+            <p class="it_subt">AÇÕES A SEREM TOMADAS:</p>
+            <p class="it_subt">  CASO 1 – PROPOSTA E/OU CPF/CNPJ DIVERGENTES DO UTILIZADO PARA A LIBERAÇÃO DO ENDEREÇO:</p>
+              <p>Neste caso, onde ou o número da proposta ou o CPF / CNPJ esteja divergente do atrelado a liberação, o chamado deve ser retido no nível 1. A nova regra foi criada justamente para inibir este cenário. Assim sendo, utilizar a seguinte mensagem para fechamento do chamado:</p>
+            <p class="it_subt">Caso a divergência seja do número da proposta:</p>
+              <p>“Caro usuário, segundo Regra de Negócios Net, a proposta a ser enviada necessita ser a mesma informada no momento da liberação de endereço inadimplente e o CPF/CNPJ do prospect também necessita ser o mesmo que o informado para a liberação. Neste caso verifica-se que a proposta XXXXXX <preencher no lugar do X o número da proposta informada no chamado> diverge da proposta YYYYY <preencher no lugar do Y o número da proposta atrelada a liberação de endereço>, que foi informada para a liberação do endereço inadimplente. Portanto, para que não ocorram novos problemas, favor proceder com o envio da proposta para qual foi solicitada a liberação do endereço ou então solicitar a um backoffice nova liberação do endereço inadimplente para a nova proposta. Att.”</p>
+            <p class="it_subt">Caso a divergência seja do CPF/CNPJ:</p>
+              <p>“Caro usuário, segundo Regra de Negócios Net, a proposta a ser enviada necessita ser a mesma informada no momento da liberação de endereço inadimplente e o CPF/CNPJ do prospect também necessita ser o mesmo que o informado para a liberação. Neste caso verifica-se que o CPF/CNPJ XXXXXX <preencher no lugar do X o número do CPF/CNPJ que pertence a proposta informada no chamado> diverge CPF/CNPJ YYYYY <preencher no lugar do Y o número do CPF/CNPJ atrelado a liberação de endereço>, que foi informado no momento da liberação do endereço inadimplente. Portanto, para que não ocorram novos problemas, favor alterar a proposta, inserindo o CPF/CNPJ para o qual foi solicitado a liberação do endereço inadimplente ou solicitar a um backoffice nova liberação para o novo CPF/CNPJ. Att.”</p>
+                <p class="it_subt">CASO 2 – A proposta e o CPF/CNPJ da proposta do chamado é praticamente idêntico, porem o CPF/CNPJ atrelado a liberação do endereço inicia-se com o numeral 0 (zero) e o da proposta não.</p>
+              <p>Este cenário demonstra uma falha na demanda que implementou essa nova regra. Sempre que o CPF/CNPJ do prospect iniciar com o numeral 0 (zero), ao solicitar a liberação do endereço inadimplente o sistema irá gravar o 0 no início, porem ao preencher a proposta, mesmo que o vendedor inclua o 0 no CPF/CNPJ do prospect em questão, o sistema NetSales irá remover automaticamente o 0 à esquerda, por consequência, no momento do envio, ocorrerá erros.</p>
+            <p class="it_subt">AÇÃO A SER TOMADA</p>
+              <p>Neste caso, por tratar-se de um bug, deverá encaminhar um chamado para o N2, na caixa Netsales – Prospect, utilizando a categoria SISTEMAS.NETSALES.PROPOSTA.ERRO DESCONHECIDO IMPEDINDO O CADASTRO DA PROPOSTA, informando na aba propriedades o número da proposta, a cidade da proposta e adicionando como evidencias as telas enviadas pelo usuário, no momento da abertura, com o erro no NetSales e o print do diagnóstico da ferramenta HPBTOOLS.</p>
+              <h2>REFERENCIA:</h2>
+              <p>IT430304 – VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 430304</p>
+          <p>Data de criação: 15/06/2015</p>
+          <p>Data de Revisão: 05/09/2018</p>
+        </div>
+</html>

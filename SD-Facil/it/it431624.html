@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431624 - Verifica Matriz de Migração</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1 id="titulo_1l">Matriz de Migração</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431624</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h1>Verifica Matriz de Migração</h1>
+          <h2>OBJETIVO :</h2>
+          <p>O documento tem como objetivo orientar o Analista do Service Desk N1 em analisar
+             a Matriz de Migração antes de realizar uma Mudança de Pacote que irá alterar o perfil do contrato.</p>
+          <h2>APLICAÇÃO: </h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>Service Desk N1</li>
+              <li>NETSMS – Atender N2</li>
+              <li>NETSMS – CORRECAO DE PRODUTOS</li>
+            </dd>
+          </ul>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p class="it_subt">Cenário 1: </p>
+          <p>Analisar a Matriz de Migração antes de realizar uma Mudança de Pacote que irá alterar o perfil do contrato.</p>
+          <div class="it_img">
+            <img src="./img/img40.png">
+          </div>
+          <div class="it_img">
+            <img src="./img/img41.png">
+          </div>
+          <br>
+          <p>A validação do cenário será feita através da Ferramenta HP Business Tool.</p>
+          <ul>
+            <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li></br>
+            <li>Caso apareça a seguinte mensagem: ‘There is a problem with this website's security certificate.’</br>
+              Clique em ‘Continue to this website (not recommended)’ para prosseguir
+            </li></br>
+            <li>Logar com mesmo usuário utilizado para acessar o NETSMS</li>
+              <dl>
+                <dt>
+                  Na opção de CONSULTAR AÇÃO, preencher a respectiva cidade ao qual
+                    o usuário esta acessando no sistema e os demais filtros da seguinte forma:
+                </dt>
+                <br>
+                  <dd>Grupo : CRM</dd>
+                  <dd>Macro Processo : CRM / Atender</dd>
+                  <dd>Funcionalidade : Contrato / Solicitação</dd>
+                  <dd>Ação : VERIFICAR MATRIZ DE MIGRAÇÃO</dd></br>
+                <dt>
+                  - Preencher os campos conforme descrito:
+                </dt>
+                <br>
+                  <dd>Número do contrato:  Informar o número do contrato do cliente . Ex: 349533315</dd>
+                  <dd>Código da cidade: Informar o código da cidade do contrato do cliente. Ex: 003</dd>
+                  <dd>Perfil desejado: Perfil que o cliente deseja possuir. EX: PTV + VIRTUA + FONE</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="it_img">
+            <img src="./img/img43.png">
+          </div>
+          <div class="it_img">
+            <img src="./img/img44.png">
+          </div>
+          <p>Neste caso, todos os pontos possuem destino na Matriz de Migração.</p>
+          <br>
+          <p class="it_subt">Cenário 2:</p>
+          <p>Neste caso, o único ponto que não possui “Destino na Matriz de Migração é o ponto 2. </p>
+          <div class="it_img">
+            <img src="./img/img45.png">
+          </div>
+          <br>
+          <p class="it_subt">Cenário 3:</p>
+          <p>Dois ou mais pontos não possuem destino na Matriz de Migração.</p>
+          <div class="it_img">
+            <img src="./img/img189.png">
+          </div>
+          <br>
+          <h2>SOLUÇÃO: </h2>
+          <br>
+          <p class="it_subt">Cenário 1:</p>
+          <p>Uma vez que todos os pontos possuem “Destino na Matriz de Migração”,
+            a Mudança de Pacote poderá ser gerada através de qualquer ponto do contrato que o erro
+            “NÃO EXISTE PARAMETRIZAÇÃO PARA O PRODUTO xxxx” não ocorrerá.
+            Neste caso, o incidente deverá ser retido em N1 usando a categoria a seguir e Sugestão de Resposta.</p>
+          <p><b>Tipo:</b> Incidente</p>
+          <p><b>Classificação:</b> A1</p>
+          <p><b>Grupo Solucionador:</b> Service Desk N1</p>
+          <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITAÇOES.ERRO MATRIZ PERFIL DE CLIENTES</p><br />
+          <br>
+          <p class="it_subt">Cenário 2:</p>
+          <p>Após identificar que, apenas um único ponto do contrato não possui Destino na Matriz de Migração,
+            Para que não ocorra o erro “NÃO EXISTE PARAMETRIZAÇÃO PARA O PRODUTO xxx",
+            deve ser realizado a Mudança de Pacote através do ponto indicado.<br />
+            Se selecionando o ponto indicado apresentar erro, o analista do Service Desk N1 deverá abrir
+             um incidente com a categoria abaixo e sugestão de resposta.</p><br />
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITACOES - MUDANCA DE PACOTE</p>
+          <p><b>Grupo Solucionador:</b> NETSMS – ATENDER</p>
+          <br>
+          <p class="it_subt">Cenário 3:</p>
+          <p>Caso, 2 ou mais pontos não possuírem destino na Matriz de Migração, o analista de Service Desk N1 deverá abrir um incidente usando a categoria abaixo e fraseologia de direcionamento sugerida.</p>
+          <p><b>Classificação:</b> A3</p>
+          <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITACOES - MUDANCA DE PACOTE</p>
+          <p><b>Grupo Solucionador:</b> NETSMS – CORRECAO DE PRODUTOS</p>
+          <br>
+          <h2>SUGESTÃO DE RESPOSTA: </h2>
+          <p class="it_subt">Cenário 1:</p>
+          <div class="resposta">
+            <p>Prezado usuário,</p>
+            <p>Após análise identificamos que todos os pontos do contrato
+              “Possuem Destino na Matriz de Migração”, neste caso não será possível prosseguir
+              com a mudança de pacote.</p>
+            <p>Atenciosamente.<br>
+              Service Desk Claro Brasil.</p>
+          </div>
+          <br>
+          <p class="it_subt">Cenário 2: </p>
+          <div class="resposta">
+            <p>Prezado usuário, </p>
+
+            <p>Após análise do chamado, identificamos que se trata de uma Mudança de Pacote no ponto xxx.<br />
+            Foi confirmado que o usuário possui todas as permissões necessárias para realizar a ação desejada,
+            conforme evidencia em anexo. Contudo, devido ao erro não foi possível o usuário prosseguir com a solicitação
+            de Mudança de Pacote.<br />
+            Com base nas informações apresentadas e na IT 431624, o chamado deverá ser tratado pela equipe NETSMS - Atender <br />
+            Sendo assim, solicitamos por gentileza que prossigam com as tratativas necessárias para resolução do chamado.</p>
+
+            <p>Atenciosamente.<br>
+            Service Desk Claro Brasil.</p>
+          </div>
+          <br>
+          <p class="it_subt">Cenário 3:</p>
+          <div class="resposta">
+            <p>Prezado usuário, </p>
+            <p>Após análise do chamado, identificamos que se trata de uma Mudança de Pacote no ponto xxx.<br />
+            Foi confirmado que o usuário possui todas as permissões necessárias para realizar a ação desejada,
+            conforme evidencia em anexo. Contudo, devido ao erro não foi possível o usuário prosseguir com a solicitação
+            de Mudança de Pacote.<br />
+            Com base nas informações apresentadas e na IT 431624, o chamado deverá ser tratado pela equipe NETSMS - Atender <br />
+            Sendo assim, solicitamos por gentileza que prossigam com as tratativas necessárias para resolução do chamado.</p>
+
+            <p>Atenciosamente.<br>
+            Service Desk Claro Brasil.</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431624</p>
+          <p>Data de criação: 11/01/2016</p>
+          <p>Data de Revisão: 28/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

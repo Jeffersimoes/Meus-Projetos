@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jose Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT427303 - Este contrato já possui uma instalação de ponto / mudança de pacote</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Este contrato já possui uma instalação de ponto / mudança de pacote</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:427303</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Este contrato já possui uma instalação de ponto / mudança de pacote</h1>
+              <br>
+              <h2>OBJETIVO:</h2>
+                  <p>O documento tem como objetivo orientar o analista do Service Desk N1 como atuar nos chamados referentes ao erro “Este contrato já<br>
+                     possui uma instalação de ponto / mudança de pacote”</p>
+              <br>
+              <h2>APLICAÇÃO:</h2>
+                  <p>Essa IT possuí aplicabilidade nos seguintes grupo:</p>
+                      <dd>
+                        <ul>
+                          <li>Service Desk N1</li>
+                        </ul>
+                      </dd>
+              <br>
+              <h2>REFERÊNCIAS: </h2>
+                  <p>N/A</p>
+              <br>
+              <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+                <p class="it_subt">Cenário 1 – Existem solicitações abertas na aba produto</p>
+                  <p>Usuário reporta mensagem “Este contrato já possui uma instalação de ponto / mudança de pacote”. Esta falha pode ocorrer quando<br>
+                     existem solicitações pendentes de processamento (abertas) que impedem a abertura de novas solicitações.</p>
+                    <dd>
+                      <div class="it_img">
+                          <img src="./img/img164.png"/></br>
+                      </div>
+                    </dd>
+                  <p>Para validar esse falha, será necessário verificar no sistema NETSMS com os passos abaixo:</p>
+                    <dd>
+                      <ul>
+                        <li>Acessar o sistema NETSMS</li>
+                        <li>Digite o contrato e a cidade fornecido pelo usuário</li>
+                        <li>Selecione a aba Produtos</li>
+                        <li>Checar a aba produtos e visualizar o histórico de solicitações do contrato se possui solicitações em aberto</li>
+                      </ul>
+                    </dd>
+                  <p>Caso existam solicitações de mudança de pacote e ou adesão de ponto adicional pendentes (aberto), deverá verificar se a solicitação<br>
+                     que o usuário deseja realizar é para perfil de contrato diferente da solicitação pendente.</p>
+                  <p>Sendo diferente o sistema não permitirá essa alteração até que todas as solicitações pendentes sejam regularizadas.</p>
+                  <p>Nesse caso, o chamado deverá ser encerrado em N1, conforme instrução no item Solução.</p>
+                <br>
+                <p class="it_subt">Cenário 2: falta de convivência entre os produtos x perfil</p>
+                  <p>Usuário reporta mensagem “Este contrato já possui uma instalação de ponto / mudança de pacote”.</p>
+                  <p>Esta falha pode ocorrer quando não existe convivência entre os produtos x perfil do contrato</p>
+                    <dd>
+                      <div class="it_img">
+                          <img src="./img/img165.png"/></br>
+                      </div>
+                    </dd>
+                  <p>O analista do Service Desk N1 deverá validar se o produto desejado convive com os produtos atuais do contrato. A validação será<br>
+                     realizada através da Ferramenta HP Business Tool, usando a funcionalidade “Consultar convivência para adesão/mudança de pacote”,<br>
+                     conforme instrução abaixo:</p>
+                    <dd>
+                      <ul>
+                        <li>Acessar o HP Business Tool;</li>
+                        <li>Clique em consultar ação;</li>
+                        <li>Cidade: Preencha a cidade ao qual o usuário está deseja realizar a ação;</li>
+                        <li><b>Grupo:</b> CRM</li>
+                        <li><b>Macro Processo:</b> CRM / Vender / Venda</li>
+                        <li><b>Funcionalidade:</b> Venda de Produto</li>
+                        <li><b>Ação:</b> Consultar Convivência para Adesão / Mudança de Pacote</li>
+                      </ul>
+                    </dd>
+                  <p><b>Dados da Consulta:</b></p>
+                  <dd>
+                    <ul>
+                      <li>Código da Operadora:</li>
+                      <li>Número do Contrato</li>
+                      <li>ID do Produto:</li>
+                      <li>Ponto do contrato</li>
+                    </ul>
+                  </dd>
+              <br>
+              <h2>SOLUÇÃO:</h2>
+                <p class="it_subt">Cenário 1:</p>
+                  <p>Tendo em vista este cenário, o analista do Service Desk N1 deverá encerrar o incidente com a categoria abaixo e com a Sugestão de<br>
+                     Resposta descrita no Item 7.</p>
+                  <p><b>Classificação:</b>  Incidente A1</p>
+                  <p><b>Grupo Solucionador:</b>  Service Desk N1</p>
+                  <p><b>Categoria</b>: SISTEMAS.NETSMS.SOLICITAÇÕES.ERRO DURANTE ABERTURA DE SOLICITAÇÃO – FALHA DE PROCESSO</p>
+              <br>
+                <p class="it_subt">Cenário 2:</p>
+                  <p>Mediante tal validação, o analista do Service Desk N1 deverá encerrar o incidente com a categoria abaixo e com a Sugestão de<br>
+                     Resposta descrita no Item 7.</p>
+                  <p><b>Classificação:</b>  Incidente A1</p>
+                  <p><b>Grupo Solucionador:</b>  Service Desk N1</p>
+                  <p><b>Categoria</b>: SISTEMAS.NETSMS.SOLICITAÇÕES.ERRO DURANTE ABERTURA DE SOLICITAÇÃO – FALHA DE PROCESSO</p>
+              <br>
+              <h2>SUGESTÃO DE RESPOSTA:</h2>
+                <p class="it_subt">Cenário 1:</p>
+                  <div class="resposta">
+                      <p>Prezado usuário(a),</p>
+                      <p>Para que possamos prosseguir com sua solicitação, será preciso primeiramente regularizar todas as solicitações pendentes no contrato<br>
+                         antes de proceder com a abertura de novas solicitações.</p>
+                      <p>Atenciosamente,<br>
+                      Service Desk Claro Brasil</p>
+                  </div>
+              <br>
+              <p class="it_subt">Cenário 2:</p>
+                <div class="resposta">
+                    <p>Prezado usuário(a),</p>
+                    <p>Após analise, identificamos que o pacote selecionado não convive com um dos pacotes já instalado no contrato.</p>
+                    <p>Por gentileza realizar a ação desejada ADESÃO/MUDANÇA DE PACOTE selecionando outro produto que convive com os produtos<br>
+                       atualmente instalado no contrato.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+
+          </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 427303</p>
+          <p>Data de criação: 16/07/2014</p>
+          <p>Data de Revisão: 07/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

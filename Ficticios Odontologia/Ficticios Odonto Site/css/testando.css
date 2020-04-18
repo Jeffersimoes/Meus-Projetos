@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+
+body{
+    font-family: "Calibri";
+     background-color: #C8C7B5;
+     background-size: cover;
+ }
+
+.borda-imagem img{
+    border-style: solid;
+    border-width: 3px ;
+    border-color: #B6B5A7;
+    box-shadow: 1px 1px 6px black;
+}    
+
+.legenda-imagem figcaption{
+    opacity: 0;
+    color: black;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 235px;
+    padding: 15px;
+    transition: opacity 1s;
+}
+
+/* quando mouse passar por cima */
+.legenda-imagem:hover figcaption{
+    opacity: 1;
+    background: rgb(255, 255, 255);
+}
+
+.borda-imagem:hover .paragrafo-personagem{
+    opacity: 0;
+}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IT431199 - Validar permissão para abertura de solicitação</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Validar permissão para abertura de solicitação - Mudança de Pacote</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431199</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>NETSMS - Consultar permissão para gerar solicitação (mudança de pacote)</h1>
+          <h2>RESUMO:</h2>
+          <p>Script para verificar se usuário possui permissão para gerar/abrir a solicitação
+            desejada, para este script abertura da solicitação de mudança de pacote.</p>
+          <h2>PROBLEMA:</h2>
+          <p>Validação de permissão de abertura solicitação mudança de pacote.</p>
+          <p class="it_subt">Identificação do cenário:</p>
+          <p>Verificar se produto desejado aparece na lista na abertura da solicitação de Mudança de Pacote</p>
+          <p class="it_subt">Exemplo:</p>
+          <div class="it_img">
+            <img src="./img/img1.png" alt="Produto não aparece na lista"/>
+          </div>
+          <h2>RESOLUÇÃO:</h2>
+          <p class="it_subt">1.	Consultar permissão para abertura da solicitação de MUDANCA DE PACOTE.</p>
+          <ul>
+            <li>- Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li></br>
+            <li>Caso apareça a seguinte mensagem: ‘There is a problem with this website's security certificate.’</br>
+              Clique em ‘Continue to this website (not recommended)’ para prosseguir
+            </li></br>
+            <li>- Logar com mesmo usuário utilizado para acessar o NETSMS</li>
+            <li></br>
+              <dl>
+                <dt>
+                  - Na opção de CONSULTAR AÇÃO, preencher a respectiva cidade ao qual o usuário esta acessando no sistema e os demais filtros da seguinte forma:
+                </dt>
+                  <dd>Grupo : CRM</dd>
+                  <dd>Macro Processo : CRM / Acesso / Perfil</dd>
+                  <dd>Funcionalidade : Perfil / Usuario</dd>
+                  <dd>Ação : CONSULTAR PERMISSÃO PARA GERAR SOLIC</dd></br>
+                <dt>
+                  - Preencher os campos conforme descrito:
+                </dt>
+                  <dd>Cod operadora: preencher com o códido da operadora desejada. Ex: 003</dd>
+                  <dd>Login: usuário utilizado durante a tentativa de geração da solic. Ex: T665777</dd>
+                  <dd>Id solicitação: o id da solicitação desejada obtido através da funcionalidade CRM/ATENDER – CONTRATO/SOLICITACAO – CONSULTAR ID SOLICITAÇÃO</dd>
+                  <dd>Produto desejado: o id do produto relacionado a solicitação desejada.</dd>
+                  <dd>Produto atual: o produto atualmente instalado no ponto.<br/>
+                    Importante: Caso o usuário deseje realizar uma adesão de ponto ou contratação de a la carte então este campo deverá ser preenchido com o número 0.</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="it_img">
+            <img src="./img/img2.png" alt="Preenchimento dos campos">
+          </div>
+          <div class="it_img">
+            <figcaption>Neste caso o usuário possui permissão para gerar a solicitação desejada</figcaption>
+            <img src="./img/img3.png" alt="Página de validação - 1">
+          </div>
+          <div class="it_img">
+            <figcaption>Neste caso o usuário <b>NÃO POSSUI</b> permissão para gerar a solicitação desejada</figcaption>
+            <img src="./img/img4.png" alt="Validação de permissão - 2">
+          </div>
+          </br>
+          <p class="it_subt">Caso o usuário não possua permissão, encerrar o incidente no Service DesK N1</p>
+          <p>OBS: Este procedimento é apenas para validação de permissão.</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431199</p>
+          <p>Data de criação: 06/10/2015</p>
+          <p>Data de Revisão: 31/07/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

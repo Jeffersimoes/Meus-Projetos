@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432555 - Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432555</h1>
+        </div>
+      </div>
+        <div class="it_conteudo"></br>
+          <h1>Mudança de pacote para Acesso Virtua - Com Mais Pontos de TV Contrato</h1>
+            <br>
+            <h2>OBJETIVO:</h2>
+              <p>Orientar o analista em casos onde o usuário solicita Mudança de Pacote para Acesso Vírtua.</p>
+            <br>
+            <h2>APLICAÇÃO:</h2>
+              <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+                <ul>
+                  <dd>
+                    <li>SERVICE DESK N1</li>
+                  </dd>
+                </ul>
+            <br>
+            <h2>REFERÊNCIAS:</h2>
+              <ul>
+                <dd>
+                  <li>N/A</li>
+                </dd>
+              </ul>
+            <br>
+            <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO:</h2>
+              <p>Segundo regra de negócios NET, todo contrato deve possuir, ao menos 1 ponto de TV no contrato. Porém alguns assinantes não<br>
+                 possuem interesse em produtos de programação de TV, desejam contratar somente internet ou fone.</p>
+              <p>Atendendo a essa demanda foi criado o produto ACESSO VIRTUA, trata-se de um produto de TV, porém não possui equipamentos e o<br>
+                 cliente não é cobrado pelo serviço de TV.</p>
+              <p>Satisfazendo a necessidade sistêmica de possuir ao menos um ponto de TV e atende aos assinantes quando os mesmos não desejam<br>
+                 mais produtos de TV.</p>
+              <p>Para a utilização do produto ACESSO VIRTUA foi criada uma regra que deve ser atendida, que é a seguinte: <b>o contrato somente pode<br>
+                 possuir o produto de acesso virtua quando este for o único ponto ptv do contrato.</b></p>
+              <p>Conforme regra acima descrita, temos alguns problema de falha de processo dos usuários, em virtude dessa regra.</p>
+            <br>
+              <p>Segue abaixo um exemplo:</p>
+                <div class="it_img">
+                  <img src="./img/img10.png" alt="Exemplo"/>
+                </div>
+            <br>
+              <p>No exemplo acima, se o usuário estivesse atento a regra sistêmica, o erro não teria ocorrido, pois conforme a regra sistêmica preza, o<br>
+                 ACESSO VIRTUA somente pode existir em contratos com um único ponto PTV. Logo, o correto no caso acima seria primeiramente<br>
+                 remover o PA de TV e depois, com o contrato constando apenas 1 ponto de TV realizar a Mudança de Pacote para ACESSO VIRTUA.</p>
+              <p>Ao receber um chamado onde o usuário alega problema com mudança de pacote para ACESSO VIRTUA, o analista do Service Desk<br>
+                 deve averiguar os seguintes pontos:</p>
+                <dd>
+                  <p> 1.	Acessar o contrato informado pelo usuário, no NETSMS, clicar na aba PRODUTOS e verificar quais os pontos instalados no<br>
+                     contrato, em busca de pontos adicionais de TV instalados.</p>
+                  <p> 2.	Caso o contrato possua mais de um ponto de TV instalado, verificar se já existe solicitação de RETIRADA DE PONTO aberta<br>
+                     para os Pontos Adicionais.</p>
+                </dd>
+              <p>Caso existam solicitações de RETIRADA DE PONTO abertas para os pontos Adicionais, orientar o usuário (caso ainda esteja abrindo o<br>
+                 chamado) ou Reter em N1 com a seguinte orientação:</p>
+            <br>
+            <h2>SOLUÇÃO:</h2>
+              <p>Esse tipo de chamado deverá ser encerrado em Service Desk N1, conforme instrução abaixo:</p>
+                <ul>
+                  <dd>
+                    <li>Se o usuário informar a falha no sistema NETSALES:</li>
+                  </dd>
+                </ul>
+              <p><b>Categoria:</b> SISTEMAS.NETSALES.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITACOES (MUDANCA DE PACOTE)</p>
+              <p><b>Grupo:</b> Service Desk N1</p>
+            <br>
+                <ul>
+                  <dd>
+                    <li>Se o usuário informar a falha no sistema NETSMS:</li>
+                  </dd>
+                </ul>
+              <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE PACOTE</p>
+              <p><b>Grupo:</b> Service Desk N1</p>
+            <br>
+            <h2>SUGESTÃO DE RESPOSTA:</h2>
+              <p><b>Retirada de Ponto em Aberto</b></p>
+              <p><i>Prezados(as),</i></p>
+              <p><i>Segundo Regra de Negócios NET, o produto ACESSO VIRTUA somente poderá ser incluído no contrato quando este for o único ponto<br>
+                    PTV do contrato.</i></p>
+              <p><i>Nesse contrato existem pontos adicionais de TV que já possuem solicitações de RETIDA DE PONTO abertas, portanto o usuário deverá<br>
+                    primeiramente BAIXAR como EXECUTADA as retiradas de ponto e depois, quando sobrar apenas 1 ponto de TV, prosseguir com a<br>
+                    abertura da mudança de pacote para o produto desejado ACESSO VIRTUA.</i></p>
+              <p><i>Atenciosamente,</br>Service Desk Claro Brasil</i></p>
+            <br>
+              <p><b>Sem Retirada de Ponto</b></p>
+              <p><i>Prezados(as),</i></p>
+              <p><i>Segundo Regra de Negócios NET, o produto ACESSO VIRTUA somente poderá ser incluído no contrato quando este for o único ponto<br>
+                    PTV do contrato.</i></p>
+              <p><i>Nesse contrato existem pontos adicionais de TV, portanto, para atender a regra de negócios vigente, favor proceder com abertura de<br>
+                    solicitação de RETIRADA DE PONTO para os pontos adicionais de TV. Somente depois de executadas as retiradas de ponto e o<br>
+                    contrato possuir apenas um único ponto de TV, prosseguir com a mudança de pacote desejada para o produto desejado ACESSO<br>
+                    VIRTUA.</i></p>
+              <p><i>Atenciosamente,</br>Service Desk Claro Brasil</i></p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432555</p>
+          <p>Data de criação: 11/10/2016</p>
+          <p>Data de Revisão: 26/10/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

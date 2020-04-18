@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT425013 - Processamento de OC’s com Movimentação de Terminais</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Processamento de OC’s com Movimentação de Terminais</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:425013</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Processamento de OC’s com Movimentação de Terminais</h1>
+          <h2>OBJETIVO:</h2>
+          <p>O objetivo desse procedimento é orientar o analista como tratar
+            chamado relacionados a movimentação de terminal.</p>
+          <br>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+              <li>ATLAS</li>
+            </dd>
+          </ul>
+          <br>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>Esse procedimento visa orientar o analista, há abrir chamado referente
+            a processamento de OC's onde ocorre movimentação de terminal.<br><br>
+            Quando o usuário solicitar processamento da OC’s, o analista deverá
+            realizar as seguintes validações: </p>
+          <br>
+          <p class="it_subt">Etapa 1 – Identificar se há solicitações no contrato:</p>
+          <p>Quando o chamado aberto tratar-se de uma movimentação de terminal, o
+            analista deverá acessar o contrato no NETSMS, em seguida acessar aba
+            técnico para visualizar as Solicitações no contrato.</p>
+          <div class="it_img">
+            <img src="./img/img203.png"/>
+          </div>
+          <p>Na aba técnico o analista deverá identificar se a Solicitação
+            que o usuário deseja processar, possui uma OS.</p>
+          <div class="it_img">
+            <img src="./img/img204.png"/>
+          </div>
+          <br>
+          <p class="it_subt">Etapa 2 – Consultar Suporte OSOC</p>
+          <p>Próximo passo será verificar no Suporte OS/OC, se o contrato possui
+             alguma OS/OC presa que não mostrou no Netsms.</p>
+          <p>A imagem abaixo mostra a tela geral de diagnóstico suporte OS/OC com
+            pendências no contrato.</p>
+          <div class="it_img">
+            <img src="./img/img205.png"/>
+          </div>
+          <p>O analista deverá verificar se a Solicitação esta com a OS’s executada (baixada).
+            E também deverá ser verificado se a OC possui alguma pendência no processo de baixa como:
+            Agendamento, processo ou pendente.</p>
+          <br>
+          <p class="it_subt">Cenário 1 – Erro ao tentar executar/cancelar OS sem movimentação de terminal.</p>
+          <p>O analista deverá questionar o usuário se foi realizada a tentativa de executar/cancelar a OS.</p>
+          <p>Se usuário não realizou o procedimento, o chamado pode ser encerrado orientando a fazer o processo.</p>
+          <p>Se usuário realizou o procedimento e apresentou erro, o chamado deverá ser encerrado seguindo
+            <b>sugestão de resposta.</b></p>
+          <br>
+          <p class="it_subt">Cenário 2 – Erro ao tentar executar/cancelar OS com movimentação de terminal.</p>
+          <p>O analista deverá questionar o usuário se foi realizada a tentativa de executar/cancelar a OS.</p>
+          <p>Se usuário não realizou o procedimento, o chamado pode ser encerrado orientando a fazer o processo.</p>
+          <p>Se usuário realizou o procedimento e apresentou erro, o chamado deverá ser transferido para equipe <b>Atlas</b>,
+            conforme descrição relatada no chamado, e utilizar a categoria que mais se adeque ao problema.</p>
+          <br>
+          <h2>SOLUÇÃO: </h2>
+          <p>O analista identificou que problema já foi solucionado e o chamado está aberto no CA.
+            Esse chamado deverá ser encerrado em N1, utilizando as categorias.</p>
+          <p>Classificação: Incidente – A1</p>
+          <p class="it_subt">Categoria: </p>
+          <p>SISTEMAS.NETSMS.OC.PAYTV</p>
+          <p>SISTEMAS.NETSMS.OC.VIRTUA</p>
+          <p><b>Grupo:</b> SERVICE DESK N1</p>
+          <br>
+          <p>Caso apresente exista pendências/divergências na Solicitação/OS/OC o chamado
+            deverá ser transferido seguindo a categoria abaixo:</p>
+          <p class="it_subt">Classificação: Incidente – A3</p>
+          <p class="it_subt">Categoria: </p>
+          <p>SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(COP)</p>
+          <p>SISTEMAS.NETSMS.TERMINAIS ENTREGA/DEVOLUCAO.EM BAIXA DE OS(SUPERVISOR)</p>
+          <p class="it_subt">Grupo: ATLAS</p>
+          <br>
+          <p class="it_subt">Classificação: Incidente - A3</p>
+          <p class="it_subt">Categoria: </p>
+          <p>SISTEMAS.NETSMS.TERMINAL.ERRO NA BAIXA OC CABLE MODEM</p>
+          <p>SISTEMAS.NETSMS.TERMINAL.ERRO NA BAIXA OC EMTA</p>
+          <p>SISTEMAS.NETSMS.TERMINAL.ERRO NA BAIXA OC SMART CARD</p>
+          <p>SISTEMAS.NETSMS.TERMINAL.ERRO NA BAIXA OC DEVOLUÇÃO DECODER</p>
+          <p class="it_subt">Grupo: ATLAS</p>
+          <br>
+          <h2>SUGESTÃO DE RESPOSTA: </h2>
+          <p class="it_subt">Solicitação em aberto e OS baixada – Grupo: Atlas.</p>
+          <div class="resposta">
+             <p>Prezado,</p>
+             <p>Após análise do contrato, foi identificado que a solicitação esta com status em aberto e a OS esta executada<br />
+             Conforme nos orienta a IT 425013, estamos transferindo para tratativa.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+          <br>
+          <p class="it_subt">Solicitação em aberto e não possui OS ou OC – Grupo: Atlas.</p>
+          <div class="resposta">
+             <p>Prezado,</p>
+             <p>Após análise do contrato, foi identificado que a solicitação esta com status
+               em aberto e não possui OS ou OC<br />
+             Conforme nos orienta a IT 425013, estamos transferindo para tratativa.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+          <br>
+          <p class="it_subt">Erro ao tentar executar/cancelar OS.</p>
+          <p class="it_subt">Nesse caso terá duas situações.</p>
+          <br>
+          <p class="it_subt">1.	SEM movimentação de terminal – Encerrar em N1.</p>
+          <div class="resposta">
+             <p>Prezado,</p>
+             <p>Após análise, identificamos que no sistema não possui movimentação de
+                terminal, nesse caso, o chamado deverá ser aberto pela ferramenta Suporte OSOC.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+          <br>
+          <p class="it_subt">2.	COM movimentação de terminal – Grupo: Atlas.</p>
+          <div class="resposta">
+             <p>Prezado,</p>
+             <p>Após análise, identificamos que não foi possível executar/cancelar OS e no
+               sistema e consta uma movimentação de terminal.<br />
+             Conforme nos orienta a IT 425013, estamos transferindo para tratativa.</p>
+             <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 425013</p>
+          <p>Data de criação: 22/11/2013</p>
+          <p>Data de Revisão: 29/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

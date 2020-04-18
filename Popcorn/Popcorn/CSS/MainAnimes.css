@@ -1,0 +1,46 @@
+#main {
+    width: calc(100vw - 37px);
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #c5c9e6;
+    padding: 20px;
+}
+
+#mainlinha {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 30px;
+}
+
+#main h2 {
+    margin-bottom: 10px;
+}
+
+#main p {
+    font-size: 12px;
+}
+
+.main-videos {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainlinha video {
+    width: 100%;
+}
+
+#main p:last-child {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}

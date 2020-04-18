@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT432336 - Exceção / Bloqueio para Mudança de Pacote</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>Exceção / Bloqueio para Mudança de Pacote</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:432336</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <br>
+          <h1>Exceção / Bloqueio para Mudança de Pacote</h1>
+            <h2>OBJETIVO:</h2>
+              <p>Esse procedimento tem o objetivo de verificar se o Login possui acesso para abertura de solicitação de mudança de pacote.</p>
+            <br>
+            <h2>APLICAÇÃO:</h2>
+              <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+                <dd>
+                  <ul>
+                    <li>Service Desk N1</li>
+                  </ul>
+                </dd>
+            <br>
+            <h2>REFERÊNCIAS: </h2>
+              <p>N/A</p>
+            <br>
+            <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+              <p>O usuário entra em contato reportando problema, produto indisponível ou não
+                consegue localizar produto, nesse caso o analista deverá verificar se o usuário
+                possui acesso para realizar a mudança de pacote.</p>
+              <p>Primeiro passo é acessar o HPBT seguindo o escopo abaixo.</p>
+              <br>
+                <ul>
+                  <dl>
+                    <dd>
+                        <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li>
+                        <li><b>Grupo :</b>  CRM</li>
+                        <li><b>Macroprocesso :</b> CRM / ACESSO / PERFIL</li>
+                        <li><b>Funcionalidade :</b> PERFIL / USUÁRIO</li>
+                        <li><b>Ação :</b> CONSULTAR EXCESSÃO PARA GERAR SOLICITAÇÃO</li>
+                    </dd>
+                  </dl>
+                </ul>
+                <br>
+              <p>Se o usuário não possuir acesso o chamado deverá ser encerrado em N1 seguindo a
+                <b>sugestão de resposta 7</b>.</p>
+          <div class="it_img">
+            <img src="./img/img39.png">
+          </div>
+              <p>Caso o usuário tenha acesso, o analista deverá verificar o erro e consultar
+                na base outro procedimento pois esse procedimento tem o intuito somente para
+                validação e não auxilia em caso de erros.</p>
+            <br>
+            <h2>SOLUÇÃO:</h2>
+              <p>O chamado deverá ser mantido em N1 independente do resultado da consulta a
+                permissão do usuário.</p>
+              <p>Caso usuário tenha permissão esse procedimento não se aplica,
+                pois, o objetivo desse procedimento é somente validar acessos, não
+                 orienta a fazer direcionamento ou transferência. </p>
+              <br>
+            <h2>SUGESTÃO DE RESPOSTA:</h2>
+              <p class="it_subt">Caso 1 – Usuário não possui permissão</p>
+                <div class="resposta">
+                    <p>Prezado usuário(a),</p>
+                    <p>Verificado no sistema e o Login informando não possui acesso para
+                      realizar esse procedimento.<br>
+                      Favor caso seja necessário realizar esse procedimento é necessário
+                      entrar em contato com sua supervisão direta solicitando acesso.</p>
+                    <p>Atenciosamente,<br>
+                    Service Desk Claro Brasil</p>
+                </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 432336</p>
+          <p>Data de criação: 26/07/2016</p>
+          <p>Data de Revisão: 29/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

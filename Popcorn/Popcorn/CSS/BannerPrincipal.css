@@ -1,0 +1,31 @@
+
+#banner {
+    width: calc(100vw - 37px);
+    display: flex;
+    justify-content: center;
+    background: #000;
+    position: relative;
+}
+
+#banner img {
+    width: calc(100vw - 37px);
+    height: 506px;
+}
+
+.mySlides {
+    animation: fading 20s infinite;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}

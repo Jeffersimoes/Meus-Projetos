@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT430304 – VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</h1>
+
+        </div>
+        <div class="it_numero">
+          <h1>IT:430304</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>VERIFICAÇÃO DE PROPOSTA A PARTIR DO CPF</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Instruir o profissional a validar erros se a proposta e CPF informados para liberação de endereço inadimplente são os mesmos utilizados em tentativa de erro da proposta.</p>
+          <h2>PROBLEMA:</h2>
+          <p>Validar erros se a proposta e CPF informados para validar erros se a proposta e CPF informados para liberação de endereço inadimplente são os mesmos utilizados em tentativa de envio da proposta.</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <p>SERVICE DESK N1</p>
+          <p>NetSales Prospect</p>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+          <p>Quando ocorrer a falha abaixo, devemos realizar algumas validações no HPBT.</p>
+          <div class="it_img">
+            <img src="./img/img97.png"/>
+          </div>
+          <p>Devemos consultar a proposta no HPBT a fim de identificar o motivo que não foi possível conclui-la. Para realizar a consulta, siga os seguintes passos: </p>
+          <ul>
+            <dd><li><b>Cidade:</b> A cidade da proposta a ser consultada</dd></li>
+            <dd><li><b>Grupo:</b> CRM</dd></li>
+            <dd><li><b>Macro Processo:</b> CRM/VENDER/VENDA</dd></li>
+            <dd><li><b>Funcionalidade:</b> Prospect / Envio de Proposta</dd></li>
+            <dd><li><b>Ação:</b> Analisar proposta para envio</dd></li>
+          </ul>
+          <p>Conforme mostra a imagem abaixo:</p>
+          <div class="it_img">
+            <img src="./img/img98.png"/>
+          </div>
+          <p>Após a consulta, será mostrado a tela abaixo ao qual podemos identificar alguns motivos da proposta não ter sido enviada:</p>
+          <div class="it_img">
+            <img src="./img/img99.png"/>
+          </div>
+          <p>A proposta somente será enviada se todos os dados estiverem corretos, para identificar se existe algum erro nos dados utilizados, compare os seguintes itens: </p>
+          <ul>
+            <dd><li>CPF/CNPJ do Prospect X CPF/CNPJ atrelado a liberação do endereço</li></dd>
+            <dd><li>Proposta atrelada a liberação do endereço X Código da proposta</li></dd>
+          </ul>
+          <p>Caso apresente alguma divergência em um dos dados acima, o analista deverá orientar o usuário para realizar a correção da proposta e o chamado deverá ser encerrado conforme orientado na solução nesse documento. </p>
+          <br />
+          <p>Agora se o CPF/CNPJ do Prospect iniciar com o numeral 0 (zero), ao solicitar a liberação do endereço inadimplente o sistema irá gravar o 0 no início, porem ao preencher a proposta, mesmo que o vendedor inclua o 0 no CPF/CNPJ do Prospect em questão, o sistema Net Sales irá remover automaticamente o 0 à esquerda, por consequência, no momento do envio, ocorrerá erros.</p>
+          <br />
+          <p>Ex: CPF/CNPJ do liberação de endereço: <b>035.141.859-31</b> X CPF/CNPJ atrelado do Prospect: <b>35.141.859-31</b></p>
+          <br />
+          <p>Caso ocorra a falha apresentada no exemplo, o chamado deverá ser direcionado, conforme instruções na solução desse documento.</p>
+          <h2>SOLUÇÃO</h2>
+          <p>Caso apresente alguma divergência, o analista deverá orientar o usuário para realizar a correção da proposta e o chamado deverá ser encerrado conforme orientação abaixo:</p>
+          <p><b>Grupo: </b>SERVICE DESK N1</p>
+          <p><b>Chamado: </b>Incidente</p>
+          <p><b>Categoria: </b>SISTEMA.NETSALES.PROPOSTA.VALIDACAO DE PENDENCIAS</p>
+          <br />
+          <p>Se a falha for o numeral 0 iniciando o CPF/CNPJ, devemos direcionar o chamado conforme categoria abaixo:</p>
+          <p><b>Grupo: </b>Net Sales – Prospect</p>
+          <p><b>Chamado: </b>Incidente</p>
+          <p><b>Categoria: </b>SISTEMAS.NETSALES.PROPOSTA.MENSAGEM DE ERRO INESPERADO IMPEDINDO O CADASTRO DA PROPOSTA</p>
+          <br />
+          <h2>SUGESTÃO DE RESPOSTA</h2>
+          <p><b><i>Caso a divergência seja do número da proposta e ou CPF</i></b></p>
+          <p>Prezado,<br />Conforme analise realizada a proposta não foi enviada pois, ________________ se encontra divergente do endereço. Para concluir a proposta o __________________ deverá ser igual ao do endereço inadimplente. <br />Atenciosamente,<br />Service Desk Claro Brasil</p>
+          <br />
+          <p><b><i>Caso a divergência seja o numeral 0 iniciando no CPF/CNPJ:</i></b></p>
+          <p>Prezado,<br />Segundo Regra de Negócios Net, a proposta a ser enviada necessita ser a mesma informada no momento da liberação de endereço inadimplente e o CPF/CNPJ do NetSales também necessita ser o mesmo que o informado para a liberação. <br />Neste caso verifica-se que o CPF/CNPJ ________ encontra-se divergente do CPF/CNPJ________, que foi informado no momento da liberação do endereço inadimplente. Portanto, para que não ocorram novos problemas, favor alterar a proposta, inserindo o CPF/CNPJ para o qual foi solicitado a liberação do endereço inadimplente.<br />Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 430304</p>
+          <p>Data de criação: 15/06/2015</p>
+          <p>Data de Revisão: 10/10/2018</p>
+        </div>
+</html>

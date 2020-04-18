@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT429994 – CRM - Produtos De / Para Não Convivem</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>CRM - Produtos De / Para Não Convivem</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:429994</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>CRM - Produtos De / Para Não Convivem</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Este documento tem como objetivo orienta o Service Desk a identificar quando o Sistema NETSMS emite uma mensagem de erro informando uma não convivência de um produto </p>
+          <p>Ex: “Orientar o analista em como atuar nos chamados referentes ao erro “CRM-0181”, ocasionados no sistema NETSMS, quando o usuário tenta cancelar uma solicitação que existe OS em andamento pela rede interna.”</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <ul>
+            <dd>
+              <li>SERVICE DESK N1</li>
+              <li>NETSMS – Vender</li>
+            </dd>
+          </ul>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>Usuário entra em contato com o Service Desk informando que o Sistema NETSMS emite mensagem de erro ao gerar solicitação de “Mudança de Pacote”.</p>
+          <div class="it_img">
+            <img src="./img/img133.png"/>
+          </div>
+          <p class="it_subt">Cenário 1: </p>
+          <p>Para validar a convivência dos produtos, se os produtos podem ser alterado (De / Para), conforme é solicitado conforme é solicitado pelo usuário, deve – se acessar a Ferramenta HP Business Tools: </p>
+          <p>Link: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></p></br>
+          <ul>
+            <dd>
+              <li>Acessar a Ferramenta HP Business Tools com login  / senha </li>
+              <li>Inserir a cidade do contrato </li>
+              <li>Grupo: CRM</li>
+              <li>Macro do Processo: CRM / Venda / Vender</li>
+              <li>Funcionalidade: Venda / Produto </li>
+              <li>Ação: Consultar convivência entre Produtos</li>
+            </dd>
+          </ul>
+          <p>Após selecionadas as opções acima, deve – se preencher as informações abaixo, conforme tela de erro no NETSMS no momento da abertura da solicitação </p>
+          <p>Dados da Consulta</p>
+          <ul>
+            <dd>
+              <li>Produto de Origem (ID do Produto A)</li>
+              <li>Produto de Destino (ID do Produto B)</li>
+              <li>Código da Operadora (por exemplo 003 para são Paulo, 013 para Belo Horizonte)</li>
+            </dd>
+          </ul>
+          <p class="it_subt">Observação:</p>
+          <p>As informações de “ID do Produto A e ID do Produto B”, aparecem na própria mensagem de erro, que no exemplo acima é:  ID do Produto A12788 ID do Produto B 14070</p>
+          <div class="it_img_pq">
+            <img src="./img/img134.png"/>
+          </div>
+          <p>Preencher as informações no HP Business Tools e verificar o resultado exibido pela ferramenta.</p>
+          <p><b>A.</b>Caso não exista convivência em ter os produtos, será exibida a imagem abaixo:</p>
+          <div class="it_img">
+            <img src="./img/img135.png"/>
+          </div>
+          <p>Neste caso, o chamado de verá ser encerrado conforme instrução no campo solução e sugestão de resposta.</p>
+          <p><b>B. </b>Caso exista somente para contrato individuais ou coletivos, será apresentada tela conforme abaixo:</p>
+          <div class="it_img">
+            <img src="./img/img136.png"/>
+          </div>
+          <p>Neste caso, o analista deve verificar junto ao colaborador NET se o contrato que deseja efetuar a abertura da solicitação é individual: </p>
+          <p>Se sim, o chamado deverá ser direcionado conforme instrução no campo solução e sugestão de resposta.</p>
+          <p>Se não, o chamado deverá ser encerrado conforme instrução no campo solução e sugestão de resposta.</p>
+          <p class="it_subt">Convivência entre contratos Coletivos: </p>
+          <div class="it_img">
+            <img src="./img/img137.png"/>
+          </div>
+          <p>Neste caso, o analista deve verificar junto ao colaborador NET se o contrato que deseja efetuar a abertura da solicitação é coletivo: </p>
+          <p>Se sim, o chamado deverá ser direcionado conforme instrução no campo solução e sugestão de resposta.</p>
+          <p>Se não, o chamado deverá ser encerrado conforme instrução no campo solução e sugestão de resposta</p>
+          <div class="it_img">
+            <img src="./img/img138.png"/>
+          </div>
+          <p>Na imagem acima o HP Business Tools já informa que existe convivência entre os produtos. Neste caso, o chamado deverá ser direcionado conforme instrução no campo solução e sugestão de resposta. </p>
+          <h2>SOLUÇÃO: </h2>
+          <p class="it_subt">Não existe convivência: </p>
+          <p>Para este caso, o chamado deverá ser retido pelo SERVICE DESK N1 conforme abaixo: </p>
+          <p><b>Categoria: </b>SISTEMAS.NETSMS.CONTRATO.PRODUTOS INDIVIDUAIS EM CONTRATOS COLETIVOS</p>
+          <p><b>Grupo: </b>SERVICE DESK N1</p>
+          <br />
+          <p class="it_subt">Existe Convivência: </p>
+          <p>Diante deste cenário, o Service Desk N1 deverá abrir um incidente com a categorização e grupo conforme abaixo: </p>
+          <p><b>Categoria: </b>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE PACOTE</p>
+          <p><b>Grupo: </b>NETSMS – VENDER</p>
+          <br />
+          <h2>SUGESTÃO DE RESPOSTA: </h2>
+          <p class="it_subt">Não existe Convivência: </p>
+          <p>Prezado usuário,</p>
+          <p>Não é possível a alteração do pacote desejado, pois não há configuração do produto de origem para o produto desejado no portfólio de produtos atual. É necessário ofertar um novo produto compatível. Em caso de dúvidas, consultar o portfólio de produtos em FIQUE LIGADO > PRODUTOS E SERVICOS”</p>
+          <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+          <p class="it_subt">Existe Convivência: </p>
+          <p>Prezado,</p>
+          <p>Conforme analise realizada, os produtos que o usuário deseja realizar a alteração de pacote, possui convivência com os outros produtos e com o tipo do contrato, conforme evidencia em anexo.</p>
+          <p>Neste caso, conforme IT 429994, o chamado deverá ser tratado por vossa equipe.<br />Favor prosseguir com a tratativa.</p>
+          <p>Atenciosamente,<br />Service Desk Claro Brasil</p>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 429994</p>
+          <p>Data de criação: 25/03/2015</p>
+          <p>Data de Revisão: 25/10/2018</p>
+        </div>
+</html>

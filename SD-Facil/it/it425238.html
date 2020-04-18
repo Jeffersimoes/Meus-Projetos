@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT425238 - CORRECAO DE PONTO</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1 id="titulo_1l">CORREÇÃO DE PONTO</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:425238</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Correção de Ponto</h1>
+          <h2>OBJETIVO:</h2>
+
+          <p>Esse procedimento visa orientar o analista, quando o usuário informa que é
+            necessário realizar uma correção de ponto.</p>
+
+      <h2>APLICAÇÃO:</h2>
+
+        <dd>
+          <ul>
+            <li>Service Desk N1</li>
+            <li>Netsms – Atender N2</li>
+          </ul>
+        </dd>
+
+
+      <h2>REFERÊNCIAS:</h2>
+  	      <p>N/A</p>
+      <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+
+          <p>Corrigir um ponto é transformar o ponto principal em ponto adicional ou vice-versa.</p>
+
+          <p>Para isso é necessário realizar algumas validações para identificar se há necessidade dessa alteração.	</p>
+          <p>O analista deverá fazer a consultar no HPBT e validar se possui alguma divergência entre os pontos.</p>
+          <br>
+          <p>Para realizar essa validação é necessário seguir o passo a passo abaixo:</p>
+          <br>
+
+
+          <dd>
+            <ul>
+              <li>Acessar o HPBT: https://5.8.8.177:7010/HPBusinessTool</li>
+              <li>Cidade: A cidade do contrato que deseja realizar essa alteração</li>
+              <li>Grupo: CRM</li>
+              <li>Macro Processo: CRM/Atender</li>
+              <li>Funcionalidade: Contrato/Solicitação</li>
+              <li>Selecionar a ação: Verificar ponto principal e adicional</li>
+            </ul>
+          </dd>
+
+              <p>Selecionando essas opção, irá abrir a tela abaixo: </p>
+
+
+          <div class="it_img_md">
+            <img src="./img/img184.png" alt="print 2">
+          </div>
+
+              <p>Coloque o número do contrato e o código da operadora que é igual ao código da cidade que deseja realizar a alteração e
+                clique em consultar.</p>
+              <p>Se apresentar a imagem abaixo, o analista deverá transferir o chamado conforme instrução no item 	SOLUÇÃO: .</p>
+
+          <div class="it_img">
+            <img src="./img/img185.png" alt="print 2">
+          </div>
+
+          <p>Se apresentar a imagem abaixo, o analista deverá encerrar o chamado conforme instrução no item SUGESTÃO DE RESPOSTA.</p>
+
+          <div class="it_img">
+            <img src="./img/img186.png" alt="print 2">
+          </div>
+
+	      <h2>SOLUÇÃO: </h2>
+
+          <p class="it_subt">Situação 1 – O PP deste contrato não está de acordo com as regras de negócio NET</p>
+
+          <dd>
+            <ul>
+              <li><b>Tipo de chamado:</b> Incidente</li>
+              <li><b>Categoria:</b> SISTEMAS.NETSMS.CONTRATO.CORRECAO DE PONTO</li>
+              <li><b>Grupo:</b> NETSMS – ATENDER</li>
+            </ul>
+          </dd>
+
+          <p class="it_subt">Situação 2 – No sistema já consta um ponto definido como principal.</p>
+
+
+
+        <h2>SUGESTÃO DE RESPOSTA: </h2>
+
+          <p class="it_subt">Caso 1 – Transferir para Netsms – Atender.</p>
+          <div class="resposta">
+            <p>Prezados, </p>
+
+            <p>Após analise realizada e evidencias em anexo, o ponto principal encontra-se em
+              desacordo com as regras de negócio NET.<br>
+              Solicitamos que realize a alteração do ponto principal para o ponto adicional a
+              fim de regularizar o contrato.</p>
+            <p>Atenciosamente,<br>
+            <p>Service Desk Claro Brasil</p>
+          </div>
+          <br>
+
+          <p class="it_subt">Caso 2 – Mensagem do HPBT informa que já foi colocado outro
+            ponto como principal.</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+            <p>Conforme análise verificou-se que o ponto___foi eleito o ponto principal pelo sistema,
+              visto que o produto, ________possui peso (que é um valor numérico atribuído a cada
+              produto de acordo com a sua tecnologia para determinar pontos principais e adicionais
+              em contratos) maior que os outros produtos instalados.</p>
+            <p>Obs: Se o contrato estiver irregular, pacotes de diferentes famílias instalados no
+              contrato, pode ser que o ponto adicional (PA) seja o pacote de maior peso. Neste caso,
+               deverá ser gerado uma nova solicitação de mudança de pacote nos pontos do contrato para
+               que os pacotes instalados estejam dentro de uma mesma família.</p>
+            <br>
+            <p>Atenciosamente,<br>
+              Service Desk Claro Brasil</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 425238</p>
+          <p>Data de criação: 26/11/2013</p>
+          <p>Data de Revisão: 19/09/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

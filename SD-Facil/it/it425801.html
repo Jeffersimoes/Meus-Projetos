@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jefferson Simões Silva - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT425801 - Validar Se Determinado Tipo de Solicitação pode ser Aberta/Cancelada/Executada com o Status Atual do Contrato</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Validar Se Solicitação pode ser Aberta/<br>Cancelada/Executada com o Status Atual do Contrato</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:425801</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Validar Se Determinado Tipo de Solicitação pode ser Aberta/Cancelada/Executada com o Status Atual do Contrato</h1>
+          <h2>RESUMO:</h2>
+          <p>Procedimento visa orientar o Analista como utilizar a Ferramenta HP Business Tools para validar se determinado
+            Tipo de Solicitação pode ser Aberta/Cancelada/Executada com Status Atual do Contrato</p>
+
+            <h2>PROBLEMA:</h2>
+
+            <p class="it_subt">  Usuário entra em contato informando que ocorre erro na tentativa de abertura de Solicitação.</p>
+            <p class="it_subt">Usuário entra em contato informando que ocorre erro na tentativa de cancelamento de Solicitação.</p>
+            <p class="it_subt">Usuário entra em contato informando que ocorre erro na tentativa de execução de Solicitação.</p>
+
+            <h2>ABERTURA DO INCIDENTE - A3</h2>
+          <ul>
+            <li>Categoria: SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - ADESAO - INSTALAR PONTO ADICIONAL</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - CONTRATACAO DE CANAL A LA CARTE</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - DESCONEXAO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - DESINSTALACAO RETORNO TELEFONICO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - HIT DE DECODER</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - INSTALACAO DE RETORNO TELEFONICO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE ENDERECO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE FORMA DE AQUISICAO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE LOCAL DE PONTO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - MUDANCA DE PACOTE</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - RECONEXAO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - REINSTALACAO - ASSINATURA</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - RETIRAR EMTA</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - RETIRAR EQUIPAMENTO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - RETIRAR PONTO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - SUBSTITUICAO DE CONTROLE REMOTO</li>
+            <li>SISTEMAS.NETSMS.SOLICITACOES.ERRO DURANTE A ABERTURA DE SOLICITAÇÕES - VISITA TECNICA</li>
+            <h3>Grupo Solucionador:NETSMS - ATENDER, GED ou ATLAS</h3>
+          </ul>
+          <ul>
+            <h2>Cancelamento ou Execução de OS</h2>
+                <li><b>Tipo:</b> Incidente</li>
+                <li><b>Classificação:</b>  A3</li>
+                <li><b>Categoria:</b>  SISTEMAS.NETSMS.OS.ERROS DURANTE A BAIXA (EXECUÇÃO/CANCELAMENTO)
+              <h3>Grupo Solucionador:</b> NETSMS - INSTALAR</h3>
+          </ul>
+
+            <h2>RESOLUÇÃO:</h2>
+                 <p>Usuário entra em contato informando que não consegue Abrir, Cancelar ou Executar Solicitação.
+                 Para este Tipo de Incidente, devemos validar na Ferramenta HP Business Tools se determinado
+                 Tipo de Solicitação pode ser Aberta/Cancelada/Executada com Status Atual do Contrato.</p>
+                 <br>
+                 <p class="p_importante">Importante:<p><p>O Direcionamento do Chamado deverá ser feito apenas se mesmo após a Validação
+                   do Status Atual do Contrato x Tipo de Solicitação, verificar-se que o sistema não permite a geração da solicitação
+                   mesmo com o Status Correto do Contrato.</p>
+                 <p>Segue abaixo exemplos para validação</p>
+                 <p class="p_importante">Exemplo 1 – Abertura de Solicitação de Mudança de Pacote</p>
+                 <p>Usuário informa que ao efetuar abertura de Determinado Tipo de Solicitação ocorre erro/falha/etc.
+                 ou neste caso uma Mudança de Pacote. Para efetuar a Validação é necessário seguir o passo a passo abaixo:</p>
+
+          <ol><dd>
+            <li>     Acessar o HP Business Tools pelo Link https://5.8.8.177:7010/HPBusinessTool;</li>
+              <br>
+            <li>    Caso apareça a mensagem “There is a problem with this website"s security certificate”. Clicar em “Continue to this website (not recommended)” para prosseguir;</li>
+              <br>
+            <li>     Efetuar o Logon com mesmo Usuário utilizado para acessar o NETSMS;</li>
+              <br>
+            <li>     Na opção de “CONSULTAR AÇÃO”, preencher a respectiva Cidade do Contrato ao qual o Usuário esta acessando no Sistema;</li>
+              <br>
+            <li>     Selecionar os demais Filtros da seguinte forma:</li>
+                <ul>
+                  <li><b>Grupo:</b> CRM</li>
+
+                  <li><b>Macro Processo:</b> CRM / Atender</li>
+
+                  <li><b>Funcionalidade:</b>  Contrato / Solicitação</li>
+
+                  <li><b>Ação:</b> CONSULTAR ABERTURA/CANCELAMENTO/EXECUÇÃO DE SOLICITAÇÃO;  </li>
+                </ul>
+                <br>
+                <li>No Campo “ID Solicitação” informar o ID do Tipo de Solicitação Desejada (Ver Procedimento ID:XXXXXXXXX)
+              , e no Campo “Código da Operadora”<br> preencher com o Código da Cidade a qual pertence o Contrato e
+              deseja-se a Consulta;</li>
+            </dd>
+          </ol>
+                <p>Neste Exemplo podemos verificar que caso o Usuário deseje abrir uma Solicitação de Mudança de Pacote envolvendo
+                Produtos NET (TV ou Internet), o Status do Contrato deverá estar Conectado, Mudança de Endereço,
+                Pend. em Instalação, Conectado (Mudança de Endereço) ou Desconectado – Opção.</p>
+                <br>
+                <p>Caso o Usuário deseje abrir uma Mudança de Pacote envolvendo Produtos EBT (Net Fone),
+                então o Status EBT do Contrato deverá estar Conectado ou Não Possui.</p>
+                <br>
+                <p>Se o Status do Contrato estiver de acordo com os informados na Ferramenta prosseguimos com o a Abertura e Direcionamento do chamado conforme Script relacionado ao Incidente informado. Se o Status do Contrato for diferente dos que foram informados na Ferramenta, devemos registrar e resolver um chamado na Fila do Service Desk N1 com Tipo, Classificação e Categoria informados abaixo:</p>
+
+                <p><b>Tipo:</b> Incidente</p>
+                <p>Classificação: A1</p>
+                <p><b>Categoria:</b> SISTEMAS.NETSMS.SOLICITAÇOES.ERRO DURANTE ABERTURA DE SOLICITAÇAO – FALHA DE PROCESSO</p>
+                <p><b>Grupo Solucionador:</b>SERVICE DESK N1</p>
+                <p><b>Resolução Padrão:</b>“Conforme Regras de Negócios da NET,</p>
+                <p>somente é permitida a abertura do Tipo de Solicitação Desejado caso o Status seja:</p>
+                <p>‘Informar Status Compatíveis conforme HP Business Tools’. Favor efetuar a Regularização do Status para um dos informados acima e prosseguir com a abertura da Solicitação”</p>
+                <br>
+
+            <p class="p_importante">Exemplo 2 – Cancelar Solicitação de Adesão – Instalar Ponto Adicional  </>
+
+            <ol>  Usuário informa que ao tentar Cancelar Determinado Tipo de Solicitação ocorre erro/falha/etc. ou neste caso uma Adesão – Instalar Ponto Adicional. Para efetuar a Validação é necessário seguir o passo a passo abaixo:</li>
+
+              <li> Acessar o HP Business Tools pelo <a href="https://5.8.8.177:7010/HPBusinessTool;">HP Business Tool</a></li>
+                  <br>
+              <li>        Caso apareça a mensagem “There is a problem with this website"s security certificate”. Clicar em “Continue to this website (not recommended)” para prosseguir;</li>
+                  <br>
+              <li>        Efetuar o Logon com mesmo Usuário utilizado para acessar o NETSMS;</li>
+                  <br>
+              <li>        Na opção de “CONSULTAR AÇÃO”, preencher a respectiva Cidade do Contrato ao qual o Usuário esta acessando no Sistema;</li>
+                  <br>
+              <li>        Selecionar os demais Filtros da seguinte forma:</li>
+
+              <ul>
+                <li><b>Grupo:</b> CRM</li>
+                <li><b>Macro Processo:</b> CRM / Atender</li>
+                <li><b> Funcionalidade:</b> Contrato / Solicitação</li>
+                <li><b> Ação:</b> CONSULTAR ABERTURA/CANCELAMENTO/EXECUÇÃO DE SOLICITAÇÃO;</li>
+              </ul>
+            <br>
+                <li>No Campo “ID Solicitação” informar o ID do Tipo de Solicitação Desejada (Ver Procedimento ID:XXXXXXXXX), e no Campo “Código da Operadora” preencher com o Código da Cidade a qual pertence o Contrato e deseja-se a Consulta;</li>
+          </ol>
+        <br>
+              <p>Ao clicar em “CONSULTAR”, é mostrado o Resultado da verificação. Inicialmente será mostrado os Status Compatíveis para Produtos NET e ao descer a Barra de Rolagem os Status Compatíveis para Produtos EBT:</p>
+              <p>Neste Exemplo podemos verificar que caso o Usuário deseje cancelar uma Solicitação de Adesão – Instalar Ponto Adicional envolvendo Produtos NET (TV ou Internet), o Status do Contrato deverá estar Conectado, Pend. em Instalação, Pend. em Liberação, Mudança de Endereço, Desconectado Parcial, Cancelado, etc.. Assim como mostra a primeira imagem.</p>
+              <p>Caso o Usuário deseje cancelar uma Solicitação de Adesão – Instalar Ponto Adicional envolvendo Produtos EBT (Net Fone), então o Status EBT do Contrato deverá estar Pend. em Instalação, Cancelado, Desabilitado Bloqueio Parcial, Desconectado – Opção, etc.. Assim como mostra a segunda imagem.</p>
+              <p>Se o Status do Contrato estiver de acordo com os informados na Ferramenta prosseguimos com o a Abertura e Direcionamento do chamado conforme Script relacionado ao Incidente informado. Se o Status do Contrato for diferente dos que foram informados na Ferramenta, devemos registrar e resolver um chamado na Fila do Service Desk N1 com Tipo, Classificação e Categoria informados abaixo:</p>
+
+
+
+
+              <p><b>Tipo </b> - Incidente</p>
+              <p><b>Classificação:</b> A1</p>
+              <p><b>Categoria:</b>SISTEMAS.NETSMS.SOLICITAÇOES.ERRO DURANTE CANCELAMENTO DE SOLICITAÇAO – FALHA DE PROCESSO</p>
+              <p><b>Grupo Solucionador:</b>SERVICE DESK N1</p>
+        <h2>Resolução Padrão:</h2>
+              <p class="it_subt"> “Conforme Regras de Negócios da NET, somente é permitido o cancelamento da Solicitação informada caso o Status seja: ‘Informar Status Compatíveis conforme HP Business Tools’. Favor efetuar a Regularização do Status para um dos informados acima e prosseguir com o cancelamento da Solicitação”
+              <p class="p_importante">Exemplo 3 – Executar Solicitação de Associar Terminal ao Ponto </p>
+              <p>Usuário informa que deseja executar Determinado Tipo de Solicitação ocorre erro/falha/etc. ou neste caso uma Associar Terminal ao Ponto. Para efetuar a Validação é necessário seguir o passo a passo abaixo:</p>
+            <ol>
+              <li>     Acessar o HP Business Tools pelo <a href="https://5.8.8.177:7010/HPBusinessTool;">HP Business Tool</a></li>
+                <br>
+              <li>     Caso apareça a mensagem “There is a problem with this website"s security certificate”. Clicar em “Continue to this website (not recommended)” para prosseguir;</li>
+                <br>
+              <li>      Efetuar o Logon com mesmo Usuário utilizado para acessar o NETSMS;</li>
+                <br>
+              <li>      Na opção de “CONSULTAR AÇÃO”, preencher a respectiva Cidade do Contrato ao qual o Usuário esta acessando no Sistema;</li>
+            <br>
+              <li>Selecionar os demais Filtros da seguinte forma:</li>
+                <ul>
+                  <li>Grupo:</b> CRM</li>
+                  <li><b>Macro Processo:</b> CRM / Atender</li>
+                  <li><b>Funcionalidade:</b> Contrato / Solicitação</li>
+                  <li><b>Ação:</b> CONSULTAR ABERTURA/CANCELAMENTO/EXECUÇÃO DE SOLICITAÇÃO;</li>
+                </ul>
+              <br>
+                  <li>No Campo “ID Solicitação” informar o ID do Tipo de Solicitação Desejada (Ver Procedimento ID:XXXXXXXXX),
+                     e no Campo “Código da Operadora” preencher com o Código da Cidade a qual pertence o Contrato e deseja-se
+                     a Consulta;</li>
+            </ol>
+
+              <p>Ao clicar em “CONSULTAR”, é mostrado o Resultado da verificação. Inicialmente será mostrado os Status Compatíveis para Produtos NET e ao descer a Barra de Rolagem os Status Compatíveis para Produtos EBT:</p>
+              <br>
+              <p>Neste Exemplo podemos verificar que caso o Usuário deseje executar uma Solicitação de Associar Terminal ao Ponto envolvendo Produtos NET (TV ou Internet), o Status do Contrato deverá estar Conectado, Conectado (Desconexão - Opção), Desconectado (Reinstalação), etc.. Assim como mostra a primeira imagem.</p>
+              <p>Caso o Usuário deseje cancelar uma Solicitação de Adesão – Instalar Ponto Adicional envolvendo Produtos EBT (Net Fone), então o Status EBT do Contrato deverá estar Conectado, Desabilitado Bloqueio Parcial, Desabilitado (Conectado), Conectado (Desabilitação), etc.. Assim como mostra a segunda imagem.</p>
+              <p>Se o Status do Contrato estiver de acordo com os informados na Ferramenta prosseguimos com o a Abertura e Direcionamento do chamado conforme Script relacionado ao Incidente informado. Se o Status do Contrato for diferente dos que foram informados na Ferramenta, devemos registrar e resolver um chamado na Fila do Service Desk N1 com Tipo, Classificação e Categoria informados abaixo:</p>
+              <br>
+
+              <p><b>Tipo:</b> Incidente</p>
+              <p><b>Classificação:</b> A1</p>
+              <p><b>Categoria:</b>SISTEMAS.NETSMS.TERMINAL.ACAO NÃO PERMITIDA PARA ESSE TIPO DE OS</p>
+              <p><b>Grupo Solucionador:</b>SERVICE DESK N1</p>
+              <p class="p_importante">  Resolução Padrão: “Conforme Regras de Negócios da NET, somente é permitida a execução da Solicitação informada caso o Status seja: ‘Informar Status Compatíveis conforme HP Business Tools’. Favor efetuar a Regularização do Status para um dos informados acima e prosseguir com a execução da Solicitação”</p>
+              </div>
+
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 425801	</p>
+          <p>Data de criação: 21/09/2018</p>
+          <p>Data de Revisão: 21/09/2018</p>
+        </div>
+    </div>
+  </body>
+</html>

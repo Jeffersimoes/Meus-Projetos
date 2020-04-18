@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Luis Felipe Somogyi - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT433092 – SA186 - Script Atendimento Contrato Desabilitado</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo" id="titulo_1l">
+          <h1>SA186 - Script Atendimento Contrato Desabilitado</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:433092</h1>
+        </div>
+      </div>
+        <div class="it_conteudo">
+          <h1>Script Atendimento Contrato Desabilitado</h1>
+          <h2>OBJETIVO:</h2>
+          <p>Esse documento tem por objetivo auxiliar o analista fazer as verificações necessárias para
+             identificar o motivo pelo o qual o contrato encontra-se desconectado.</p>
+          <h2>APLICAÇÃO:</h2>
+          <p>Essa IT possuí aplicabilidade nos seguintes grupos: </p>
+          <p>SERVICE DESK N1</p>
+          <p>Netsms – Atender</p>
+          <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO: </h2>
+          <p>O analista deverá acessar o contrato no NETSMS e fazer algumas verificações. </p>
+          <ul>
+            <dd>
+              <li>Faturas em aberto.</li>
+              <li>Solicitação (OS’s) de desconexão por inadimplência c/ retirada de equipamento.</li>
+              <li>Se há alguma OS’s posterior a desconexão por inadimplência para uma reinstalação.</li>
+            </dd>
+          </ul>
+          <p>Ao acessar o NETSMS na aba geral o analista visualizará o status do contrato abaixo uma legenda que poderá
+            facilitar a analise só com base nas cores que podem apresentar no contrato net/netfone.</p>
+          <ul>
+            <dd>
+              <li>Verde conectado</li>
+              <li>Rosa: Inadimplência</li>
+              <li>Azul: Desconectado por opção</li>
+              <li>Marrom: Mudança de endereço</li>
+              <li>Vermelho: Cancelado</li>
+              <li>Preto: Não possui</li>
+            </dd>
+          </ul>
+          <div class="it_img">
+            <img src="./img/img140.png"/>
+          </div>
+          <div class="it_img">
+            <figcaption>Após analisar o status o analista deverá verificar se o contrato possui alguma fatura
+              em aberto na aba Financeiro > Visualização Cobrança.</figcaption>
+            <img src="./img/img141.png"/>
+          </div>
+          <br>
+          <p>Após acessar a Visualização de Cobrança o sistema mostrará um relatório com as faturas geradas no sistema,
+             o analista deverá analisar a data de pagamento e data da baixa, caso não tenha fatura em aberto ou com data
+              vencida o analista deverá seguir para segunda verificação.</p>
+          <div class="it_img">
+            <img src="./img/img142.png"/>
+          </div>
+          <br>
+          <p>Caso as faturas pagas estejam com “data da baixa” menor que 24 horas o chamado deverá ser encerrado em N1.
+             <b>Seguindo a SUGESTÃO DE RESPOSTA - Caso 3.</b></p>
+          <p>Próxima analise, o analista terá que acessar aba Produtos ou Técnico para verificar as OS’s, nos registros o
+             analista encontrará uma solicitação executada com o nome de desconexão, porem o foco do analista é localizar alguma
+              outra OS’s mais recente Reinstalação/Reabilitação.</p>
+          <div class="it_img">
+            <img src="./img/img143.png"/>
+          </div>
+          <p>Nesse caso o chamado deverá ser encerrado em N1 seguindo a <b>SUGESTÃO DE RESPOSTA - Caso 2.</b></p>
+          <p>Caso após todas essas validações o analista não localizou problema para encerrar ou transferir para N2,
+            o analista poderá fazer uma última validação no Suporte OSOC.</p>
+          <div class="it_img">
+            <figcaption>Ao acessar o Suporte OSOC o analista terá que inserir o código
+              da cidade, número do contrato e clicar em Diagnosticar.</figcaption>
+            <img src="./img/img144.png"/>
+          </div>
+          <br>
+          <p>O sistema mostrará um relatório que poderá conter várias notificações com “!”. Nesse caso o
+            analista deverá procurar por divergência em OS”s no contrato.</p>
+          <div class="it_img">
+            <img src="./img/img145.png"/>
+          </div>
+          <br>
+          <p>Caso o diagnóstico não apresente erro de OS’s o analista deverá transferir
+            o chamado para a equipe NETSMS – Atender.</p>
+          <h2>SOLUÇÃO: </h2>
+          <p>Caso o analista valide todas as informações e no contrato e não tenha nenhuma
+            divergência para o contrato estar desabilitado o chamado deverá ser transferido,
+            seguindo a <b>SUGESTÃO DE RESPOSTA.</b></p>
+          <p><b>Categoria: </b>SISTEMAS.NETSMS.CONTRATO.DESABILITADO SEM DIVIDA SEM SOLICITACAO EM ABERTO</p>
+          <br />
+          <p>Se o analista localizou qualquer divergência no sistema referente ao contrato,
+            o chamado deverá ser encerrado no N1. </p>
+          <h2>SUGESTÃO DE RESPOSTA: </h2>
+          <p class="it_subt">Caso 1 – Fatura em vencida.</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+            <p>Após realizar análise do contrato verificamos que o mesmo está com fatura vencida
+              impossibilitando a reabilitação automática.</p>
+            <p>Para o contrato ser reabilitado é necessário pagar essas pendencias, e a reabilitação
+              e feita de maneira automática até 24 horas a baixa de pagamento no sistema. </p>
+            <br />
+            <p>Atenciosamente.<br />Service Desk Claro Brasil.</p>
+          </div>
+          <p class="it_subt">Caso 2 – Solicitação executada com DESCONEXAO INADIMPLENCIA C/ RETIRADA DE EQUIPAMENTO.</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+            <p>Após realizar análise do contrato verificamos que o contrato possui OS em aberto/executada com
+              desconexão por inadimplência c/ retirada de equipamento e não possui solicitação posterior
+              para uma reinstalação, nesse caso o contrato não será reabilitado automaticamente, pois
+              existe pendências no contrato e só poderá ser reabilitar após os devidos acertos.</p>
+            <p>Atenciosamente.<br />Service Desk Claro Brasil.</p>
+          </div>
+          <p class="it_subt">Caso 3 – Contrato não possui nenhuma pendência, porem está com o prazo de 24 horas para ativação.</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+            <p>Verificado no sistema o contrato não possui nenhuma divergência, porem analisando as faturas e a baixa de pagamento
+               ainda não ultrapassou o prazo de 24 horas para a reabilitação, nesse caso é necessário aguardar, pois será
+               reabilitado automaticamente.</p>
+            <br />
+            <p>Atenciosamente.<br />Service Desk Claro Brasil.</p>
+          </div>
+          <p class="it_subt">Caso 4 – Contrato não possui nenhuma pendência e ultrapassou as 24 horas (Transferir para NETSMS – Atender).</p>
+          <div class="resposta">
+            <p>Prezados,</p>
+            <p>Após realizar todas as validações no sistema não localizamos nenhuma divergência no contrato para que o mesmo esteja desabilitado.</p>
+            <p>Lembrando que o prazo de pagamento da última fatura já ultrapassou o prazo de 24 horas, devido a isso estamos transferindo para uma verificação da equipe – NETSMS - Atender.</p>
+            <br />
+            <p>Atenciosamente.<br />Service Desk Claro Brasil.</p>
+          </div>
+        </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 433092</p>
+          <p>Data de criação: 27/06/2017</p>
+          <p>Data de Revisão: 26/10/2018</p>
+        </div>
+</html>

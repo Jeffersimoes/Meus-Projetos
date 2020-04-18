@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="José Luis Alves - Equipe CSC Madrugada">
+    <meta name="description" content="SD-Fácil">
+    <title>IT431045 - Mudança de pacote (perfil e comercialização de produto)</title>
+    <link rel="shortcut icon" href="./img/logo_sdfacil1.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="master">
+      <div class="itbox_superior">
+        <div class="logo_it">
+        </div>
+        <div class="it_titulo">
+          <h1>Mudança de pacote</br>(perfil e comercialização de produto)</h1>
+        </div>
+        <div class="it_numero">
+          <h1>IT:431045</h1>
+        </div>
+      </div>
+          <div class="it_conteudo">
+            <h1>Mudança de pacote (perfil e comercialização de produto)</h1>
+              <br>
+              <h2>OBJETIVO:</h2>
+                <p>O documento tem como objetivo orientar o analista do Service Desk N1 a validar se o produto pertence ao Perfil e se sua<br>
+                   comercialização encontra- se aberta.</p>
+              <br>
+              <h2>APLICAÇÃO:</h2>
+                <p>Essa IT possuí aplicabilidade nos seguintes grupos:</p>
+                <dd>
+                  <ul>
+                    <li>Service Desk N1</li>
+                    <li>NETSMS – ATENDER N2</li>
+                  </ul>
+                </dd>
+              <br>
+              <h2>REFERÊNCIAS: </h2>
+                <p>N/A</p>
+              <br>
+              <h2>DESCRIÇÃO GERAL DO PROCEDIMENTO</h2>
+              <br>
+                <p>Para a situação temos o seguinte cenário.</p>
+              <br>
+                  <p class="it_subt">Cenário 1:  Comercialização fechada</p>
+                    <p>Para identificar se a comercialização do produto encontra-se encerrada, devemos validar o produto e o perfil desejado pelo usuário para<br>
+                       realizar a mudança de pacote.</p>
+                    <p>Para validar o cenário, o analista do Service Desk N1 deverá acessar a ferramenta HP Businnes Tool</p>
+                      <dd>
+                        <ul>
+                          <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li>
+                          <li>Logar com mesmo usuário utilizado para acessar o NETSMS</li>
+                          <li><b>Cidade</b>: preencher a respectiva cidade ao qual o usuário está acessando no sistema</li>
+                          <li><b>Grupo</b>: CRM </li>
+                          <li><b>Macro Processo</b>: CRM / Vender / Venda</li>
+                          <li><b>Funcionalidade</b>: Venda / Produto</li>
+                          <li><b>Ação</b>: CONSULTA PERFIL E COMERCIALIZACAO DE PRODUTO</li>
+                        </ul>
+                      </dd>
+                        <div class="it_img_pq">
+                            <img src="./img/img5.png"/>
+                        </div>
+                        <div class="it_img_md">
+                            <img src="./img/img6.png"/>
+                        </div>
+                    <p>Caso após a consulta a comercialização encontra-se fechada, o chamado deverá ser encerrado, conforme instrução no item <b>solução</b>.</p>
+              <br>
+                  <p class="it_subt">Cenário 2:  Comercialização aberta</p>
+                    <p>Para identificar se a comercialização do produto encontra-se aberta, devemos validar o produto e o perfil desejado pelo usuário para<br>
+                       realizar a mudança de pacote.</p>
+                    <p>Para validar o cenário, o analista do Service Desk N1 deverá acessar a ferramenta HP Businnes Tool</p>
+                    <dd>
+                      <ul>
+                        <li>Acessar o HP Business Tool: <a href="https://5.8.8.177:7010/HPBusinessTool" target="_blank">Clique aqui</a></li>
+                        <li>Logar com mesmo usuário utilizado para acessar o NETSMS</li>
+                        <li><b>Cidade</b>: preencher a respectiva cidade ao qual o usuário está acessando no sistema</li>
+                        <li><b>Grupo</b>: CRM </li>
+                        <li><b>Macro Processo</b>: CRM / Vender / Venda</li>
+                        <li><b>Funcionalidade</b>: Venda / Produto</li>
+                        <li><b>Ação</b>: CONSULTA PERFIL E COMERCIALIZACAO DE PRODUTO</li>
+                      </ul>
+                    </dd>
+                      <div class="it_img_pq">
+                          <img src="./img/img5.png"/>
+                      </div>
+                      <div class="it_img_md">
+                          <img src="./img/img188.png"/>
+                      </div>
+                    <p>Nesse caso, o chamado deverá ser direcionado, conforme instrução no item <b>solução</b>.</p>
+              <h2>SOLUÇÃO:</h2>
+                <p class="it_subt">Cenário 1:</p>
+                  <p>Após a validação do cenário 1, onde o resultado da validação informa que a “Comercialização entre / para o (s) produto (o) encontra-se<br>
+                     fechada”, o incidente deverá ser retido em N1 com a categoria a seguir e Sugestão de Resposta descrita no item 7.</p>
+                    <p><b>Tipo:</b> Incidente:</p>
+                    <p><b>Classificação:</b> A1</p>
+                    <p><b>Categoria </b>: SOFTWARE.APLICACOES.NETSMS - RET E REV.PACOTE INDISPONIVEL (ITENS NÃO OK) </p>
+                    <p><b>Grupo Solucionador:</b>  Service Desk N1</p>
+              <br>
+                <p class="it_subt">Cenário 2:</p>
+                  <p>Após a validação do cenário 2, onde o resultado da validação informa que a “Comercialização entre / para o (s) produto (o) encontra-se<br>
+                     aberta”, o incidente deverá ser direcionado o Grupo Net SMS – Atender com as informações da aba “Propriedades” devidamente<br>
+                     preenchidas com a categoria a seguir e com a sugestão de direcionamento descrita no Item 7.</p>
+                  <p><b>Tipo:</b> Incidente:</p>
+                  <p><b>Classificação:</b> A3</p>
+                  <p><b>Categoria </b>: SOFTWARE.APLICACOES.NETSMS - RET E REV.PACOTE INDISPONIVEL (ITENS OK) </p>
+                  <p><b>Grupo Solucionador:</b>  NETSMS - Atender</p>
+            <br>
+              <h2>SUGESTÃO DE RESPOSTA:</h2>
+                <p class="it_subt">Cenário 1:</p>
+                  <div class="resposta">
+                      <p>Prezado usuário(a),</p>
+                      <p>Após análise, identificamos que a comercialização do produto desejado encontra-se fechada. Por gentileza ofertar outro produto para o<br>
+                         cliente, consultando a Tabela disponível no Fique Ligado.</p>
+                      <p>Atenciosamente,<br>
+                      Service Desk Claro Brasil</p>
+                  </div>
+            <br>
+                <p class="it_subt">Cenário 2:</p>
+                  <div class="resposta">
+                      <p>Prezados(as),</p>
+                      <p>Após análise do incidente, identificamos que se trata de uma mudança de pacote. As validações necessárias forem realizadas, onde<br>
+                         identificamos que o pacote sugerido pelo usuário está disponível para contratação.</p>
+                      <p>Com base nas informações apresentadas e na IT 431045, o incidente deverá ser tratado pela equipe NETSMS - ATENDER</p>
+                      <p>Sendo assim, solicitamos por gentileza que prossigam com as tratativas necessárias para resolução do chamado.</p>
+                      <p>Atenciosamente,<br>
+                      Service Desk Claro Brasil</p>
+                  </div>
+          </div>
+        <div class="itbox_inferior">
+          <h2>Propriedades do Documento:</h2>
+          <p>ID do doc: 431045</p>
+          <p>Data de criação: 04/09/2015</p>
+          <p>Data de Revisão: 14/11/2018</p>
+        </div>
+    </div>
+  </body>
+</html>
